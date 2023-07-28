@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "c58b769ead1b9364",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f14975c99f57e0c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9f3137d49545097",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "English.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d0eb60772a0dd212",
+    "type": "split",
+    "children": [
+      {
+        "id": "172283aa90a14ade",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "debdb0281db2308e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1887d0b7ef42be9f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d0519fbdc172f591",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 242
+  },
+  "right": {
+    "id": "99e9bea6891297dc",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1e1f73ae83a4a1e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5ce17900dcb40c8c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "English.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2d5bf57152bca375",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "English.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0f734c906fa714b1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b2739ef907b03f21",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "English.md"
+              }
+            }
+          },
+          {
+            "id": "7d8bd8e42aa365b5",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "random-note:Open random note": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "dbfolder:Create a new database table": false,
+      "omnisearch:Omnisearch": false
+    }
+  },
+  "active": "d9f3137d49545097",
+  "lastOpenFiles": [
+    "Math.md",
+    "English.md",
+    "Chemistry.md",
+    "Physics.md",
+    "Homework/Math/Chp 1 HW.md",
+    "README.md",
+    "test.html",
+    "Notes/English/17-07-2023.md",
+    "Notes/English/24-07-2023.md",
+    "Notes/English/20-07-2023.md",
+    "Home.md",
+    "Schedule/Friday.md",
+    "Schedule/Monday.md",
+    "Schedule/Wednesday.md",
+    "Schedule/Progress.md",
+    "Guitar/Untitled database.md",
+    "Notes/Physics/Topics/Errors and Uncertainties.md",
+    "Notes/Physics/Topics/SI Units.md",
+    "Notes/Math/Topics/Vectors.md",
+    "Notes/Math/Topics/Exponentiation Rules.md",
+    "Chemistry/Topics/Atoms.md",
+    "Chemistry/18-07-2023.md",
+    "Chemistry/17-07-2023.md",
+    "Notes/Math/Topics/Quadratics.md",
+    "Notes/Math/Topics/Polynomial Identities.md",
+    "Notes/Math/Topics/Functions.md",
+    "Chemistry/Topics",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Images/Pasted image 20230720160752.png",
+    "Images/Pasted image 20230720160605.png",
+    "Notes/Physics/Topics",
+    "Images/Pasted image 20230719195232.png",
+    "Images/Pasted image 20230719195106.png",
+    "Images/Pasted image 20230719191149.png",
+    "Images/Screenshot 2023-07-19 112336C.png",
+    "Images/Pasted image 20230719134723.png",
+    "Images/Pasted image 20230719134247.png",
+    "Images/Pasted image 20230719125520.png",
+    "Images/Pasted image 20230719113644.png",
+    "Homework/Math",
+    "Homework",
+    "Notes/Math/Topics/Factorizing Polynomials.html",
+    "Notes/Math/Topics",
+    "Notes/Physics",
+    "Chemistry",
+    "Notes/Math",
+    "Untitled.canvas"
+  ]
+}
