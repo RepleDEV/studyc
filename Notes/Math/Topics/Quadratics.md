@@ -167,6 +167,18 @@ The example quadratic above has a discriminant of **less than zero**, which mean
 This quadratic ($x^2+10x+25$) has only **one solution**, and has a discriminant of **zero**. The **y-coordinate** of the vertex is **zero**, making it the only point in the curve where it touches the **x-axis**.
 ![[Pasted image 20230719195232.png]]
 And this one has **two solutions**, so the discriminant is **greater than zero**. See how the curve intersects the **x-axis** on two points.
+## Intersecting lines
+To find the tangent of a quadratic at $x = q$, the linear equation can be substituted for $y$, giving:
+$$
+m(q)+b=ax^2+bx+c
+$$
+Rearranging to quadratic form:
+$$
+\begin{align*}
+m(q)+b &= ax^2+bx+c\\
+ax^2+(b-m)x
+\end{align*}
+$$
 
 > [!done] Conclusion
 > A quadratic equation is a **two-degree polynomial** in the form:

@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "6f14975c99f57e0c",
+        "id": "1536274017b836a3",
         "type": "tabs",
         "children": [
           {
-            "id": "d9f3137d49545097",
+            "id": "b0672f5eba4554ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "English.md",
+                "file": "Notes/Chemistry/Topics/Electron Shells.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "458daea0638f9a00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Math/Topics/Quadratics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "English.md",
+                "file": "Notes/Math/Topics/Quadratics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "English.md",
+                "file": "Notes/Math/Topics/Quadratics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "English.md"
+                "file": "Notes/Math/Topics/Quadratics.md"
               }
             }
           },
@@ -159,36 +172,37 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "d9f3137d49545097",
+  "active": "458daea0638f9a00",
   "lastOpenFiles": [
-    "Math.md",
-    "English.md",
-    "Chemistry.md",
-    "Physics.md",
-    "Homework/Math/Chp 1 HW.md",
-    "README.md",
-    "test.html",
+    "Notes/Math/Topics/Coordinate Geometry.md",
+    "Notes/Chemistry/Topics/Electron Shells.md",
+    "Notes/Chemistry/Topics/Atoms.md",
+    "Notes/Physics/Topics/SI Units.md",
+    "Images/Pasted image 20230802103046.png",
+    "Notes/Math/Topics/Quadratics.md",
+    "Notes/Math/Topics/Functions.md",
+    "Notes/Math/Topics/Vectors.md",
+    "Notes/Math/Topics/Linear Function.md",
     "Notes/English/17-07-2023.md",
+    "Notes/Chemistry/17-07-2023.md",
+    "Notes/Chemistry/18-07-2023.md",
+    "Chemistry.md",
+    "Notes/Math/Topics/Polynomial Identities.md",
+    "Notes/Math/Topics/Pythagorean Theorem.md",
+    "Notes/Math/18-07-2023.md",
+    "Math.md",
+    "Physics.md",
+    "English.md",
+    "Notes/Physics/Topics/Errors and Uncertainties.md",
+    "README.md",
+    "Notes/Physics/Topics/Scalars and Vectors.md",
+    "Homework/Math/Chp 1 HW.md",
+    "test.html",
     "Notes/English/24-07-2023.md",
     "Notes/English/20-07-2023.md",
     "Home.md",
     "Schedule/Friday.md",
-    "Schedule/Monday.md",
-    "Schedule/Wednesday.md",
-    "Schedule/Progress.md",
-    "Guitar/Untitled database.md",
-    "Notes/Physics/Topics/Errors and Uncertainties.md",
-    "Notes/Physics/Topics/SI Units.md",
-    "Notes/Math/Topics/Vectors.md",
-    "Notes/Math/Topics/Exponentiation Rules.md",
-    "Chemistry/Topics/Atoms.md",
-    "Chemistry/18-07-2023.md",
-    "Chemistry/17-07-2023.md",
-    "Notes/Math/Topics/Quadratics.md",
-    "Notes/Math/Topics/Polynomial Identities.md",
-    "Notes/Math/Topics/Functions.md",
-    "Chemistry/Topics",
-    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Chemistry/Topics",
     "Images/Pasted image 20230720160752.png",
     "Images/Pasted image 20230720160605.png",
     "Notes/Physics/Topics",
@@ -199,13 +213,12 @@
     "Images/Pasted image 20230719134723.png",
     "Images/Pasted image 20230719134247.png",
     "Images/Pasted image 20230719125520.png",
-    "Images/Pasted image 20230719113644.png",
     "Homework/Math",
     "Homework",
     "Notes/Math/Topics/Factorizing Polynomials.html",
     "Notes/Math/Topics",
     "Notes/Physics",
-    "Chemistry",
+    "Notes/Chemistry",
     "Notes/Math",
     "Untitled.canvas"
   ]

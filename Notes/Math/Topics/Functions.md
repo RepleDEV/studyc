@@ -77,3 +77,5 @@ $$
 Functions can be reflected along the two main axes.
 * $f(-x)$ reflects it along the **y-axis**
 * $-f(x)$ reflects it along the **x-axis**
+## Common Function types
+There are a few common function types with their own unique graphical shapes that are useful to remember. These include:

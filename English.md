@@ -8,7 +8,7 @@ drive: https://drive.google.com/drive/folders/1rWR9O7iWoJYxOCa5fm62_DOTq4d9JZO1?
 # Notes
 ```dataview
 LIST
-FROM "Studies/Notes/English"
+FROM "/Notes/English/Topics"
 ```
 
 ## Resources
