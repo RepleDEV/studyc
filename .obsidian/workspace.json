@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Quadratics.md",
+                "file": "Notes/Physics/17-07-2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Quadratics.md",
+                "file": "Notes/Physics/17-07-2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Quadratics.md",
+                "file": "Notes/Physics/17-07-2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Quadratics.md"
+                "file": "Notes/Physics/17-07-2023.md"
               }
             }
           },
@@ -172,27 +172,28 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "458daea0638f9a00",
+  "active": "debdb0281db2308e",
   "lastOpenFiles": [
+    "Notes/Math/Topics/Quadratics.md",
+    "Notes/Physics/Untitled",
     "Notes/Math/Topics/Coordinate Geometry.md",
     "Notes/Chemistry/Topics/Electron Shells.md",
     "Notes/Chemistry/Topics/Atoms.md",
     "Notes/Physics/Topics/SI Units.md",
     "Images/Pasted image 20230802103046.png",
-    "Notes/Math/Topics/Quadratics.md",
     "Notes/Math/Topics/Functions.md",
     "Notes/Math/Topics/Vectors.md",
     "Notes/Math/Topics/Linear Function.md",
     "Notes/English/17-07-2023.md",
     "Notes/Chemistry/17-07-2023.md",
     "Notes/Chemistry/18-07-2023.md",
-    "Chemistry.md",
+    "Notes/Chemistry/Chemistry.md",
     "Notes/Math/Topics/Polynomial Identities.md",
     "Notes/Math/Topics/Pythagorean Theorem.md",
     "Notes/Math/18-07-2023.md",
-    "Math.md",
-    "Physics.md",
-    "English.md",
+    "Notes/Math/Math.md",
+    "Notes/Physics/Physics.md",
+    "Notes/English/English.md",
     "Notes/Physics/Topics/Errors and Uncertainties.md",
     "README.md",
     "Notes/Physics/Topics/Scalars and Vectors.md",
@@ -201,7 +202,6 @@
     "Notes/English/24-07-2023.md",
     "Notes/English/20-07-2023.md",
     "Home.md",
-    "Schedule/Friday.md",
     "Notes/Chemistry/Topics",
     "Images/Pasted image 20230720160752.png",
     "Images/Pasted image 20230720160605.png",
@@ -219,7 +219,6 @@
     "Notes/Math/Topics",
     "Notes/Physics",
     "Notes/Chemistry",
-    "Notes/Math",
     "Untitled.canvas"
   ]
 }
