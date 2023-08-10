@@ -1,2 +1,5 @@
 *-*-*.md
 Homework/
+node_modules/
+public/
+.cache
