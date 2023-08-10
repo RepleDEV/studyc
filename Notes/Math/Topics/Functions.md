@@ -13,12 +13,6 @@ Each function has a **domain** and a **range**.
 For example: the function $f(x) = x^2$. This function can take any input $x$ so long that $x$ is a real number and it will give a real number as its output. Which means that the function's domain is: $\{ x \in \mathbb{R} \}$ (reads **x is element of all real numbers**). For the range, there is no valid $x$ value that is a real number and where the function will output a negative number. So, the range is $\{y \in \mathbb{R}, 0 \leq y\}$.
 
 Another example would be $g(x) = \frac{1}{x}$. Here, the domain is all real numbers again, but with the exception of $x = 0$ as when $x=0$ the function evaluates to $\frac{1}{0}$. Thus, the domain of $g(x)$ would be $\{x\in\mathbb{R},x \neq 0\}$. The range would also be $\{y\in\mathbb{R}, y \neq 0\}$. as there are no possible solutions for $\frac{1}{x}=0$ except for $\infty$ or $-\infty$.
-## Function mappings
-Functions can also be thought as **mapping** a set of inputs to a set of outputs.
-
-Functions can have different types of mappings. It can map values as **one-to-one** where one value as an input maps to a single value as an output, such as **linear functions**.
-It can also be **many-to-one** where multiple values maps to one output, such as **quadratics**.
-One other mapping type is **one-to-many**, where one value maps to multiple values, such as $\sqrt{x}$. Such mappings **may not** be defined as a function.
 ## Piecewise Functions
 Functions can be made of multiple equations, these are called **piecewise functions**. Here's a simple example:
 $$
@@ -62,7 +56,7 @@ The notation is $f^{-1}$, pronounced **f inverse (of x)**. Inverse functions hav
 Functions can also be **transformed**, it can be:
 * Translated
 * Reflected
-* Stretched
+* Scaled (stretched)
 ### Translation
 Function translation is where the function is moved across the two axes.
 $$
@@ -77,5 +71,15 @@ $$
 Functions can be reflected along the two main axes.
 * $f(-x)$ reflects it along the **y-axis**
 * $-f(x)$ reflects it along the **x-axis**
-## Common Function types
-There are a few common function types with their own unique graphical shapes that are useful to remember. These include:
+## Scaling
+Functions can be **scaled** by a factor of $n$.
+* $n\times f(x)$ scales it by a factor of $n$ in the **y direction**
+* $f(x\times \frac{1}{n})$ scales it by a factor of $n$ in the **x direction**
+For $f(x \times n)$, it will "squeeze" the function by a factor of $n$.
+## Function mappings
+Functions can also be thought as **mapping** a set of inputs to a set of outputs. More intuitively, functions could also be thought of as "manipulating" the coordinate plane.
+
+Functions take an input $x$ and outputs one value, where it is graphed as $y = f(x)$. 
+Here, we can think of it as the function taking $x$: a number line, as the input, and outputting a vertical number line: $y$, that is according to the function $f$'s definition. 
+
+This concept is useful to understand as function transformations is basically as if you're "moving" the coordinate plane. For the translation $f(x+1)$, it's as if the $x$ number line is shifted to the **right** by one unit, which is why the output is as if it's to the **left** of its original position. For the transformation $y + 1 = f(x)$, it's as if you're "moving" the $y$ number line up one unit.

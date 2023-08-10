@@ -2,14 +2,14 @@ Coordinate geometry (or analytic geometry) is defined as **the study of geometr
 ## Line segments
 Line segments are straight lines that connects two points. 
 ### Line segment length
-Say, we have two points $A(1,5)$ and $B(7,1)$. The length of the line segment $\overline{AB}$ is the positive square root of the sum of squares of the vertical and horizontal distances. In other words: the vertical and horizontal distances of the two points, $\Delta x$ and $\Delta y$ forms a right triangle with $\overline{AB}$ being the hypotenuse, meaning that the [[Pythagorean Theorem]] can be used to find $\overline{AB}$.
+Say, we have two points $A$ and $B$. The length of the line segment $\overline{AB}$ is the positive square root of the sum of squares of the vertical and horizontal distances. In other words: the vertical and horizontal distances of the two points, $\Delta x$ and $\Delta y$ forms a right triangle with $\overline{AB}$ being the hypotenuse, meaning that the [[Pythagorean Theorem]] can be used to find $\overline{AB}$.
 $$
 \overline{AB} = \sqrt{(\Delta x)^2+(\Delta y)^2}
 $$
 ### Line segment midpoint
 The midpoint of a line segment is quite literally the middle of it and it is calculated by averaging the horizontal and vertical distances of the two endpoints.
 $$
-\frac{A+B}{2} = \frac{\Delta x + \Delta y}{2}
+\frac{A+B}{2} = \left(\frac{\Delta x}{2},\frac{\Delta y}{2} \right)
 $$
 ### Line segment gradient
 The gradient, also known as the [[Slope]] of the line segment is the rate of change of the line. Meaning: how much the line is raised or lowered per a given distance. 
@@ -29,7 +29,7 @@ $$
 m_1\times m_2=-1
 $$
 Rearranging the equation we get:
-$$$m_1 \perp -\frac{1}{m_2}$$
+$$m_1 \perp -\frac{1}{m_{1}}= m_2$$
 ## Line through two points
 A straight line extending all the way to infinity can also connect two points. 
 $$

@@ -151,7 +151,7 @@ Now, after all of that, the other way we could solve a quadratic equation is to 
 $$
 x=\frac{b\pm \sqrt{b^2-4ac}}{2a}
 $$
-Using this formula, we can instantly solve any quadratic equation! Assuming that the quadratic has a **real solution(s)**. How do we know that? Why are there quadratics without a **real** solution?
+Using this formula, we ican instantly solve any quadratic equation! Assuming that the quadratic has a **real solution(s)**. How do we know that? Why are there quadratics without a **real** solution?
 ![[Pasted image 20230719191149.png]]
 This quadratic ($x^2-4x+5$) has **zero(!)** real solutions. As you can see, the **vertex**'s **y-coordinate** is greater than zero. So, the function never touches the **x-axis**, which means that there are **zero possible (real) x-values** that can solve the equation.
 
@@ -167,6 +167,8 @@ The example quadratic above has a discriminant of **less than zero**, which mean
 This quadratic ($x^2+10x+25$) has only **one solution**, and has a discriminant of **zero**. The **y-coordinate** of the vertex is **zero**, making it the only point in the curve where it touches the **x-axis**.
 ![[Pasted image 20230719195232.png]]
 And this one has **two solutions**, so the discriminant is **greater than zero**. See how the curve intersects the **x-axis** on two points.
+> [!info]
+> To not get things flipped when it comes to discriminants, just remember that in the **quadratic formula**, the **square root** of the discriminant is used, which means that if the discriminant is negative, the solution MUST NOT be a real value.
 ## Intersecting lines
 To find the tangent of a quadratic at $x = q$, the linear equation can be substituted for $y$, giving:
 $$
