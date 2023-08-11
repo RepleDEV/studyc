@@ -17,6 +17,10 @@ module.exports = {
                 plugins.provide({
                     Buffer: ["buffer", "Buffer"]
                 }),
+                plugins.ignore({
+                    resourceRegExp: /canvas/,
+                    contextRegExp: /jsdom$/
+                })
             ],
         });
     },

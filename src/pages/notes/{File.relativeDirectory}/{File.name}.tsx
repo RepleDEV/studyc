@@ -5,6 +5,9 @@ import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeMathjax from "rehype-mathjax";
 import obsidianWikilink from "../../../plugins/remark-obsidian-wikilink";
+import Layout from "../../../components/Layout";
+
+import "../../../styles/pages.scss";
 
 export interface FileIdentity {
     relativeDirectory: string;
@@ -32,8 +35,7 @@ export default function Page(props: PageProps) {
     const page = new MDPage(content, props.data.allFile.nodes);
 
     return (
-        <>
-        <div className="etc">
+        <Layout>
             <ReactMarkdown 
                 children={page.converted}
                 remarkPlugins={[
@@ -55,8 +57,7 @@ export default function Page(props: PageProps) {
                     },
                 }}
             />
-        </div>
-        </>
+        </Layout>
     );
 }
 
