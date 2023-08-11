@@ -37,12 +37,22 @@ export default function Page(props: PageProps) {
             <ReactMarkdown 
                 children={page.converted}
                 remarkPlugins={[
+                    [obsidianWikilink, { fileIdentities }],
                     remarkMath,
-                    [obsidianWikilink, { fileIdentities }]
                 ]}
                 rehypePlugins={[rehypeMathjax]}
                 components={{
-                    
+                    img({node, className, children, ...props}) {
+                        return (
+                            <>
+                                <br />
+                                <img {...props} className={className}>
+                                    {children}
+                                </img>
+                                <br />
+                            </>
+                        )
+                    },
                 }}
             />
         </div>

@@ -33,6 +33,8 @@
     "remark-wiki-link": "^1.0.4",
     "remark-wiki-link-plus": "^1.1.1",
     "unist-builder": "^4.0.0",
+    "unist-util-flatmap": "^1.0.0",
+    "unist-util-index": "^4.0.0",
     "unist-util-map": "^4.0.0",
     "unist-util-visit": "^5.0.0"
   },
