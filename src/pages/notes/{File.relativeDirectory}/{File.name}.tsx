@@ -6,8 +6,12 @@ import remarkMath from "remark-math";
 import rehypeMathjax from "rehype-mathjax";
 import obsidianWikilink from "../../../plugins/remark-obsidian-wikilink";
 import Layout from "../../../components/Layout";
+import MathDisplay from "../../../components/MathDisplay";
+import Bold from "../../../components/Bold";
+import MathInline from "../../../components/MathInline";
+import Link from "../../../components/Link";
 
-import "../../../styles/pages.scss";
+// import "../../../styles/pages.scss";
 
 export interface FileIdentity {
     relativeDirectory: string;
@@ -20,6 +24,7 @@ interface PageProps {
     params: FileIdentity;
     data: {
         file: {
+            name: string;
             internal: {
                 content: string;
             }
@@ -36,6 +41,10 @@ export default function Page(props: PageProps) {
 
     return (
         <Layout>
+        <div className="my-8 mx-10">
+            <h1 className="mb-8 text-8xl font-bold tracking-tight text-purple-400">
+                {props.data.file.name}
+            </h1>
             <ReactMarkdown 
                 children={page.converted}
                 remarkPlugins={[
@@ -44,19 +53,29 @@ export default function Page(props: PageProps) {
                 ]}
                 rehypePlugins={[rehypeMathjax]}
                 components={{
-                    img({node, className, children, ...props}) {
-                        return (
-                            <>
-                                <br />
-                                <img {...props} className={className}>
-                                    {children}
-                                </img>
-                                <br />
-                            </>
-                        )
+                    strong({children, ...props}) {
+                        return <Bold {...props}>{ children }</Bold>
                     },
+                    span({children, className, ...props}) {
+                        if (className?.includes("math-inline")) {
+                            return <MathInline {...props}>{children}</MathInline>
+                        }
+
+                        return <span className={className}>{children}</span>
+                    },
+                    div({children, className, ...props}) {
+                        if (className?.includes("math-display")) {
+                            return <MathDisplay>{children}</MathDisplay>
+                        }
+
+                        return <div className={className} {...props}>{children}</div>
+                    },
+                    a({children, ...props}) {
+                        return <Link {...props}>{children}</Link>
+                    }
                 }}
             />
+        </div>
         </Layout>
     );
 }
@@ -64,6 +83,7 @@ export default function Page(props: PageProps) {
 export const query = graphql`
 query($id: String!) {
     file(id: { eq: $id }) {
+        name
         internal {
             content
         }

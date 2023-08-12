@@ -1,17 +1,10 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 
-interface LinkProps extends React.PropsWithChildren {
-    onClick?: React.MouseEventHandler<HTMLAnchorElement>
-}
-export default function Link(props: LinkProps): React.ReactNode {
-    const onClick: React.MouseEventHandler<HTMLAnchorElement> = (...args) => {
-        args[0].stopPropagation();
-        if (props.onClick) {
-            props.onClick(...args);
-        }
-    }
-
+export default function Link({ children, ...props }: PropsWithChildren): React.ReactNode {
     return (
-        <a href="#" onClick={onClick}>{props.children}</a>
+        <a 
+            className="text-purple-400 visited:text-blue-600 underline font-semibold"
+            {...props}>
+        {children}</a>
     )
 }

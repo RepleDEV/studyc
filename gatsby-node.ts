@@ -1,4 +1,5 @@
 import type { GatsbyNode } from "gatsby";
+import path from "path";
 
 // Buffer undefined workaround: https://stackoverflow.com/a/68723223/13160047
 module.exports = {
@@ -22,6 +23,12 @@ module.exports = {
                     contextRegExp: /jsdom$/
                 })
             ],
+            resolve: {
+                alias: {
+                    "@/components": path.resolve(__dirname, "src/components"),
+                    "@/lib/utils": path.resolve(__dirname, "src/lib/utils"),
+                },
+            },
         });
     },
 } as GatsbyNode;
