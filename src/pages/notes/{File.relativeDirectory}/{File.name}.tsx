@@ -5,11 +5,13 @@ import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeMathjax from "rehype-mathjax";
 import obsidianWikilink from "../../../plugins/remark-obsidian-wikilink";
+
 import Layout from "../../../components/Layout";
 import MathDisplay from "../../../components/MathDisplay";
 import Bold from "../../../components/Bold";
 import MathInline from "../../../components/MathInline";
 import Link from "../../../components/Link";
+import Title from "../../../components/Title";
 
 // import "../../../styles/pages.scss";
 
@@ -41,10 +43,9 @@ export default function Page(props: PageProps) {
 
     return (
         <Layout>
-        <div className="my-8 mx-10">
-            <h1 className="mb-8 text-8xl font-bold tracking-tight text-purple-400">
+            <Title>
                 {props.data.file.name}
-            </h1>
+            </Title>
             <ReactMarkdown 
                 children={page.converted}
                 remarkPlugins={[
@@ -75,7 +76,6 @@ export default function Page(props: PageProps) {
                     }
                 }}
             />
-        </div>
         </Layout>
     );
 }

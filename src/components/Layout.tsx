@@ -4,7 +4,9 @@ export default function Layout({ children }: React.PropsWithChildren) {
     return (
         <>
         {/* NAVBAR */}
-        <main>{children}</main>
+        <main
+            className="my-8 mx-10"
+        >{children}</main>
         {/* FOOTER */}
         </>
     )
