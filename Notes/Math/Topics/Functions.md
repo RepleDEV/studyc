@@ -83,3 +83,12 @@ Functions take an input $x$ and outputs one value, where it is graphed as $y = f
 Here, we can think of it as the function taking $x$: a number line, as the input, and outputting a vertical number line: $y$, that is according to the function $f$'s definition. 
 
 This concept is useful to understand as function transformations is basically as if you're "moving" the coordinate plane. For the translation $f(x+1)$, it's as if the $x$ number line is shifted to the **right** by one unit, which is why the output is as if it's to the **left** of its original position. For the transformation $y + 1 = f(x)$, it's as if you're "moving" the $y$ number line up one unit.
+
+For scaling it's as if you're "zooming in" on an axis or a plane if it is scaled by a factor of $n\{n \in \mathbb{R},1 \leq n \}$.
+$$
+\begin{align*}
+y\times n&= f(x)\\
+y&= \frac{1}{n} \times f(x)
+\end{align*}
+$$
+This way, it seems like the function $f$ is "squished" in the $y$-direction.

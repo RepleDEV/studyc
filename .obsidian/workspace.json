@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Polynomial Identities.md",
+                "file": "Notes/Physics/Topics/Kinematics.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Trigonometry.md",
+                "file": "Notes/Chemistry/Topics/Electron Shells.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,50 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Functions.md",
+                "file": "Notes/Math/Topics/Exponentiation Rules.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "af18a3420b2132a3",
+            "id": "26e91d66e1b3d3be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Angles.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ab11b75271baf5f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Math/Topics/Quadratics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "727a6e97a1a9937b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Math/Topics/Polynomial Identities.md",
+                "file": "Notes/Math/Topics/Circular Measure.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Quadratics.md",
+                "file": "Notes/Chemistry/Topics/Electron Shells.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Quadratics.md",
+                "file": "Notes/Chemistry/Topics/Electron Shells.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Quadratics.md"
+                "file": "Notes/Chemistry/Topics/Electron Shells.md"
               }
             }
           },
@@ -220,20 +196,46 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "ab11b75271baf5f1",
+  "active": "debdb0281db2308e",
   "lastOpenFiles": [
-    "Notes/Math/Topics/Polynomial Identities.md",
+    "tsconfig.json",
+    "tailwind.config.js",
+    "static/favicon.ico",
+    "static",
+    "src/pages/notes/{File.relativeDirectory}/{File.name}.tsx",
+    "src/pages/notes/{File.relativeDirectory}",
+    "src/plugins/remark-obsidian-wikilink.ts",
+    "src/styles/global.css",
+    "src/styles/pages.scss",
+    "src/pages/notes",
+    "src/pages/index.tsx",
+    "Notes/Chemistry/Topics/Atoms.md",
+    "Notes/Chemistry/Topics/Masses of Atoms.md",
+    "Notes/Physics/Topics/Kinematics.md",
     "Notes/Math/Topics/Exponentiation Rules.md",
-    "Notes/Math/Topics/Functions.md",
-    "Notes/Math/Topics/Angles.md",
+    "Notes/Chemistry/Topics/Electron Shells.md",
+    "Notes/Math/Topics/Vectors.md",
+    "Notes/Physics/Topics/Scalars and Vectors.md",
+    "Notes/Physics/Topics/SI Units.md",
+    "Notes/Math/Topics/Coordinate Geometry.md",
     "Notes/Math/Topics/Quadratics.md",
     "Notes/Math/Topics/Trigonometry.md",
-    "Notes/Math/Topics/Linear Function.md",
-    "Notes/Math/Topics/Factorizing Polynomials.md",
-    "Notes/Math/Topics/Coordinate Geometry.md",
-    "Notes/Chemistry/Topics/Masses of Atoms.md",
+    "Notes/Math/Topics/Functions.md",
     "Notes/Math/Math.md",
-    "Notes/Chemistry/Topics/Atoms.md",
+    "Notes/Math/Topics/Linear Function.md",
+    "Notes/Math/Topics/Circular Measure.md",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Math/Topics/Polynomial Identities.md",
+    "Images/Pasted image 20230815091954.png",
+    "Images/Pasted image 20230815091849.png",
+    "Images/Pasted image 20230815091539.png",
+    "Images/Pasted image 20230815084258.png",
+    "Images/Pasted image 20230815083849.png",
+    "Images/Pasted image 20230814201703.png",
+    "Images/Pasted image 20230814194748.png",
+    "Binomial Expansion.md",
+    "Notes/Math/Topics/Angles.md",
+    "Notes/Physics/Physics.md",
     "Notes/Math/Topics/Pythagorean Theorem.md",
     "Hydrogen.md",
     "Images/Pasted image 20230807094926.png",
@@ -242,32 +244,6 @@
     "Notes/Math/07-08-2023.md",
     "Images/Pasted image 20230807083316.png",
     "Notes/English/07-08-2023.md",
-    "Images/Pasted image 20230807073717.png",
-    "Notes/Chemistry/Topics/Electron Shells.md",
-    "Notes/Chemistry/Chemistry.md",
-    "Notes/English/24-07-2023.md",
-    "Notes/English/English.md",
-    "Notes/Chemistry/18-07-2023.md",
-    "Notes/Chemistry/17-07-2023.md",
-    "Notes/Physics/17-07-2023.md",
-    "Notes/Physics/Untitled",
-    "Notes/Physics/Topics/SI Units.md",
-    "Images/Pasted image 20230802103046.png",
-    "Notes/Math/Topics/Vectors.md",
-    "test.html",
-    "Notes/Chemistry/Topics",
-    "Images/Pasted image 20230720160752.png",
-    "Images/Pasted image 20230720160605.png",
-    "Notes/Physics/Topics",
-    "Images/Pasted image 20230719195232.png",
-    "Images/Pasted image 20230719195106.png",
-    "Images/Pasted image 20230719191149.png",
-    "Homework/Math",
-    "Homework",
-    "Notes/Math/Topics/Factorizing Polynomials.html",
-    "Notes/Math/Topics",
-    "Notes/Physics",
-    "Notes/Chemistry",
     "Untitled.canvas"
   ]
 }

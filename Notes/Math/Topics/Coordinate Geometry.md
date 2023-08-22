@@ -22,7 +22,7 @@ $$
 \overline{AB} \| \overline{CD} \text{ if } m(\overline{AB})=m(\overline{CD})
 $$
 > [!warning]
-> I don't know if writing it this way is valid in any way
+> I don't know if writing it this way is valid in any way but it is pronounced $\overline{AB}$ is parallel to $\overline{CD}$ if the slope ($m$) of $\overline{AB}$ is equal to the slope of $\overline{CD}$
 ## Perpendicular Lines
 The definition of two perpendicular lines is when the product of the two slopes equals to negative one.
 $$
@@ -37,7 +37,7 @@ $$
 m &= \frac{y_2-y_1}{x_2-x_1}\\
 y-y_1 &= m(x-x_1)\\
 y-y_1 &= \left(\frac{y_2-y_1}{x_2-x_1}\right)\times(x-x_1)\\
-\frac{y-y_1}{x-x_1} &= \frac{y_2-y_1}{x_2-x_1}
+%\frac{y-y_1}{x-x_1} &= \frac{y_2-y_1}{x_2-x_1}\\
 \end{align*}
 $$
 This uses the [[Linear Function#^9104a2||point slope form]] of a linear equation.
@@ -71,4 +71,4 @@ $$
 \end{align*}
 $$
 ## Circle tangents
-Given a point $P$ that sits at any arbitrary circle $A$, the tangent of $A$ at point $P$ will always be perpendicular to $\overline{AP}$. 
+Given a point $P$ that sits at any arbitrary circle $A$, the tangent of $A$ at point $P$ will always be the perpendicular bisector to $\overline{AP}$ at $P$. 

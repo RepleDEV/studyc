@@ -28,4 +28,4 @@ Some units I've used:
 ## Homogeneity of equations
 Units in equations follow homogeneous rules, which means that every term of an equation have exactly the same unit.
 ## Prefixes
-Prefixes indicate multiples or submultiples of units (like how **centimetres** are hundredth of a **metre**).
+Prefixes indicate multiples or submultiples of units (like how **centimetres** are a hundredth of a **metre**).
