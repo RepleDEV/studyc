@@ -54,6 +54,12 @@ export default function Page(props: PageProps) {
                 ]}
                 rehypePlugins={[rehypeMathjax]}
                 components={{
+                    h2({children, ...props}) {
+                        return <h2 {...props} className="text-3xl font-semibold">{children}</h2>
+                    },
+                    h3({children, ...props}) {
+                        return <h2 {...props} className="text-2xl font-semibold">{children}</h2>
+                    },
                     strong({children, ...props}) {
                         return <Bold {...props}>{ children }</Bold>
                     },
