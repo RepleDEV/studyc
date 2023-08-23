@@ -55,10 +55,10 @@ export default function Page(props: PageProps) {
                 rehypePlugins={[rehypeMathjax]}
                 components={{
                     h2({children, ...props}) {
-                        return <h2 {...props} className="text-3xl font-semibold">{children}</h2>
+                        return <h2 {...props} className="text-3xl font-semibold mt-5">{children}</h2>
                     },
                     h3({children, ...props}) {
-                        return <h2 {...props} className="text-2xl font-semibold">{children}</h2>
+                        return <h2 {...props} className="text-2xl font-semibold mt-5">{children}</h2>
                     },
                     strong({children, ...props}) {
                         return <Bold {...props}>{ children }</Bold>
@@ -79,6 +79,9 @@ export default function Page(props: PageProps) {
                     },
                     a({children, ...props}) {
                         return <Link {...props}>{children}</Link>
+                    },
+                    p({children, ...props}) {
+                        return <p {...props} className="mt-5">{children}</p>
                     }
                 }}
             />
