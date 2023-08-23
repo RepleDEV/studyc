@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Physics/Topics/Kinematics.md",
-                "mode": "source",
+                "file": "Notes/Math/Topics/Factorizing Polynomials.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Exponentiation Rules.md",
+                "file": "Notes/Math/Topics/Functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Chemistry/Topics/Electron Shells.md",
+                "file": "Notes/Math/Topics/Factorizing Polynomials.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Chemistry/Topics/Electron Shells.md",
+                "file": "Notes/Math/Topics/Factorizing Polynomials.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Chemistry/Topics/Electron Shells.md"
+                "file": "Notes/Math/Topics/Factorizing Polynomials.md"
               }
             }
           },
@@ -196,8 +195,19 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "debdb0281db2308e",
+  "active": "b0672f5eba4554ba",
   "lastOpenFiles": [
+    "Notes/Math/Topics/Pythagorean Theorem.md",
+    "Notes/Math/Topics/Polynomial Identities.md",
+    "Notes/Physics/Topics/Kinematics.md",
+    "Notes/Math/Topics/Functions.md",
+    "Notes/Chemistry/Topics/Electron Shells.md",
+    "Notes/Math/Topics/Vectors.md",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Math/Topics/Coordinate Geometry.md",
+    "Notes/Physics/Topics/Errors and Uncertainties.md",
+    "Notes/Physics/Topics/SI Units.md",
+    "Notes/Math/Topics/Exponentiation Rules.md",
     "tsconfig.json",
     "tailwind.config.js",
     "static/favicon.ico",
@@ -208,24 +218,14 @@
     "src/styles/global.css",
     "src/styles/pages.scss",
     "src/pages/notes",
-    "src/pages/index.tsx",
     "Notes/Chemistry/Topics/Atoms.md",
     "Notes/Chemistry/Topics/Masses of Atoms.md",
-    "Notes/Physics/Topics/Kinematics.md",
-    "Notes/Math/Topics/Exponentiation Rules.md",
-    "Notes/Chemistry/Topics/Electron Shells.md",
-    "Notes/Math/Topics/Vectors.md",
     "Notes/Physics/Topics/Scalars and Vectors.md",
-    "Notes/Physics/Topics/SI Units.md",
-    "Notes/Math/Topics/Coordinate Geometry.md",
     "Notes/Math/Topics/Quadratics.md",
     "Notes/Math/Topics/Trigonometry.md",
-    "Notes/Math/Topics/Functions.md",
     "Notes/Math/Math.md",
     "Notes/Math/Topics/Linear Function.md",
     "Notes/Math/Topics/Circular Measure.md",
-    "Notes/Math/Topics/Factorizing Polynomials.md",
-    "Notes/Math/Topics/Polynomial Identities.md",
     "Images/Pasted image 20230815091954.png",
     "Images/Pasted image 20230815091849.png",
     "Images/Pasted image 20230815091539.png",
@@ -236,7 +236,6 @@
     "Binomial Expansion.md",
     "Notes/Math/Topics/Angles.md",
     "Notes/Physics/Physics.md",
-    "Notes/Math/Topics/Pythagorean Theorem.md",
     "Hydrogen.md",
     "Images/Pasted image 20230807094926.png",
     "Images/Pasted image 20230807091846.png",

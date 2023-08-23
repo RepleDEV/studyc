@@ -27,6 +27,7 @@ Next, is finding the factor(s) for $c$. There are multiple factors this time, an
 * $2 \times 27$
 * $3 \times 18$
 * $6 \times 9$
+
 The next step is to try one of the factors and write it out in this format:
 ![[Pasted image 20230718102416.png]]
 Notice the factors for $x^2$ on the left side of the cross, and (one) of the factors of $54$ on the other side. The cross denotes the direction of the products to sum to find $b$. Thus:

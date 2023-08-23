@@ -10,6 +10,7 @@ Here, we have a function $f(x)$ (pronounced **f of x**). It takes an **input x**
 Each function has a **domain** and a **range**.
 * **Domain**: the set of values that a function can take where it will give out a valid output
 * **Range**: the set of values that the function can output
+
 For example: the function $f(x) = x^2$. This function can take any input $x$ so long that $x$ is a real number and it will give a real number as its output. Which means that the function's domain is: $\{ x \in \mathbb{R} \}$ (reads **x is element of all real numbers**). For the range, there is no valid $x$ value that is a real number and where the function will output a negative number. So, the range is $\{y \in \mathbb{R}, 0 \leq y\}$.
 
 Another example would be $g(x) = \frac{1}{x}$. Here, the domain is all real numbers again, but with the exception of $x = 0$ as when $x=0$ the function evaluates to $\frac{1}{0}$. Thus, the domain of $g(x)$ would be $\{x\in\mathbb{R},x \neq 0\}$. The range would also be $\{y\in\mathbb{R}, y \neq 0\}$. as there are no possible solutions for $\frac{1}{x}=0$ except for $\infty$ or $-\infty$.
