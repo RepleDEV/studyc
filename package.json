@@ -37,6 +37,7 @@
     "remark-wiki-link": "^1.0.4",
     "remark-wiki-link-plus": "^1.1.1",
     "sass": "^1.65.1",
+    "slugify": "^1.6.6",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.6",
     "unist-builder": "^4.0.0",

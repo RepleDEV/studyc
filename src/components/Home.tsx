@@ -47,7 +47,7 @@ function Home(props: HomeProps): React.ReactNode {
       }
       links.push(
         <li key={page.name + i}>
-          <Link onClick={onClick}>{page.name}</Link>
+          <Link>{page.name}</Link>
         </li>
       )
       i++;
