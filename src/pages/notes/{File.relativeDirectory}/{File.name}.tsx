@@ -58,7 +58,7 @@ export default function Page(props: PageProps) {
                         return <h2 {...props} className="text-3xl font-semibold mt-5">{children}</h2>
                     },
                     h3({children, ...props}) {
-                        return <h2 {...props} className="text-2xl font-semibold mt-5">{children}</h2>
+                        return <h3 {...props} className="text-2xl font-semibold mt-5">{children}</h3>
                     },
                     strong({children, ...props}) {
                         return <Bold {...props}>{ children }</Bold>
