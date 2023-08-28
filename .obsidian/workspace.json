@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md",
+                "file": "Notes/Math/Topics/Trigonometry.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md",
+                "file": "Notes/Math/Topics/Trigonometry.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md",
+                "file": "Notes/Math/Topics/Trigonometry.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md"
+                "file": "Notes/Math/Topics/Trigonometry.md"
               }
             }
           },
@@ -167,16 +167,19 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "random-note:Open random note": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "dbfolder:Create a new database table": false,
-      "omnisearch:Omnisearch": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "27c199a7d7a52970",
   "lastOpenFiles": [
+    "Notes/Math/Topics/Binomial Expansion.md",
+    "Notes/Math/Topics/Vectors.md",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Math/Topics/Linear Function.md",
+    "Notes/Math/Topics/Pythagorean Theorem.md",
+    "Notes/Math/Topics/Combinations & Permutations.md",
     "src/components/Title.tsx",
     "Notes/Math/Topics/Exponentiation Rules.md",
-    "Notes/Math/Topics/Binomial Expansion.md",
     "Notes/Math/Topics/Circular Measure.md",
     "Notes/Physics/Topics/Kinematics.md",
     "Notes/Chemistry/Topics/Ionization Energy.md",
@@ -187,15 +190,12 @@
     "Notes/Math/Topics/Coordinate Geometry.md",
     "Notes/Math/Topics/Functions.md",
     "Notes/Math/Topics/Quadratics.md",
-    "Notes/Math/Topics/Factorizing Polynomials.md",
     "Images/Pasted image 20230823150608.png",
     "Images/Pasted image 20230823150408.png",
     "Images/Pasted image 20230823145700.png",
     "Images/Pasted image 20230823145648.png",
     "Notes/Chemistry/Topics/Atoms.md",
-    "Notes/Math/Topics/Pythagorean Theorem.md",
     "Notes/Math/Topics/Polynomial Identities.md",
-    "Notes/Math/Topics/Vectors.md",
     "Notes/Physics/Topics/Errors and Uncertainties.md",
     "Notes/Physics/Topics/SI Units.md",
     "tsconfig.json",
@@ -207,9 +207,7 @@
     "src/plugins/remark-obsidian-wikilink.ts",
     "src/styles/global.css",
     "src/styles/pages.scss",
-    "src/pages/notes",
     "Notes/Physics/Topics/Scalars and Vectors.md",
-    "Notes/Math/Topics/Linear Function.md",
     "Images/Pasted image 20230815091954.png",
     "Images/Pasted image 20230815091849.png",
     "Images/Pasted image 20230815091539.png",
