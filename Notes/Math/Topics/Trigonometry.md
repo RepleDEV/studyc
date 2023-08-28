@@ -14,15 +14,13 @@ a &= \cos(\theta)\times h
 \end{align*}
 $$
 ## Unit circle
-Another way of thinking about trigonometric functions is with a [[unit circle]]. 
+Another way (arguably an easier way) of thinking about trigonometric functions is with a [[unit circle]]. 
 ![[Pasted image 20230807094926.png]]
 Given a circle with radius of $1$, the point $P$ that sits on the circle with angle $\theta$ relative to the center of the circle, will be equal to $(\cos(\theta), \sin(\theta))$.
 
 Notice how the $cos$ and $sin$ coordinates form a right triangle, with the radius being the hypotenuse.
 
-   
-
-The tangent ($tan$) function is defined as the ratio of the **opposite** side to the **adjacent side**. Knowing the the unit circle, it would be:
+The tangent ($tan$) function is defined as the ratio of the **opposite** side to the **adjacent side** to an angle of a right triangle. Knowing the the unit circle, it would be:
 $$\tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}$$
 With $\sin$ being the $y$ coordinate and $cos$ being the $x$ coordinate, using the definition of a [[slope]], $\tan(\theta)$ is equals to the **slope** of a straight line with angle $\theta$. 
 >[!warning]
@@ -72,14 +70,16 @@ Dividing this equation by either $\sin^2(\theta)$ or $\cos^2(\theta)$ we get:
 $$
 \begin{align*}
 1+\frac{\cos^2(\theta)}{\sin^2(\theta)} &= \frac{1}{\sin^2(\theta)}\\
-1+\cot^2 &= \csc^2(\theta)
+1+\cot^2 &= \csc^2(\theta)\\
+\cot^2(\theta)&=\csc^2(\theta)-1
 \end{align*}
 $$
 and
 $$
 \begin{align*}
 1+\frac{\sin^2(\theta)}{\cos^2(\theta)} &= \frac{1}{\cos^2(\theta)}\\
-1+\tan^2 &= \sec^2(\theta)
+1+\tan^2(\theta) &= \sec^2(\theta)\\
+\tan^2(\theta)&=\sec^2(\theta)-1
 \end{align*}
 $$
 This leads to:
@@ -92,8 +92,9 @@ The area of any triangle is half of the base times the height.
 $$
 A=\frac{1}{2}h_b \times b
 $$
-Given the side lengths of the two adjacent sides to an angle of any triangle, we can calculate the area of said triangle.
+Given the side lengths of the two adjacent sides to an angle of any triangle and the angle itself, we can calculate the area of said triangle.
 ![[Pasted image 20230814201703.png]]
+Here, we can see that if we draw a perpendicular line $h_b$ of $b$ that goes through a corner of the triangle, it divides the triangle into two right triangles. 
 $$
 \begin{align*}
 h_b&=\sin(\gamma)\times a\\
@@ -154,3 +155,11 @@ c &= \sqrt{a^2 + b^2 - 2ab \times \cos(C)}
 \end{align*}
 $$
 [Source](https://brilliant.org/wiki/cosine-rule/)
+> [!done] Conclusion
+> Trigonometry is the measure of circular angles and ratios of triangle side lengths.
+> * $\sin$ gives $\frac{\text{opp}}{\text{hyp}}$
+> * $\cos$ gives $\frac{\text{adj}}{\text{hyp}}$
+> * $\tan$ gives $\frac{\text{opp}}{\text{adj}}$ or $\frac{\sin}{\cos}$
+> 
+> $\tan$ is also the **slope** of the straight line with angle $\theta$.
+> 

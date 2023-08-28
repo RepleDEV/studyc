@@ -8,7 +8,8 @@ For example:
 $$
 6x^2 + 11x - 35 = 0
 $$
-And there are two main ways of solving it. **Factorizing** and the **quadratic equation**.
+And there are two main ways of solving for $x$. **Factorizing**, using **quadratic equation**, and by **completing the square**.
+
 To factorize, it's the same way as factorizing a polynomial . (Refer to [[Factorizing Polynomials]])
 $$
 \begin{align*}
@@ -170,9 +171,9 @@ And this one has **two solutions**, so the discriminant is **greater than zero**
 > [!info]
 > To not get things flipped when it comes to discriminants, just remember that in the **quadratic formula**, the **square root** of the discriminant is used, which means that if the discriminant is negative, the solution MUST NOT be a real value.
 ## Intersecting lines
-To find the tangent of a quadratic at $x = q$, the linear equation can be substituted for $y$, giving:
+To find the tangent of a quadratic at $x = p$, the linear equation can be substituted for $y$, giving:
 $$
-m(q)+b=ax^2+bx+c
+m(p)+q=ax^2+bx+c
 $$
 Rearranging to quadratic form:
 $$

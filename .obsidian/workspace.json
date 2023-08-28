@@ -4,58 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "1536274017b836a3",
+        "id": "982740359b1c5a71",
         "type": "tabs",
         "children": [
           {
-            "id": "b0672f5eba4554ba",
+            "id": "e5f56b8ec1bfaf88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Factorizing Polynomials.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "458daea0638f9a00",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Chemistry/Topics/Electron Shells.md",
+                "file": "Notes/Physics/Topics/Kinematics.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f541dc385cba8e59",
+            "id": "27c199a7d7a52970",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Functions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "26e91d66e1b3d3be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Math/Topics/Circular Measure.md",
+                "file": "Notes/Math/Topics/Binomial Expansion.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Factorizing Polynomials.md",
+                "file": "Notes/Math/Topics/Binomial Expansion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Factorizing Polynomials.md",
+                "file": "Notes/Math/Topics/Binomial Expansion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Factorizing Polynomials.md"
+                "file": "Notes/Math/Topics/Binomial Expansion.md"
               }
             }
           },
@@ -195,19 +172,32 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "b0672f5eba4554ba",
+  "active": "27c199a7d7a52970",
   "lastOpenFiles": [
+    "src/components/Title.tsx",
+    "Notes/Math/Topics/Exponentiation Rules.md",
+    "Notes/Math/Topics/Binomial Expansion.md",
+    "Notes/Math/Topics/Circular Measure.md",
+    "Notes/Physics/Topics/Kinematics.md",
+    "Notes/Chemistry/Topics/Ionization Energy.md",
+    "Notes/Chemistry/Topics/Electron Shells.md",
+    "Notes/Chemistry/Topics/Masses of Atoms.md",
+    "Notes/Math/Topics/Trigonometry.md",
+    "Notes/Math/Math.md",
+    "Notes/Math/Topics/Coordinate Geometry.md",
+    "Notes/Math/Topics/Functions.md",
+    "Notes/Math/Topics/Quadratics.md",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Images/Pasted image 20230823150608.png",
+    "Images/Pasted image 20230823150408.png",
+    "Images/Pasted image 20230823145700.png",
+    "Images/Pasted image 20230823145648.png",
+    "Notes/Chemistry/Topics/Atoms.md",
     "Notes/Math/Topics/Pythagorean Theorem.md",
     "Notes/Math/Topics/Polynomial Identities.md",
-    "Notes/Physics/Topics/Kinematics.md",
-    "Notes/Math/Topics/Functions.md",
-    "Notes/Chemistry/Topics/Electron Shells.md",
     "Notes/Math/Topics/Vectors.md",
-    "Notes/Math/Topics/Factorizing Polynomials.md",
-    "Notes/Math/Topics/Coordinate Geometry.md",
     "Notes/Physics/Topics/Errors and Uncertainties.md",
     "Notes/Physics/Topics/SI Units.md",
-    "Notes/Math/Topics/Exponentiation Rules.md",
     "tsconfig.json",
     "tailwind.config.js",
     "static/favicon.ico",
@@ -218,31 +208,18 @@
     "src/styles/global.css",
     "src/styles/pages.scss",
     "src/pages/notes",
-    "Notes/Chemistry/Topics/Atoms.md",
-    "Notes/Chemistry/Topics/Masses of Atoms.md",
     "Notes/Physics/Topics/Scalars and Vectors.md",
-    "Notes/Math/Topics/Quadratics.md",
-    "Notes/Math/Topics/Trigonometry.md",
-    "Notes/Math/Math.md",
     "Notes/Math/Topics/Linear Function.md",
-    "Notes/Math/Topics/Circular Measure.md",
     "Images/Pasted image 20230815091954.png",
     "Images/Pasted image 20230815091849.png",
     "Images/Pasted image 20230815091539.png",
     "Images/Pasted image 20230815084258.png",
     "Images/Pasted image 20230815083849.png",
     "Images/Pasted image 20230814201703.png",
-    "Images/Pasted image 20230814194748.png",
     "Binomial Expansion.md",
     "Notes/Math/Topics/Angles.md",
     "Notes/Physics/Physics.md",
     "Hydrogen.md",
-    "Images/Pasted image 20230807094926.png",
-    "Images/Pasted image 20230807091846.png",
-    "Untitled.md",
-    "Notes/Math/07-08-2023.md",
-    "Images/Pasted image 20230807083316.png",
-    "Notes/English/07-08-2023.md",
     "Untitled.canvas"
   ]
 }

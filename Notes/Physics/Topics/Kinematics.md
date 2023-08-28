@@ -20,7 +20,7 @@ SUVAT equations are a set of equations for one dimensional motion involving the 
 >I have replaced $u$ and $v$ with $v_0$ and $v_1$ respectively to make things easier to understand.
 ### Displacement
 $$
-s(t) = ut+\frac{1}{2}a(t)t^2
+s(t) = v_0t+\frac{1}{2}a(t)t^2
 $$
 With initial velocity of zero it's:
 $$
@@ -30,30 +30,37 @@ This is also because acceleration is the **second derivative** of displacement.
 
 If the final velocity $v$ is given and $t$ seconds has passed, this equation for displacement would be:
 $$
-s= v-\frac{1}{2}at^2
+s(t)= v_1t-\frac{1}{2}at^2
 $$
 ### Velocity
 $$
-v=u+at
+v(t)=v_0+at
 $$
 This can be thought of as the velocity as being the starting velocity: $u$, added up with the velocity from accelerating at $a$ after $t$ seconds, resulting in $v$: the final velocity.
 
 Squaring both sides we get:
 $$
 \begin{align*}
-v^{2} &= u^2+2uat+a^2t^2\\
-&= u^2+2a(ut+\frac{1}{2}at^2)\\
-&= u^2+2as
+(v(t))^{2} &= v_0^2+2v_0at+a^2t^2\\
+&= v_0^2+2a(v_0t+\frac{1}{2}at^2)\\
+&= v_0^2+2as
 \end{align*}
 $$
 ## 2 dimensional motion
 For motion in two dimensions, the angle of the forces must also be considered. Depending on the angle, there could be two forces that act on said object which faces the horizontal and vertical axes.
 
-For an object that is thrown vertically with angle $\theta$, and an initial velocity of $v$, the horizontal velocity of said object will be **constant** (given no air resistance of course), and it would be the **cosine** of $\theta$ times $v$. For the vertical velocity, it would be the **sine** of $\theta$ times $v$.
+For an object that is thrown vertically with angle $\theta$ to the horizontal, and an initial velocity of $v_0$, the horizontal velocity of said object will be **constant** (given no air resistance of course), and it would be the **cosine** of $\theta$ times $v_0$. For the vertical velocity, it would be the **sine** of $\theta$ times $v$.
 $$
 \begin{align*}
 V_h &= \cos(\theta)\times v\\
 V_v &= \sin(\theta)\times v\\
 
+\end{align*}
+$$
+The Suvat equations still apply here, the equations for the vertical and horizontal distances would be:
+$$
+\begin{align*}
+s_{h}(t)&=tv_0\cos(\theta)+\frac{1}{2}\\
+s_{v}(t)&=tv_0\sin(\theta)
 \end{align*}
 $$

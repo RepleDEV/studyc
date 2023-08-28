@@ -16,11 +16,11 @@ $$
 > [!info]
 > From this we could also deduce the fact that the perimeter is the length times the angle of a full circle: $2\pi$.
 ## Sector
-The same could also be done for the area of a circle.
+The same could also be done for the area of a part of a circle.
 $$
 \begin{align*}
 A&= \pi r^2\\
-A_{s} &= \frac{\theta}{2\pi}\times A\\
+A_{sec} &= \frac{\theta}{2\pi}\times A\\
 &= \frac{1}{2}\theta r^2
 \end{align*}
 $$

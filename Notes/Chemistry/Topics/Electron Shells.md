@@ -31,3 +31,22 @@ $$
 Here, we have the element **Titanium (Z=22)** and it used **Argon (Z=18)** to notate its electron configuration. 
 ## Removing electrons
 When removing electrons, like when ionizing an atom, the order of removal from the outmost shell and inwards. So with the titanium element, for $\ce{Ti+}$ the electron removed will be from the $\ce{4s}$ subshell.
+## Orbital diagrams
+Orbital diagrams visualizes the amount of orbitals and the amount of electrons in said orbitals of any atom. For example, the element $\ce{_2He}$, with two electrons, both being in the $\ce{1s}$ orbital, will have an orbital diagram like:
+![[Pasted image 20230823145700.png]]
+(Do ignore the $\ce{1s^1}$ in the picture as it should've been $\ce{1s}$)
+
+Notice the two arrows inside the $\ce{1s^1}$ orbital. The two arrows represents the two electrons, one facing up and the other facing downwards. The arrow direction matters, as this represents the **"spin"** of an electron. Electrons default to spinning upwards for an unpaired electron (i.e. sub-shells with only one electron) and it also defaults to filling in empty sub-shells of orbitals before "pairing" with other electrons.
+
+For example, with the element $\ce{_7N}$, it's electron configuration will be $\ce{1s^{2} 2s^{2} 2p^{3}}$.
+![[Pasted image 20230823150608.png]]
+## Half-filled orbitals
+The fact that **half-filled** orbitals are more stable than **partially-filled** orbitals explains the unusual electron configuration of $\ce{_24Cr}$ and $\ce{_29Cu}$. If we follow the **Aufbau** principle earlier for element $\ce{_24Cr}$, it's expected to be:
+$$
+\ce{1s^{2} 2s^{2} 2p^{2} 3s^{2} 3p^{6} 4s^{2} 3d^{4}}
+$$
+Except, because half-filled electrons ($\ce{3d^5}$) are **more stable** than partially-filled orbitals ($\ce{3d^4}$), the electron configuration is actually:
+$$
+\ce{1s^{2} 2s^{2} 2p^{6} 3s^{2} 3p^{6} 4s^{1} 3d^{5}}
+$$
+It "steals" an electron from the $\ce{4s}$ orbital and it fills in the $\ce{3d}$ orbital instead.
