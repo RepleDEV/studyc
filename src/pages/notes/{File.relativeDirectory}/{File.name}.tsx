@@ -22,7 +22,7 @@ export interface FileIdentity {
     sourceInstanceName: string;
     base: string;
 }
-interface PageProps {
+export interface PageProps {
     params: FileIdentity;
     data: {
         file: {
