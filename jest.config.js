@@ -10,7 +10,7 @@ module.exports = {
   transformIgnorePatterns: 
     // Okay look, WHAT THE FUCK? WHY ARE THERE SO MANY ESM MODULES? I HAVE TO UNFILTER EVERYTHING HERE?
     // I know it takes a million years to do jest but im LAZY to manually fill all this crap
-    [`node_modules/(?!(gatsby|gatsby-script|gatsby-link|react-markdown|vfile|vfile-message|(unist.*)|unist-util-is|unified|bail|is-plain-obj|trough|(remark.*)|(mdast.*)|(micromark.*)|decode-named-character-reference|trim-lines|property-information|(hast.*)|space-separated-tokens|comma-separated-tokens|longest-streak|(rehype.*)|web-namespaces)/)`],
+    [`node_modules/(?!(gatsby|gatsby-script|gatsby-link|react-markdown|vfile|vfile-message|(unist.*)|unist-util-is|unified|bail|is-plain-obj|trough|(remark.*)|ccount|escape-string-regexp|markdown-table|(mdast.*)|(micromark.*)|decode-named-character-reference|trim-lines|property-information|(hast.*)|space-separated-tokens|comma-separated-tokens|longest-streak|(rehype.*)|web-namespaces)/)`],
   globals: {
     __PATH_PREFIX__: ``,
   },

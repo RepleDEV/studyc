@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeMathjax from "rehype-mathjax";
 import obsidianWikilink from "../../../plugins/remark-obsidian-wikilink";
+import remarkGfm from "remark-gfm";
 
 import Layout from "../../../components/Layout";
 import MathDisplay from "../../../components/MathDisplay";
@@ -13,7 +14,6 @@ import MathInline from "../../../components/MathInline";
 import Link from "../../../components/Link";
 import Title from "../../../components/Title";
 import obsidianBlockQuote from "../../../plugins/remark-obsidian-blockquote";
-import remarkGfm from "remark-gfm";
 
 // import "../../../styles/pages.scss";
 
