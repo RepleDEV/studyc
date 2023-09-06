@@ -12,6 +12,7 @@ import Bold from "../../../components/Bold";
 import MathInline from "../../../components/MathInline";
 import Link from "../../../components/Link";
 import Title from "../../../components/Title";
+import obsidianBlockQuote from "../../../plugins/remark-obsidian-blockquote";
 
 // import "../../../styles/pages.scss";
 
@@ -50,6 +51,7 @@ export default function Page(props: PageProps) {
                 children={page.converted}
                 remarkPlugins={[
                     [obsidianWikilink, { fileIdentities }],
+                    obsidianBlockQuote,
                     remarkMath,
                 ]}
                 rehypePlugins={[rehypeMathjax]}
@@ -67,8 +69,16 @@ export default function Page(props: PageProps) {
                         if (className?.includes("math-inline")) {
                             return <MathInline {...props}>{children}</MathInline>
                         }
+                        ///@ts-ignore nextline
+                        const data_type = props["data-type"] as string | null;
+                        if (data_type && data_type === "blockquote_title") {
+                            return <span className="font-semibold text-purple-600 text-lg" {...props}>{children}</span>
+                        }
 
-                        return <span className={className}>{children}</span>
+                        return <span className={className} {...props}>{children}</span>
+                    },
+                    blockquote({ children }) {
+                        return <blockquote className="bg-purple-200 p-5 rounded-xl">{children}</blockquote>
                     },
                     div({children, className, ...props}) {
                         if (className?.includes("math-display")) {
