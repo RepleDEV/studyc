@@ -73,4 +73,18 @@ describe("Page component testing", () => {
         expect(italic).not.toBeNull();
         expect(paragraph).toContainHTML(italic?.outerHTML as string);
     });
+
+    test("Lists", () => {
+        const page = render(<Page {...pageProps}/>);
+        const list = page.queryByRole("list") as HTMLElement;
+
+        expect(list).not.toBeNull();
+        expect(list.children).toHaveLength(4)
+        
+        for (const child of list.children) {
+            expect(child.nodeName).toBe("LI");
+        }
+        
+        expect(1).toBe(1);
+    });
 });
