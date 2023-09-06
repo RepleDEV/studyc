@@ -13,6 +13,7 @@ import MathInline from "../../../components/MathInline";
 import Link from "../../../components/Link";
 import Title from "../../../components/Title";
 import obsidianBlockQuote from "../../../plugins/remark-obsidian-blockquote";
+import remarkGfm from "remark-gfm";
 
 // import "../../../styles/pages.scss";
 
@@ -53,6 +54,7 @@ export default function Page(props: PageProps) {
                     [obsidianWikilink, { fileIdentities }],
                     obsidianBlockQuote,
                     remarkMath,
+                    remarkGfm,
                 ]}
                 rehypePlugins={[rehypeMathjax]}
                 components={{
@@ -95,7 +97,16 @@ export default function Page(props: PageProps) {
                     },
                     ul({children, ...props}) {
                         return <ul className="list-disc list-inside" {...props}>{children}</ul>
-                    }
+                    },
+                    table({children, ...props}) {
+                        return <table className="border-2 border-gray-600" {...props}>{children}</table>
+                    },
+                    th({children, ...props}) {
+                        return <th className="border-2 border-gray-600 text-left px-2" {...props}>{children}</th>
+                    },
+                    td({children, ...props}) {
+                        return <td className="border-2 border-gray-600 px-2" {...props}>{children}</td>
+                    },
                 }}
             />
         </Layout>
