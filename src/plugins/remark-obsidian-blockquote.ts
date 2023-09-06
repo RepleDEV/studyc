@@ -2,7 +2,7 @@ import { map } from "unist-util-map";
 import { u } from "unist-builder";
 import { visit } from "unist-util-visit";
 
-const blockQuoteRegex = /\[\!([a-zA-Z]*)\](?:(.*)\n)?/g
+const blockQuoteRegex = /\[\!([a-zA-Z]*)\](.*)(?:\n|$)?/gm
 
 export default function obsidianBlockQuote() {
     return (tree: any) => {
