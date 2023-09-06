@@ -78,7 +78,7 @@ export default function Page(props: PageProps) {
                         return <span className={className} {...props}>{children}</span>
                     },
                     blockquote({ children }) {
-                        return <blockquote className="bg-purple-200 p-5 rounded-xl">{children}</blockquote>
+                        return <blockquote className="bg-purple-200 p-5 rounded-xl mt-5">{children}</blockquote>
                     },
                     div({children, className, ...props}) {
                         if (className?.includes("math-display")) {
