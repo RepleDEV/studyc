@@ -27,7 +27,7 @@ function TopicCard({ children, topics, ...props }: React.DetailedHTMLProps<React
       .join("/")
       .toLowerCase();
     links.push(
-      <Link href={`notes/${path}/`} key={topic.id}>{ topic.name }</Link>
+      <Link href={`notes/${path}/`} className="mx-5 my-1 flex-[1_1_20%]" key={topic.id}>{ topic.name }</Link>
     )
   }
 
@@ -35,7 +35,7 @@ function TopicCard({ children, topics, ...props }: React.DetailedHTMLProps<React
     className={`p-5 rounded-xl border-4 ${props.className}`}
   >
     <h3 className="font-semibold text-2xl">{children}</h3>
-    <div className="flex flex-col">
+    <div className="flex flex-row flex-wrap">
       {links}
     </div>
   </div>
@@ -48,7 +48,7 @@ function App(): React.ReactNode {
     <Layout>
       <Title>StudyC</Title>
       <h3 className="text-xl">To be honest I forgot what StudyC means.</h3>
-      <div className="flex flex-row mt-5 gap-5">
+      <div className="flex flex-col mt-5 gap-5">
         <TopicCard topics={getTopicsOfSubject(topics, "math")} className="border-red-200" >Math</TopicCard>
         <TopicCard topics={getTopicsOfSubject(topics, "physics")} className="border-yellow-200" >Physics</TopicCard>
         <TopicCard topics={getTopicsOfSubject(topics, "chemistry")} className="border-green-200" >Chemistry</TopicCard>
