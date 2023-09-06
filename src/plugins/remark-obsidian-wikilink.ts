@@ -1,4 +1,4 @@
-import * as flatMap from "unist-util-flatmap";
+import flatMap from "unist-util-flatmap";
 import { link, text } from "mdast-builder"
 import Wikilink from "../modules/wikilink";
 import { FileIdentity } from "../pages/notes/{File.relativeDirectory}/{File.name}";
