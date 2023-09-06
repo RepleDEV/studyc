@@ -59,5 +59,18 @@ describe("Page component testing", () => {
         expect(h3).toHaveTextContent("h3");
     });
 
-    // TODO: Finish this
+    test("Paragraph", () => {
+        const page = render(<Page {...pageProps}/>);
+        const paragraph = page.baseElement.querySelector("p");
+        const strong = page.baseElement.querySelector("strong");
+        const italic = page.baseElement.querySelector("em");
+
+        expect(paragraph).toHaveTextContent("This is a paragraph. This is bold, italic, .");
+
+        expect(strong).not.toBeNull();
+        expect(paragraph).toContainHTML(strong?.outerHTML as string);
+
+        expect(italic).not.toBeNull();
+        expect(paragraph).toContainHTML(italic?.outerHTML as string);
+    });
 });
