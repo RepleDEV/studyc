@@ -92,6 +92,9 @@ export default function Page(props: PageProps) {
                     },
                     p({children, ...props}) {
                         return <p {...props} className="mt-5">{children}</p>
+                    },
+                    ul({children, ...props}) {
+                        return <ul className="list-disc list-inside" {...props}>{children}</ul>
                     }
                 }}
             />
