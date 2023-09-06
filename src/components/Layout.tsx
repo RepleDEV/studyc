@@ -5,7 +5,7 @@ export default function Layout({ children }: React.PropsWithChildren) {
         <>
         {/* NAVBAR */}
         <main
-            className="my-8 mx-10"
+            className="my-8 mx-10 text-gray-800"
         >{children}</main>
         {/* FOOTER */}
         </>
