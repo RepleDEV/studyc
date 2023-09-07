@@ -10,7 +10,7 @@ export default class Wikilink {
         this.link = link;
 
         // Okay, I gotta admit this is from ChatGPT (i'm a fool)
-        const regex = /^([A-Za-z .]+)(\^[A-Za-z0-9]+)?(\|.*)?$/gm;
+        const regex = /^([A-Za-z .]+)((?:\^|\#)[^|]+)?(\|.*)?$/gm;
         const m = regex.exec(link);
         if (m) {
             const [_, ...groups] = m
