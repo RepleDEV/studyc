@@ -95,6 +95,7 @@ describe("Page component testing", () => {
         const list = page.queryByRole("list") as HTMLElement;
 
         expect(list).not.toBeNull();
+        expect(list).toHaveClass("list-disc");
         expect(list.children).toHaveLength(4)
         
         for (const child of list.children) {
