@@ -121,10 +121,10 @@ describe("Page component testing", () => {
     
     test("Image(s)", () => {
         const page = render(<Page {...pageProps}/>);
-        const img = page.baseElement.querySelector("img") as HTMLElement;
+        const img = page.baseElement.querySelector("img");
 
         expect(img).not.toBeNull();
-        expect(img.getAttribute("src")).toBe(pageProps.data.allFile.nodes[1].publicURL);
+        expect(img?.getAttribute("src")).toBe(pageProps.data.allFile.nodes[1].publicURL);
     });
 
     test("Callout", () => {
