@@ -18,8 +18,18 @@ const fileIdentity: FileIdentity[] = [
     }
 ];
 
-describe("WikiLink parsing", () => {
-    const link = "test^1111|Test?";
+describe.each([
+    {
+        link: "test^1111|Test?",
+        text: "Test?",
+        subtarget: "1111",
+    },
+    {
+        link: "test#Foo Bar|Test hehe",
+        text: "Test hehe",
+        subtarget: "Foo Bar",
+    },
+])("WikiLink parsing", ({link, text, subtarget}) => {
     const wikilink = new Wikilink(link, fileIdentity);
     const cFile = fileIdentity[0];
 
@@ -27,10 +37,10 @@ describe("WikiLink parsing", () => {
         expect(wikilink.path).toBe(`/notes/${cFile.relativeDirectory}/${cFile.name}`);
     });
     test("Text", () => {
-        expect(wikilink.title).toBe("Test?");
+        expect(wikilink.title).toBe(text);
     });
     test("Subtarget", () => {
-        expect(wikilink.blockTarget).toBe("1111");
+        expect(wikilink.blockTarget).toBe(subtarget);
     });
 });
 
