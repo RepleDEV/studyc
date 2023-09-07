@@ -87,4 +87,19 @@ describe("Page component testing", () => {
         
         expect(1).toBe(1);
     });
+
+    test("Links", () => {
+        const page = render(<Page {...pageProps}/>);
+        const [link, wikilink, emptyWikilink] = page.queryAllByRole("link") as HTMLElement[];
+
+        expect(link).toHaveTextContent("This is a link");
+        expect(link.getAttribute("href")).toBe("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+
+        const cFile = pageProps.data.allFile.nodes[0]
+        expect(wikilink).toHaveTextContent("WikiLink");
+        expect(wikilink.getAttribute("href")).toBe(`/notes/${cFile.relativeDirectory}/testpage`)
+
+        expect(emptyWikilink).toHaveTextContent("emptyWikiLink");
+        expect(emptyWikilink.getAttribute("href")).toBe("#");
+    });
 });
