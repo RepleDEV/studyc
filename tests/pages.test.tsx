@@ -126,4 +126,13 @@ describe("Page component testing", () => {
         expect(img).not.toBeNull();
         expect(img.getAttribute("src")).toBe(pageProps.data.allFile.nodes[1].publicURL);
     });
+
+    test("Callout", () => {
+        const page = render(<Page {...pageProps}/>);
+        const bq = page.baseElement.querySelector("blockquote");
+
+        expect(bq).not.toBeNull();
+        expect(bq?.querySelector("span[data-type=\"blockquote_title\"]")).toHaveTextContent("Callout");
+        expect(bq?.querySelector("p")).toHaveTextContent("This is a Callout!");
+    })
 });
