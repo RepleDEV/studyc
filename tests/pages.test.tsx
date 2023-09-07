@@ -102,4 +102,12 @@ describe("Page component testing", () => {
         expect(emptyWikilink).toHaveTextContent("emptyWikiLink");
         expect(emptyWikilink.getAttribute("href")).toBe("#");
     });
+    
+    test("Image(s)", () => {
+        const page = render(<Page {...pageProps}/>);
+        const img = page.baseElement.querySelector("img") as HTMLElement;
+
+        expect(img).not.toBeNull();
+        expect(img.getAttribute("src")).toBe(pageProps.data.allFile.nodes[1].publicURL);
+    });
 });
