@@ -25,9 +25,11 @@ export default function obsidianWikilink({ fileIdentities }: Options) {
             const textBeforeWikilink = value.substring(0, m.index);
             const textAfterWikilink = value.substring(m.index + fullLink.length);
 
+            const url = wikilink.path == wikilink.link ? "#" : wikilink.path;
+
             const rNode = wikilink.type === "page" ? 
                 u("link", { 
-                    url: wikilink.path,
+                    url: url,
                     children: [
                     u("text", wikilink.title)
                 ]}) :
