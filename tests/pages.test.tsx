@@ -74,6 +74,22 @@ describe("Page component testing", () => {
         expect(paragraph).toContainHTML(italic?.outerHTML as string);
     });
 
+    test("Inline-math", () => {
+        const page = render(<Page {...pageProps}/>);
+        const el = page.baseElement.querySelector("span.inline-block > mjx-container");
+
+        expect(el).not.toBeNull();
+    });
+
+    test("Math block", () => {
+        const page = render(<Page {...pageProps}/>);
+        const el = page.baseElement.querySelector("div > mjx-container");
+
+        expect(el).not.toBeNull();
+        expect(el?.parentElement).toHaveClass("flex");
+        expect(el?.parentElement).toHaveClass("justify-center");
+    });
+
     test("Lists", () => {
         const page = render(<Page {...pageProps}/>);
         const list = page.queryByRole("list") as HTMLElement;
