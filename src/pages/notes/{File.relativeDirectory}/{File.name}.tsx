@@ -4,7 +4,7 @@ import MDPage from "../../../modules/md_parser";
 import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeMathjax from "rehype-mathjax";
-import obsidianWikilink from "../../../plugins/remark-obsidian-wikilink";
+import obsidianWikilink, { transformHeaders } from "../../../plugins/remark-obsidian-wikilink";
 import remarkGfm from "remark-gfm";
 
 import Layout from "../../../components/Layout";
@@ -59,10 +59,10 @@ export default function Page(props: PageProps) {
                 rehypePlugins={[rehypeMathjax]}
                 components={{
                     h2({children, ...props}) {
-                        return <h2 {...props} className="text-3xl font-semibold mt-5">{children}</h2>
+                        return <h2 {...props} className="text-3xl font-semibold mt-5" id={transformHeaders(children)}>{children}</h2>
                     },
                     h3({children, ...props}) {
-                        return <h3 {...props} className="text-2xl font-semibold mt-5">{children}</h3>
+                        return <h3 {...props} className="text-2xl font-semibold mt-5" id={transformHeaders(children)}>{children}</h3>
                     },
                     strong({children, ...props}) {
                         return <Bold {...props}>{ children }</Bold>
