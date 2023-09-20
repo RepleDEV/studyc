@@ -1,10 +1,11 @@
-import * as flatMap from "unist-util-flatmap";
-import { link, text } from "mdast-builder"
+import flatMap from "unist-util-flatmap";
 import Wikilink from "../modules/wikilink";
 import { FileIdentity } from "../pages/notes/{File.relativeDirectory}/{File.name}";
 import { u } from "unist-builder";
 
 const wikilinkRegex = /\!*\[\[(.+)\]\]/g;
+
+export const transformHeaders = (str: any) => str.toString().toLowerCase().replace(" ", "_");
 
 interface Options {
     fileIdentities: FileIdentity[]
@@ -25,9 +26,12 @@ export default function obsidianWikilink({ fileIdentities }: Options) {
             const textBeforeWikilink = value.substring(0, m.index);
             const textAfterWikilink = value.substring(m.index + fullLink.length);
 
+            let url = wikilink.path == wikilink.link ? "#" : wikilink.path;
+            if (wikilink.blockTarget && wikilink.link.includes("#"))url += "#" + transformHeaders(wikilink.blockTarget);
+
             const rNode = wikilink.type === "page" ? 
                 u("link", { 
-                    url: wikilink.path,
+                    url: url,
                     children: [
                     u("text", wikilink.title)
                 ]}) :

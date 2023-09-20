@@ -4,7 +4,8 @@ import MDPage from "../../../modules/md_parser";
 import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeMathjax from "rehype-mathjax";
-import obsidianWikilink from "../../../plugins/remark-obsidian-wikilink";
+import obsidianWikilink, { transformHeaders } from "../../../plugins/remark-obsidian-wikilink";
+import remarkGfm from "remark-gfm";
 
 import Layout from "../../../components/Layout";
 import MathDisplay from "../../../components/MathDisplay";
@@ -12,6 +13,7 @@ import Bold from "../../../components/Bold";
 import MathInline from "../../../components/MathInline";
 import Link from "../../../components/Link";
 import Title from "../../../components/Title";
+import obsidianBlockQuote from "../../../plugins/remark-obsidian-blockquote";
 
 // import "../../../styles/pages.scss";
 
@@ -22,7 +24,7 @@ export interface FileIdentity {
     sourceInstanceName: string;
     base: string;
 }
-interface PageProps {
+export interface PageProps {
     params: FileIdentity;
     data: {
         file: {
@@ -50,15 +52,17 @@ export default function Page(props: PageProps) {
                 children={page.converted}
                 remarkPlugins={[
                     [obsidianWikilink, { fileIdentities }],
+                    obsidianBlockQuote,
                     remarkMath,
+                    remarkGfm,
                 ]}
                 rehypePlugins={[rehypeMathjax]}
                 components={{
                     h2({children, ...props}) {
-                        return <h2 {...props} className="text-3xl font-semibold mt-5">{children}</h2>
+                        return <h2 {...props} className="text-3xl font-semibold mt-5" id={transformHeaders(children)}>{children}</h2>
                     },
                     h3({children, ...props}) {
-                        return <h3 {...props} className="text-2xl font-semibold mt-5">{children}</h3>
+                        return <h3 {...props} className="text-2xl font-semibold mt-5" id={transformHeaders(children)}>{children}</h3>
                     },
                     strong({children, ...props}) {
                         return <Bold {...props}>{ children }</Bold>
@@ -67,8 +71,16 @@ export default function Page(props: PageProps) {
                         if (className?.includes("math-inline")) {
                             return <MathInline {...props}>{children}</MathInline>
                         }
+                        ///@ts-ignore nextline
+                        const data_type = props["data-type"] as string | null;
+                        if (data_type && data_type === "blockquote_title") {
+                            return <span className="font-semibold text-purple-600 text-lg" {...props}>{children}</span>
+                        }
 
-                        return <span className={className}>{children}</span>
+                        return <span className={className} {...props}>{children}</span>
+                    },
+                    blockquote({ children }) {
+                        return <blockquote className="bg-purple-200 p-5 rounded-xl mt-5">{children}</blockquote>
                     },
                     div({children, className, ...props}) {
                         if (className?.includes("math-display")) {
@@ -82,7 +94,21 @@ export default function Page(props: PageProps) {
                     },
                     p({children, ...props}) {
                         return <p {...props} className="mt-5">{children}</p>
-                    }
+                    },
+                    ul({children, ...props}) {
+                        // Workaround for ordered property being the wrong type
+                        const newProps = Object.assign(props, { ordered: `${props.ordered}`}) as Record<string, any>;
+                        return <ul className="list-disc list-inside" {...newProps}>{children}</ul>
+                    },
+                    table({children, ...props}) {
+                        return <table className="border-2 border-gray-600" {...props}>{children}</table>
+                    },
+                    th({children, ...props}) {
+                        return <th className="border-2 border-gray-600 text-left px-2" {...props}>{children}</th>
+                    },
+                    td({children, ...props}) {
+                        return <td className="border-2 border-gray-600 px-2" {...props}>{children}</td>
+                    },
                 }}
             />
         </Layout>

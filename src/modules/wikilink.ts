@@ -9,7 +9,8 @@ export default class Wikilink {
     constructor(link: string, fileIdentities: FileIdentity[]) {
         this.link = link;
 
-        const regex = /([^|#]*)(\#[^\|]*)?(\|.*)?/gm;
+        // Okay, I gotta admit this is from ChatGPT (i'm a fool)
+        const regex = /^([A-Za-z .]+)((?:\^|\#)[^|]+)?(\|.*)?$/gm;
         const m = regex.exec(link);
         if (m) {
             const [_, ...groups] = m

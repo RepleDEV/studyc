@@ -3,3 +3,4 @@ Homework/
 node_modules/
 public/
 .cache
+coverage/
