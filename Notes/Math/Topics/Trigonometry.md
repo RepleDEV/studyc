@@ -27,6 +27,7 @@ With $\sin$ being the $y$ coordinate and $cos$ being the $x$ coordinate, using t
 >If you see the unit circle again, the **tangent** of the circle at angles $\frac{\pi}{2}$ and $\frac{3}{2\pi}$, it will be a vertical line, for which a slope for a vertical line is **undefined**. Which means that the **tangent** of $0$ and $\pi$ is **undefined**.
 ## Related angles
 For any angle $\theta$ in the first quadrant, there exists an equivalent angle in the second quadrant where the **sine** of said angle is equal to $\sin(\theta)$, and it is the **mirror angle** of $\theta$ (angle reflected across the **x-axis**).
+![[Pasted image 20230906122737.png]]
 $$
 \sin(\theta)=\sin(\pi-\theta)
 $$

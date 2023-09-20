@@ -2,5 +2,6 @@
   "accentColor": "#c71f62",
   "monospaceFontFamily": "Cascadia Mono",
   "nativeMenus": false,
-  "cssTheme": "Encore"
+  "cssTheme": "Encore",
+  "baseFontSize": 18
 }

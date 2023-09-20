@@ -4,7 +4,7 @@
 * [[Coordinate Geometry]]
 * [[Circular Measure]]
 * [[Trigonometry]]
-* [[Series]]
+* [[Sequences and Series]]
 * [[Differentiation]]!
 * [[Integration]]!
 ## Written Topics

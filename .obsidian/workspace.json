@@ -4,42 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "982740359b1c5a71",
+        "id": "0ce0e0c694b377ed",
         "type": "tabs",
         "children": [
           {
-            "id": "e5f56b8ec1bfaf88",
+            "id": "ba79f50829ba962d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Physics/Topics/Kinematics.md",
+                "file": "Notes/Math/Topics/Functions.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1ec8fe4a2010b04e",
+            "id": "6a4182e7c383451b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "Factorial.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "27c199a7d7a52970",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Math/Topics/Trigonometry.md",
-                "mode": "source",
-                "source": false
+                "currentVersion": "1.4.13"
               }
             }
           }
@@ -110,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Factorial.md",
+                "file": "Notes/Math/Topics/Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Factorial.md",
+                "file": "Notes/Math/Topics/Functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Factorial.md"
+                "file": "Notes/Math/Topics/Functions.md"
               }
             }
           },
@@ -160,6 +146,16 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {}
+            }
+          },
+          {
+            "id": "f8882255733643e8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
             }
           }
         ],
@@ -182,35 +178,40 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1ec8fe4a2010b04e",
+  "active": "6a4182e7c383451b",
   "lastOpenFiles": [
     "Notes/Math/Topics/Combinations & Permutations.md",
-    "Factorial.md",
-    "Notes/Math/Topics/Binomial Expansion.md",
-    "Notes/Physics/Topics/Kinematics.md",
-    "Notes/Math/Topics/Trigonometry.md",
     "Notes/Math/Topics/Vectors.md",
-    "Notes/Math/Topics/Factorizing Polynomials.md",
-    "Notes/Math/Topics/Linear Function.md",
-    "Notes/Math/Topics/Pythagorean Theorem.md",
-    "src/components/Title.tsx",
-    "Notes/Math/Topics/Exponentiation Rules.md",
-    "Notes/Math/Topics/Circular Measure.md",
-    "Notes/Chemistry/Topics/Ionization Energy.md",
-    "Notes/Chemistry/Topics/Electron Shells.md",
-    "Notes/Chemistry/Topics/Masses of Atoms.md",
-    "Notes/Math/Math.md",
+    "Notes/Math/Topics/Differentiation.md",
     "Notes/Math/Topics/Coordinate Geometry.md",
-    "Notes/Math/Topics/Functions.md",
+    "Notes/Math/Topics/Polynomial Identities.md",
+    "Notes/Chemistry/Chemistry.md",
+    "Notes/Math/Topics/Sequences and Series.md",
+    "Notes/Math/Math.md",
+    "Notes/Chemistry/18-07-2023.md",
     "Notes/Math/Topics/Quadratics.md",
+    "Notes/Math/Topics/Functions.md",
+    "Notes/Physics/Topics/Dynamics.md",
+    "Notes/Physics/Topics/Errors and Uncertainties.md",
+    "Notes/Physics/Topics/Kinematics.md",
+    "Notes/Physics/Physics.md",
+    "Notes/Math/Topics/Trigonometry.md",
+    "Notes/Math/Topics/Factorial.md",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Math/Topics/Circular Measure.md",
+    "Notes/Physics/Topics/SI Units.md",
+    "Images/Pasted image 20230906122737.png",
+    "Notes/Math/Topics/Linear Functions.md",
+    "Notes/Math/Topics/Exponentiation Rules.md",
+    "Notes/Math/Topics/Pythagorean Theorem.md",
+    "Notes/Math/Topics/Binomial Expansion.md",
+    "Notes/Chemistry/Topics/Moles.md",
+    "Notes/Chemistry/Topics/Masses of Atoms.md",
+    "src/components/Title.tsx",
     "Images/Pasted image 20230823150608.png",
     "Images/Pasted image 20230823150408.png",
     "Images/Pasted image 20230823145700.png",
     "Images/Pasted image 20230823145648.png",
-    "Notes/Chemistry/Topics/Atoms.md",
-    "Notes/Math/Topics/Polynomial Identities.md",
-    "Notes/Physics/Topics/Errors and Uncertainties.md",
-    "Notes/Physics/Topics/SI Units.md",
     "tsconfig.json",
     "tailwind.config.js",
     "static/favicon.ico",
@@ -220,16 +221,11 @@
     "src/plugins/remark-obsidian-wikilink.ts",
     "src/styles/global.css",
     "src/styles/pages.scss",
-    "Notes/Physics/Topics/Scalars and Vectors.md",
     "Images/Pasted image 20230815091954.png",
     "Images/Pasted image 20230815091849.png",
     "Images/Pasted image 20230815091539.png",
     "Images/Pasted image 20230815084258.png",
     "Images/Pasted image 20230815083849.png",
-    "Images/Pasted image 20230814201703.png",
-    "Binomial Expansion.md",
-    "Notes/Math/Topics/Angles.md",
-    "Notes/Physics/Physics.md",
     "Untitled.canvas"
   ]
 }

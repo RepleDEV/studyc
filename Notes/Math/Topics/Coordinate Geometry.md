@@ -40,7 +40,7 @@ y-y_1 &= \left(\frac{y_2-y_1}{x_2-x_1}\right)\times(x-x_1)\\
 %\frac{y-y_1}{x-x_1} &= \frac{y_2-y_1}{x_2-x_1}\\
 \end{align*}
 $$
-This uses the [[Linear Function#^9104a2||point slope form]] of a linear equation.
+This uses the [[Linear Functions#^9104a2||point slope form]] of a linear equation.
 ## Perpendicular bisector of a line through two points
 The perpendicular bisector has a perpendicular slope and its origin is the midpoint of the two points.
 ## Circles

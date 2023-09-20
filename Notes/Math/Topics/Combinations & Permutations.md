@@ -67,5 +67,5 @@ $$
 $$
 And that is all there is to it. This formula is pronounced $n$ **choose** $k$.
 $$
-C(n,r)={^n}C_k={_n}C_k=\frac{n!}{(n-k)!k!}
+C(n,k)={^n}C_k={_n}C_k=\frac{n!}{(n-k)!k!}
 $$

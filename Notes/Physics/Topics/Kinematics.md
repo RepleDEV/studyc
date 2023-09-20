@@ -57,10 +57,4 @@ V_v &= \sin(\theta)\times v\\
 
 \end{align*}
 $$
-The Suvat equations still apply here, the equations for the vertical and horizontal distances would be:
-$$
-\begin{align*}
-s_{h}(t)&=tv_0\cos(\theta)+\frac{1}{2}\\
-s_{v}(t)&=tv_0\sin(\theta)
-\end{align*}
-$$
+The SUVAT equations still apply here.
