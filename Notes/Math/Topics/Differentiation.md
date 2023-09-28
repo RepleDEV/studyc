@@ -1,4 +1,4 @@
-To *differentiate* a function is to find the **instantaneous** rate of change of a function at a point.
+To *differentiate* a [[Functions|function]] is to find the **instantaneous** rate of change of a function at a point, analogous to the speedometer of a car, denoting the car's **velocity**. 
 ## Definition
 *Differentiating* a function results in its **derivative**, which is the **slope** or the **tangent** of the function's curve at a given point.
 
@@ -47,3 +47,34 @@ $$
 \frac{d}{dx}\left[f(x)\cdot g(x)\right]=\left[\frac{d}{dx} f(x)\right]g(x) + f(x)\left[\frac{d}{dx}g(x)\right]
 $$
 ## Quotient rule
+$$
+\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right]=
+\frac{
+	\left[\frac{d}{dx}f(x)\right]g(x)
+	+
+	f(x)\left[\frac{d}{dx}g(x)\right]
+}{
+\left[g(x)\right]^2
+}
+$$
+## Chain rule
+$$
+\begin{align*}
+\frac{d}{dx}f(g(x)) &= f'(g(x))\cdot g'(x)\\
+\frac{d}{dx}f(x)&=\frac{d}{dg(x)}f(g(x))\cdot\frac{d}{dx}g(x)
+\end{align*}
+$$
+## Trigonometric Functions
+$$
+\begin{align*}
+\frac{d}{dx}\sin x &= \cos x\\
+\frac{d}{dx}\cos x &= -\sin x\\
+\frac{d}{dx}\tan x&=\frac{d}{dx}\left[\frac{\sin x}{\cos x}\right]\\
+&=\frac{\sin^2x+\cos^2x}{\cos^2x}\\
+	&=\sec^2x
+\end{align*}
+$$
+## Exponentials
+$$
+\frac{d}{dx}a^x=a^x\ln(a)
+$$

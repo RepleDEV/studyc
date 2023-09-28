@@ -13,10 +13,15 @@ This will be applied to systems of objects, but since we're dealing with (possib
 $$
 \Sigma F = \Sigma ma
 $$
-Here, the **sum** of forces, $\Sigma F$ is known as the **resultant** force. 
+Here, the **sum** of forces, $\Sigma F$ is known as the **resultant** force.
+
+> [!info] Vectors
+> Note that **force** is a **vector**, and it's good to think of it that way. When angles are part of calculations, it's useful to have this mindset.
 ## Variety of forces
 In life, there are many forces that can be acted upon any mundane object. For example, in a moving car, there's a **pushing** force that moves the car forwards, there's also **drag** from the air molecules that counteract that movement, the **weight** of the car from **gravity**, which can result in **friction**, etc.
 ## Contact force
 Contact force is the force that results from objects touching one another, like if a box is being **pushed** or the contact force from an object's **weight** touching the ground.
 ## Tension force
-Tension force is the force that runs along the length of a string, rope
+Tension force is the force that runs along the length of a string, rope, or anything along those lines.
+## Normal force
+Normal force is the force that counteracts the force of **weight**, which is an equal opposite force following Newton's **third law of motion**. 
