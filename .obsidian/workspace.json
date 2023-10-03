@@ -4,33 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "0ce0e0c694b377ed",
+        "id": "7dfb97c486363326",
         "type": "tabs",
         "children": [
           {
-            "id": "ba79f50829ba962d",
+            "id": "307b57ca8a22c998",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Physics/Topics/Momentum.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8b111080cf704fc3",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.14"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Physics/Topics/Momentum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Physics/Topics/Momentum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Notes/Physics/Topics/Momentum.md"
-              }
+              "state": {}
             }
           },
           {
@@ -146,16 +127,6 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {}
-            }
-          },
-          {
-            "id": "f8882255733643e8",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency"
-              }
             }
           }
         ],
@@ -178,24 +149,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8b111080cf704fc3",
+  "active": "307b57ca8a22c998",
   "lastOpenFiles": [
-    "Notes/Physics/Topics/Dynamics.md",
+    "Notes/Physics/Topics/Torque.md",
     "Notes/Physics/Topics/Momentum.md",
-    "Notes/Physics/Topics/Errors and Uncertainties.md",
-    "Notes/Chemistry/Topics/Chemical Equations.md",
-    "Notes/Chemistry/Topics/Chemical Formulas.md",
-    "Notes/Chemistry/Topics/Ionization Energy.md",
     "Notes/Math/Topics/Differentiation.md",
     "Notes/Math/Topics/Trigonometry.md",
-    "Notes/Chemistry/Topics/Masses of Atoms.md",
-    "Notes/Chemistry/Topics/Moles.md",
-    "Notes/Chemistry/Topics/Electron Shells.md",
-    "Notes/Math/Topics/Functions.md",
-    "Notes/Math/Topics/Binomial Expansion.md",
-    "Notes/Math/Topics/Sequences and Series.md",
-    "Notes/Math/Topics/Polynomial Identities.md",
-    "Notes/Math/Topics/Circular Measure.md",
+    "Notes/Physics/Topics/Kinematics.md",
+    "Factorial.md",
     "tests/wikilink.test.ts",
     "tests/testPage.md",
     "tests/pages.test.tsx",
@@ -206,17 +167,27 @@
     "loadershim.js",
     "jest.config.js",
     "jest-preprocess.js",
-    "__mocks__/file-mock.js",
-    "Notes/Math/Topics/Combinations & Permutations.md",
-    "Notes/Math/Topics/Vectors.md",
-    "Notes/Math/Topics/Coordinate Geometry.md",
-    "Notes/Chemistry/Chemistry.md",
-    "Notes/Math/Math.md",
-    "Notes/Chemistry/18-07-2023.md",
-    "Notes/Math/Topics/Quadratics.md",
-    "Notes/Physics/Topics/Kinematics.md",
-    "Notes/Physics/Physics.md",
+    "__mocks__/gatsby.js",
+    "Notes/Physics/Topics/Dynamics.md",
+    "Notes/Math/Topics/Sequences and Series.md",
+    "Notes/Math/Topics/Linear Functions.md",
+    "Notes/Math/Topics/Factorial.md",
+    "Notes/Chemistry/Topics/Moles.md",
+    "Notes/Chemistry/Topics/Chemical Formulas.md",
+    "Notes/Chemistry/Topics/Chemical Equations.md",
     "Images/Pasted image 20230906122737.png",
+    "Notes/Math/Topics/Combinations & Permutations.md",
+    "Notes/Math/Topics/Binomial Expansion.md",
+    "Notes/Math/Topics/Vectors.md",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Math/Topics/Linear Function.md",
+    "Notes/Math/Topics/Pythagorean Theorem.md",
+    "Notes/Math/Topics/Exponentiation Rules.md",
+    "Notes/Math/Topics/Circular Measure.md",
+    "Notes/Chemistry/Topics/Ionization Energy.md",
+    "Notes/Chemistry/Topics/Electron Shells.md",
+    "Notes/Chemistry/Topics/Masses of Atoms.md",
+    "Notes/Math/Math.md",
     "Images/Pasted image 20230823150608.png",
     "Images/Pasted image 20230823150408.png",
     "Images/Pasted image 20230823145700.png",
