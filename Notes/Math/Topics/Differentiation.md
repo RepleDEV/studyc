@@ -78,3 +78,8 @@ $$
 $$
 \frac{d}{dx}a^x=a^x\ln(a)
 $$
+## Local Extrema / Second Derivative
+One of the uses for derivatives is finding **local/global extrema**, which are **maximum/minimum points** in a function. During these points, the derivative of said function will either be $0$ or be undefined. The **second derivative** denotes whether the **extremum** is a **maximum** or **minimum** point.
+$$
+\text{Second Derivative: }\frac{d^2}{dx^2}f(x)=f''(x)
+$$

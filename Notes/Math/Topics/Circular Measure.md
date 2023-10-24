@@ -24,7 +24,7 @@ A_{sec} &= \frac{\theta}{2\pi}\times A\\
 &= \frac{1}{2}\theta r^2
 \end{align*}
 $$
-This area is called a **sector** of a circle.
+This area is called a **sector** of a circle (for $\theta$ radians).
 ## Chord
 A chord is the line that connects two points that sits at any point in a circle (where the resulting line isn't the diameter). The length of a chord can be thought as the length of the base of an isosceles triangle with side lengths $r$.
 ![[Pasted image 20230814194748.png]]

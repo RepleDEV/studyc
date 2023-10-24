@@ -61,6 +61,7 @@ For circles with origin $(a,b)$, the equation is:
 $$
 (x-a)^2+(y-b)^2=r^2
 $$
+$a$ and $b$ are $x$ and $y$ function [[Functions#Translation|translations]]. 
 ## Circles that pass through a point
 A circle with origin $(a,b)$ passes through $(p,q)$ equates to:
 $$
