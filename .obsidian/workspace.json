@@ -4,50 +4,36 @@
     "type": "split",
     "children": [
       {
-        "id": "0ce0e0c694b377ed",
+        "id": "7dfb97c486363326",
         "type": "tabs",
         "children": [
           {
-            "id": "ba79f50829ba962d",
+            "id": "307b57ca8a22c998",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "2157269fea5df0ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Coordinate Geometry.md",
+                "file": "Notes/Math/Topics/Integration.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "51af94c55867f5a0",
+            "id": "5801e19af2307e5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Physics/Topics/Work & Power.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "308d0ba0bf7aa107",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.16"
-              }
-            }
-          },
-          {
-            "id": "c634334c73553d66",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Math/Topics/Trigonometry.md",
+                "file": "Notes/Math/Topics/Integration.md",
                 "mode": "source",
                 "source": false
               }
@@ -120,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Physics/Topics/Work & Power.md",
+                "file": "Notes/Math/Topics/Integration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Physics/Topics/Work & Power.md",
+                "file": "Notes/Math/Topics/Integration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Physics/Topics/Work & Power.md"
+                "file": "Notes/Math/Topics/Integration.md"
               }
             }
           },
@@ -173,7 +159,7 @@
             }
           },
           {
-            "id": "f8882255733643e8",
+            "id": "88074ecd349f34bf",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -202,35 +188,21 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "308d0ba0bf7aa107",
+  "active": "5801e19af2307e5c",
   "lastOpenFiles": [
-    "Notes/Physics/Topics/Energy.md",
+    "Notes/Math/Topics/Differentiation.md",
     "Notes/Physics/Topics/Torque.md",
-    "Notes/Physics/Topics/Momentum.md",
     "Notes/Physics/Topics/Work & Power.md",
+    "Notes/Physics/Topics/Energy.md",
+    "Notes/Math/Topics/Integration.md",
     "Notes/Physics/Topics/Density and Pressure.md",
-    "Notes/Physics/Physics.md",
-    "Notes/Math/Math.md",
-    "Notes/Physics/Topics/Dynamics.md",
-    "Notes/Physics/Topics/SI Units.md",
-    "Notes/Physics/Topics/Scalars and Vectors.md",
-    "Notes/Physics/Topics/Physical Quantity.md",
-    "Notes/Math/Topics/Combinations & Permutations.md",
-    "Notes/Math/Topics/Circular Measure.md",
-    "Notes/Math/Topics/Binomial Expansion.md",
-    "Notes/Math/Topics/Angles.md",
-    "Notes/Math/Topics/Functions.md",
-    "Notes/Math/Topics/Factorizing Polynomials.md",
-    "Notes/Math/Topics/Factorial.md",
-    "Notes/Math/Topics/Coordinate Geometry.md",
-    "Notes/Math/Topics/Vectors.md",
-    "Notes/Math/Topics/Quadratics.md",
+    "Notes/Chemistry/Topics/Stoichiometry.md",
+    "Notes/Physics/Topics/Momentum.md",
     "Notes/Math/Topics/Trigonometry.md",
     "Notes/Physics/Topics/Kinematics.md",
-    "Notes/Physics/Topics/Errors and Uncertainties.md",
-    "Notes/Physics/17-07-2023.md",
-    "Notes/Math/Topics/Sequences and Series.md",
+    "Factorial.md",
     "tests/wikilink.test.ts",
+    "tests/testPage.md",
     "tests/pages.test.tsx",
     "tests/md_parser.test.ts",
     "tests",
@@ -239,8 +211,22 @@
     "loadershim.js",
     "jest.config.js",
     "jest-preprocess.js",
-    "__mocks__/file-mock.js",
+    "__mocks__/gatsby.js",
+    "Notes/Physics/Topics/Dynamics.md",
+    "Notes/Math/Topics/Sequences and Series.md",
+    "Notes/Math/Topics/Linear Functions.md",
+    "Notes/Math/Topics/Factorial.md",
+    "Notes/Chemistry/Topics/Moles.md",
+    "Notes/Chemistry/Topics/Chemical Formulas.md",
+    "Notes/Chemistry/Topics/Chemical Equations.md",
     "Images/Pasted image 20230906122737.png",
+    "Notes/Math/Topics/Combinations & Permutations.md",
+    "Notes/Math/Topics/Binomial Expansion.md",
+    "Notes/Math/Topics/Vectors.md",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Math/Topics/Linear Function.md",
+    "Notes/Math/Topics/Pythagorean Theorem.md",
+    "Notes/Math/Topics/Exponentiation Rules.md",
     "Images/Pasted image 20230823150608.png",
     "Images/Pasted image 20230823150408.png",
     "Images/Pasted image 20230823145700.png",
