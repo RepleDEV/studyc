@@ -26,6 +26,6 @@ $$
 \begin{align*}
 F_u &= \frac{F_w}{A}\\
 &=\frac{\rho Vg}{A}\\
-&=pgh
+&=\rho gh
 \end{align*}
 $$

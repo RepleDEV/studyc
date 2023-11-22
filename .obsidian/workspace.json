@@ -25,9 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Functions.md",
-                "mode": "preview",
+                "file": "Notes/Physics/Topics/Work & Power.md",
+                "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "308d0ba0bf7aa107",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
               }
             }
           },
@@ -44,7 +54,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Functions.md",
+                "file": "Notes/Physics/Topics/Work & Power.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Functions.md",
+                "file": "Notes/Physics/Topics/Work & Power.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Functions.md"
+                "file": "Notes/Physics/Topics/Work & Power.md"
               }
             }
           },
@@ -192,33 +202,35 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "51af94c55867f5a0",
+  "active": "308d0ba0bf7aa107",
   "lastOpenFiles": [
-    "Notes/Math/Topics/Coordinate Geometry.md",
-    "Notes/Math/Topics/Functions.md",
-    "Translations.md",
-    "Notes/Chemistry/Topics/Chemical Equations.md",
-    "Notes/Math/Topics/Trigonometry.md",
-    "Notes/Math/Topics/Circular Measure.md",
-    "Notes/Physics/Topics/Density and Pressure.md",
+    "Notes/Physics/Topics/Energy.md",
     "Notes/Physics/Topics/Torque.md",
-    "Notes/Chemistry/Topics/Stoichiometry.md",
-    "Notes/Chemistry/Topics/Atoms.md",
-    "Notes/Chemistry/Topics/Chemical Formulas.md",
-    "Notes/Math/Topics/Quadratics.md",
-    "Notes/Math/Topics/Differentiation.md",
     "Notes/Physics/Topics/Momentum.md",
+    "Notes/Physics/Topics/Work & Power.md",
+    "Notes/Physics/Topics/Density and Pressure.md",
+    "Notes/Physics/Physics.md",
+    "Notes/Math/Math.md",
     "Notes/Physics/Topics/Dynamics.md",
-    "Notes/Physics/Topics/Errors and Uncertainties.md",
-    "Notes/Chemistry/Topics/Ionization Energy.md",
-    "Notes/Chemistry/Topics/Masses of Atoms.md",
-    "Notes/Chemistry/Topics/Moles.md",
-    "Notes/Chemistry/Topics/Electron Shells.md",
+    "Notes/Physics/Topics/SI Units.md",
+    "Notes/Physics/Topics/Scalars and Vectors.md",
+    "Notes/Physics/Topics/Physical Quantity.md",
+    "Notes/Math/Topics/Combinations & Permutations.md",
+    "Notes/Math/Topics/Circular Measure.md",
     "Notes/Math/Topics/Binomial Expansion.md",
+    "Notes/Math/Topics/Angles.md",
+    "Notes/Math/Topics/Functions.md",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Math/Topics/Factorial.md",
+    "Notes/Math/Topics/Coordinate Geometry.md",
+    "Notes/Math/Topics/Vectors.md",
+    "Notes/Math/Topics/Quadratics.md",
+    "Notes/Math/Topics/Trigonometry.md",
+    "Notes/Physics/Topics/Kinematics.md",
+    "Notes/Physics/Topics/Errors and Uncertainties.md",
+    "Notes/Physics/17-07-2023.md",
     "Notes/Math/Topics/Sequences and Series.md",
-    "Notes/Math/Topics/Polynomial Identities.md",
     "tests/wikilink.test.ts",
-    "tests/testPage.md",
     "tests/pages.test.tsx",
     "tests/md_parser.test.ts",
     "tests",
@@ -228,8 +240,6 @@
     "jest.config.js",
     "jest-preprocess.js",
     "__mocks__/file-mock.js",
-    "Notes/Math/Topics/Combinations & Permutations.md",
-    "Notes/Math/Topics/Vectors.md",
     "Images/Pasted image 20230906122737.png",
     "Images/Pasted image 20230823150608.png",
     "Images/Pasted image 20230823150408.png",
