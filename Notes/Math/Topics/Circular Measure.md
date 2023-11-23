@@ -25,6 +25,14 @@ A_{sec} &= \frac{\theta}{2\pi}\times A\\
 \end{align*}
 $$
 This area is called a **sector** of a circle (for $\theta$ radians).
+>[!info]
+>One other thing I noticed is that:
+>$$
+>\begin{align*}
+>A_{sec} &= \int L \space dr\\
+>&= \int \theta r \space dr
+>\end{align*}
+>$$
 ## Chord
 A chord is the line that connects two points that sits at any point in a circle (where the resulting line isn't the diameter). The length of a chord can be thought as the length of the base of an isosceles triangle with side lengths $r$.
 ![[Pasted image 20230814194748.png]]
