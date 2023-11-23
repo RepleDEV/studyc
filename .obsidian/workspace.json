@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Integration.md",
+                "file": "Notes/Physics/Topics/Deformation of Solids & Springs.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Integration.md",
+                "file": "Notes/Physics/Topics/Deformation of Solids & Springs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Integration.md",
+                "file": "Notes/Physics/Topics/Deformation of Solids & Springs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Integration.md"
+                "file": "Notes/Physics/Topics/Deformation of Solids & Springs.md"
               }
             }
           },
@@ -190,14 +190,16 @@
   },
   "active": "5801e19af2307e5c",
   "lastOpenFiles": [
+    "Images/Pasted image 20231122113221.png",
+    "Notes/Physics/Topics/Work & Power.md",
+    "Notes/Physics/Topics/Deformation of Solids & Springs.md",
+    "Notes/Physics/Topics/Momentum.md",
+    "Notes/Math/Topics/Integration.md",
     "Notes/Math/Topics/Differentiation.md",
     "Notes/Physics/Topics/Torque.md",
-    "Notes/Physics/Topics/Work & Power.md",
     "Notes/Physics/Topics/Energy.md",
-    "Notes/Math/Topics/Integration.md",
     "Notes/Physics/Topics/Density and Pressure.md",
     "Notes/Chemistry/Topics/Stoichiometry.md",
-    "Notes/Physics/Topics/Momentum.md",
     "Notes/Math/Topics/Trigonometry.md",
     "Notes/Physics/Topics/Kinematics.md",
     "Factorial.md",
@@ -225,8 +227,6 @@
     "Notes/Math/Topics/Vectors.md",
     "Notes/Math/Topics/Factorizing Polynomials.md",
     "Notes/Math/Topics/Linear Function.md",
-    "Notes/Math/Topics/Pythagorean Theorem.md",
-    "Notes/Math/Topics/Exponentiation Rules.md",
     "Images/Pasted image 20230823150608.png",
     "Images/Pasted image 20230823150408.png",
     "Images/Pasted image 20230823145700.png",
