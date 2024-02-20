@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Quadratics.md",
+                "file": "Notes/Math/Topics/Polynomial Identities.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2f485aa19262c7a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Math/Topics/Central Tendency.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Quadratics.md",
+                "file": "Notes/Math/Topics/Central Tendency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Quadratics.md",
+                "file": "Notes/Math/Topics/Central Tendency.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Quadratics.md"
+                "file": "Notes/Math/Topics/Central Tendency.md"
               }
             }
           },
@@ -155,7 +168,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -179,35 +194,36 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ba79f50829ba962d",
+  "active": "2f485aa19262c7a7",
   "lastOpenFiles": [
-    "Notes/Math/Topics/Coordinate Geometry.md",
-    "Notes/Math/Topics/Trigonometry.md",
-    "Notes/Math/Topics/Circular Measure.md",
-    "Notes/Math/Topics/Combinations & Permutations.md",
-    "Notes/Physics/Topics/Work & Power.md",
+    "Notes/Physics/Topics/Electromagnetic Waves.md",
+    "Notes/Physics/Topics/Dynamics.md",
+    "Notes/Physics/Topics/Momentum.md",
+    "Notes/Math/Topics/Central Tendency.md",
+    "Notes/Math/Topics/Histograms.md",
+    "Images/Pasted image 20240211213004.png",
+    "Notes/Math/Topics/Stem & Leaf diagram.md",
     "Notes/Physics/Topics/Deformation of Solids & Springs.md",
     "Notes/Math/Topics/Integration.md",
-    "Images/Pasted image 20231122113221.png",
-    "Notes/Physics/Topics/Energy.md",
-    "Notes/Physics/Topics/Torque.md",
-    "Notes/Physics/Topics/Momentum.md",
-    "Notes/Physics/Topics/Density and Pressure.md",
-    "Notes/Physics/Physics.md",
-    "Notes/Math/Math.md",
-    "Notes/Physics/Topics/Dynamics.md",
-    "Notes/Physics/Topics/SI Units.md",
-    "Notes/Physics/Topics/Scalars and Vectors.md",
-    "Notes/Physics/Topics/Physical Quantity.md",
-    "Notes/Math/Topics/Binomial Expansion.md",
-    "Notes/Math/Topics/Angles.md",
-    "Notes/Math/Topics/Functions.md",
-    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Math/Topics/Statistics Intro.md",
+    "Notes/Math/Topics/Sequences and Series.md",
     "Notes/Math/Topics/Factorial.md",
-    "Notes/Math/Topics/Vectors.md",
+    "Notes/Math/Topics/Linear Functions.md",
     "Notes/Math/Topics/Quadratics.md",
-    "Notes/Physics/Topics/Kinematics.md",
-    "Notes/Physics/Topics/Errors and Uncertainties.md",
+    "Notes/Physics/Topics/Torque.md",
+    "Notes/Physics/Topics/SI Units.md",
+    "Notes/Math/Topics/Vectors.md",
+    "Notes/Math/Topics/Combinations & Permutations.md",
+    "Notes/Math/Topics/Coordinate Geometry.md",
+    "Notes/Math/Topics/Differentiation.md",
+    "Notes/Math/Topics/Exponentiation Rules.md",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Math/Topics/Functions.md",
+    "Notes/Math/Topics/Polynomial Identities.md",
+    "Notes/Math/Topics/Pythagorean Theorem.md",
+    "Notes/Math/Topics/Trigonometry.md",
+    "Notes/Math/Topics/Angles.md",
+    "Images/Pasted image 20231122113221.png",
     "tests/wikilink.test.ts",
     "tests/pages.test.tsx",
     "tests/md_parser.test.ts",
@@ -226,7 +242,6 @@
     "Images/Pasted image 20230815091954.png",
     "Images/Pasted image 20230815091849.png",
     "Images/Pasted image 20230815091539.png",
-    "Images/Pasted image 20230815084258.png",
     "Untitled.canvas"
   ]
 }

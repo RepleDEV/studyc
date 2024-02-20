@@ -19,9 +19,27 @@ Young's modulus is also the slope of a **stress** over **strain** graph.
 Materials will deform linearly until it hits its proportional limit (point A in the graph), but it will continue to follow elastic behavior until its **elastic limit**.
 * Elastic behavior: the behavior of materials where if forces are removed, they will **return to their original shape or form**
 * Plastic behavior: the behavior where materials will **not** return to their original shape or form when their forces are removed.
-
 ## Hooke's law
 Hooke's law applies to the deformation of springs, it states where springs (that follow proportionality), the force that they hold is proportional to its extension multiplied by the spring's **spring constant**.
 $$
-F=k\Delta x
+F=k\Delta l
+$$
+## Elastic Potential Energy
+Integrating Hooke's law with respect to its extension, we get:
+$$
+\begin{align*}
+EPE &= \int F \space d\Delta l\\
+&= \int k\Delta x \space d\Delta l\\
+&=\frac{1}{2}k\Delta l^2
+\end{align*}
+$$
+## Springs in Series
+For springs in series, the whole connection of every spring can be thought of one big spring with a $k$ value of its own.
+$$
+\frac{1}{k_{series}}=\sum\frac{1}{k_n}
+$$
+## Springs in Parallel
+For springs in parallel, it's simpler than springs in series.
+$$
+k_{parallel} = \sum k_n
 $$

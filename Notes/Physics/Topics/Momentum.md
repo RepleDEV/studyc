@@ -4,12 +4,12 @@ While momentum can be difficult to conceptualize, it is used to calculate the sp
 ## Conservation of momentum
 Momentum is conserved in a perfectly elastic collision, i.e., if two objects collide, the sum of their momentum will **not change** after the collision.
 $$
-m_1v_1 + m_2v_2=m_1v_1^`+m_2v2^`
+m_1v_1 + m_2v_2=m_1v_1^`+m_2v_2^`
 $$
 This property is also true for the objects' kinetic energy.
 $$
 \begin{align*}
-KE &= \frac{1}{2}mv\\
+KE &= \frac{1}{2}mv^2\\
 KE_1+KE_2 &= KE_1^`+KE_2^`
 \end{align*}
 $$
@@ -23,6 +23,15 @@ Impulse is the change of momentum in an object. The change of momentum in an obj
 $$
 \Delta p = F \Delta t
 $$
+>[!info]
+>### Its derivation
+>$$
+>\begin{align*}
+>\frac{dP}{dt} &= ma\\
+>&= F \\
+>dP &= Fdt
+>\end{align*}
+>$$
 ## Conservation of Momentum in Two Dimensions
 In this case, it's about a collision with a moving ball with a stationary one. After their collision, both balls will be redirected with an angle $\theta_n$ relative to the path of the first ball. In this case, the **vector sums** of the two balls' momentums after the collision must equal to the vector of the first ball's momentum.
 $$
