@@ -7,6 +7,15 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-postcss",
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets\/svg/,
+          omitKeys: ["width", "height"]
+        }
+      }
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",
