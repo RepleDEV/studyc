@@ -9,17 +9,17 @@ interface Props extends PropsWithChildren {
     last_update?: string;
 }
 
-const TopicCardIcon = addComponentStyle("block w-12 h-14");
+const TopicCardIcon = addComponentStyle("block w-12 h-14 [&>path]:stroke-rust_84 stroke-2");
 
 export default function TopicCard(props: Props): React.ReactNode {
     return (
-        <div className="flex flex-row gap-1 items-center h-32 w-64 p-7 border-2 border-gray-400 rounded-xl">
+        <div className="flex flex-row gap-3 items-center h-[115px] w-[276px] p-6 border-2 border-light_blue rounded-xl">
             {/* Left icon */}
             <TopicCardIcon>
                 {props.Icon ? <props.Icon/> : <QuestionMark/>}
             </TopicCardIcon>
-            <div className="flex flex-col text-sm">
-                <div className="font-semibold text-lg">
+            <div className="flex flex-col text-sm text-blue_light_text">
+                <div className="font-semibold text-lg text-rust_84">
                     {props.title ? props.title : "subject"}
                 </div>
                 {/* Files number */}
