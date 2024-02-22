@@ -5,7 +5,7 @@ export default function HomepageLayout({ children }: React.PropsWithChildren) {
         <>
         {/* NAVBAR */}
         <main
-            className="my-16 mx-32 text-gray-800 flex justify-center font-body flex-col"
+            className="my-16 mx-32 flex justify-center font-body flex-col"
         >{children}</main>
         {/* FOOTER */}
         </>
