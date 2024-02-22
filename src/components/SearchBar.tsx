@@ -6,10 +6,10 @@ interface Props {
 
 export default function SearchBar(props: Props): React.ReactNode {
     return (
-        <div className="flex border-4 border-dark_blue rounded-full h-14">
+        <div className="flex h-[58px]">
             <input
                 type="text"
-                className="w-full bg-inherit focus:outline-none px-4 font-2xl"
+                className="w-full border-4 border-dark_blue rounded-full focus:outline-none px-4 text-2xl placeholder:italic placeholder:lowercase"
                 placeholder="Search for File"
                 onInput={(e) =>  {
                         e.stopPropagation();
