@@ -17,6 +17,13 @@ module.exports = {
     },
     extend: {
       colors: {
+        "rust": "#B4573E",
+        "rust_84": "#C0725D",
+        "dark_blue": "#007CC4",
+        "light_blue": "#CEEAF8",
+        "purple": "#5E4581",
+        "blue": "#23ABDA",
+        "blue_light_text": "#7FCEEA",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
