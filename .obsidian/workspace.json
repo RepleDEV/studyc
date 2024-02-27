@@ -32,6 +32,16 @@
             }
           },
           {
+            "id": "7c5374d850ba84ba",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
+              }
+            }
+          },
+          {
             "id": "c634334c73553d66",
             "type": "leaf",
             "state": {
@@ -44,7 +54,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -194,13 +204,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2f485aa19262c7a7",
+  "active": "7c5374d850ba84ba",
   "lastOpenFiles": [
+    "Notes/Math/Topics/Histograms.md",
+    "Notes/Chemistry/Topics/Redox Reactions.md",
+    "Notes/Math/Topics/Central Tendency.md",
     "Notes/Physics/Topics/Electromagnetic Waves.md",
     "Notes/Physics/Topics/Dynamics.md",
     "Notes/Physics/Topics/Momentum.md",
-    "Notes/Math/Topics/Central Tendency.md",
-    "Notes/Math/Topics/Histograms.md",
     "Images/Pasted image 20240211213004.png",
     "Notes/Math/Topics/Stem & Leaf diagram.md",
     "Notes/Physics/Topics/Deformation of Solids & Springs.md",
@@ -222,7 +233,6 @@
     "Notes/Math/Topics/Polynomial Identities.md",
     "Notes/Math/Topics/Pythagorean Theorem.md",
     "Notes/Math/Topics/Trigonometry.md",
-    "Notes/Math/Topics/Angles.md",
     "Images/Pasted image 20231122113221.png",
     "tests/wikilink.test.ts",
     "tests/pages.test.tsx",
