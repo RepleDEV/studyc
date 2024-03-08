@@ -15,8 +15,12 @@ function App(): React.ReactNode {
     <HomepageLayout>
       <Title>StudyC</Title>
       <SearchBar onInput={set_searchInput}/>
-      <div className="flex flex-col mt-5 gap-5">
+      <div className="mt-20">
         <TopicList>
+          <Topics.Math/>
+          <Topics.Math/>
+          <Topics.Math/>
+          <Topics.Math/>
           <Topics.Math/>
         </TopicList>
       </div>
