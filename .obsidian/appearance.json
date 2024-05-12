@@ -3,5 +3,6 @@
   "monospaceFontFamily": "Cascadia Mono",
   "nativeMenus": false,
   "cssTheme": "Encore",
-  "baseFontSize": 14
+  "baseFontSize": 14,
+  "theme": "obsidian"
 }

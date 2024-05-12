@@ -38,7 +38,7 @@ Conceptually, the probability of two events $A$ **and** $B$ happening is as if $
 ## Dependent Events
 Dependent events are a set of events that can only happen if the other happens. 
 # Probability Distributions
-Probability distributions involve the specific distribution of a **probability** function given any random variable
+Probability distributions involve the specific distribution of a **probability** function given a discrete or continuous random variable which can be represented as a table and as a curve respectively.
 ## Random Variables
 A random variable is simply a variable taken from a statistical experiment. Assigning a numerical value to any sample point in an experiment to quantify a probabilistic outcome to perform statistical observations upon it. These such variables are denoted by a capital letter, and its lowercase counterpart denotes any one value that it can take. These random variables can be either **discrete** or **continuous**. 
 
@@ -51,10 +51,51 @@ P(X = x)
 $$
  where the sum of probabilities of every possible value of said random variable is always **one**.
  $$
-\Sigma P(X=x) =\int P(X=x)=1
+\Sigma P(X=x) =1
+$$
+Concepts from FTC applies here, in that:
+$$
+\begin{align*}
+P(a \le X \le b) &= P(X \le b) - P(X \le a)\\
+P(X \ge a) &= 1-P(X<A)
+\end{align*}
 $$
 ## Expected Value
 The expected value of a random variable $X$, $E(X)$ is equal to the sum of the product of the values of $X$ and $P(X = x)$, notated as:
 $$
 E(X) = \sum\left[ x_iP(X=x_i)\right]
+$$
+### Binomial Distribution
+The binomial distribution is one of many distributions to calculate the probabilities of an event. Given a discrete random variable $X$ where the outcome is binary, i.e., either **success** or **failure**, $P(X = x)$ is equal to the probability that the event happens $x$ times with constant probability of $p$ out of $n$ times.
+
+In simpler terms, it can be used to calculate the probability of getting heads for example 3 times out of 8 throws. In this case, $n = 8$ and $x = 3$.
+
+In mathematical terms, it's expressed as:
+
+If $X \sim \text{Bin}(n, p)$, then:
+$$
+P(X = x) = \binom nx p^x(1-p)^{1-x},\space x=0,1,\ldots,n
+$$
+where $P(\text{"success"}) = p$.
+
+Conceptually, with the coin example, one possibility of getting 3 heads out of 8 throws is getting three heads in a row then getting 5 tails, which equates to $p^3(1-p)^5$. But, there are other possibilities of getting 3 heads out of 8 throws, that's where the combination $\binom nx$ comes in.
+
+Its **mean**, $\mu_X$ is equal to the product of $n$ and $p$, with its variance being: $\text{Var}(X) = np(1-p)$.
+### Geometric Distribution
+This distribution is also for binary events where the probability of success is constant. It's used to calculate the probability of an event happening at the $x$'th attempt. 
+
+If $X \sim \text{Geo}(p)$, then:
+$$
+P (X = x) = p(1-p)^{x-1}
+$$
+
+Conceptually, the probability of rolling a head for the first time at the third attempt, is equal to $P(X = 3) = p(1-p)^2$. Which reads $P(\text{tails twice AND heads once})$.
+## Probability Density Function
+A probability density function (PDF) represents the probability of a **continuous** random variable. Similar to a probability function with discrete random variables, the whole are under the (PDF) curve is equal to **one**.
+$$
+\int_{-\infty}^{+\infty}f_X(x)dx = 1
+$$
+In a continuous random variable, the probability of it getting any specific value is **zero**, analogous with:
+$$
+P(X=a)=\int_a^af_X(x)dx = 0
 $$
