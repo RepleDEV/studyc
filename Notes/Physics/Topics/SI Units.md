@@ -24,7 +24,7 @@ Some units I've used:
 | watt    | W      | power                            | $J/s, V\cdot A$                           | $kg\cdot m^{2} \cdot s^{-3}$ |
 | coulomb | C      | electric charge                  | $s\cdot A, F\cdot V$                      |                              |
 | volt    | V      | electric potential, voltage, emf | $kg\cdot m^2 \cdot s^{-3} \cdot A^{-1}$   | $W/A=J/C$                    |
-| farad   | F      | capacitance                      | $kg^{-1}\cdot m^{-2} \cdot s^4 \cdot A^2$ | $C/V=C^2/j$                             |
+| farad   | F      | capacitance                      | $kg^{-1}\cdot m^{-2} \cdot s^4 \cdot A^2$ | $C/V=C^2/j$                  |
 ## Homogeneity of equations
 Units in equations follow homogeneous rules, which means that every term of an equation have exactly the same unit.
 ## Prefixes

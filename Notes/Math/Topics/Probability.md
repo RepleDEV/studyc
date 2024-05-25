@@ -74,13 +74,63 @@ In mathematical terms, it's expressed as:
 
 If $X \sim \text{Bin}(n, p)$, then:
 $$
-P(X = x) = \binom nx p^x(1-p)^{1-x},\space x=0,1,\ldots,n
+P(X = x) = \binom nx p^x(1-p)^{n-x},\space x=0,1,\ldots,n
 $$
 where $P(\text{"success"}) = p$.
 
 Conceptually, with the coin example, one possibility of getting 3 heads out of 8 throws is getting three heads in a row then getting 5 tails, which equates to $p^3(1-p)^5$. But, there are other possibilities of getting 3 heads out of 8 throws, that's where the combination $\binom nx$ comes in.
 
-Its **mean**, $\mu_X$ is equal to the product of $n$ and $p$, with its variance being: $\text{Var}(X) = np(1-p)$.
+### Expectation
+Given $n$ numbers of independent *Bernoulli random variables*, also known as binomial variables with $n = 1$, or a binomial event run once, with mean $p$ and variance $p(1-p)$. A binomial random variable $X$ can thought of as $n$ repeating independent Bernoulli random variables.
+$$
+\begin{align*}
+&\text{Let U $\sim$ Bin(1, p) where $E(U) = p$ and $Var(U) = p(1-p)$}\\
+X &= U_1 + \ldots + U_n\\
+E(X) &= E(U_1 + \ldots + U_n)\\
+E(X) &= E(U_1) + \ldots +E(U_n)\\
+E(X) &= np 
+\end{align*}
+$$
+From scratch, using the formula for expectation:
+$$
+\begin{align*}
+E(X) &= \sum_x^nxP(X=x)\\
+&= \sum_{x=0}^nx\binom nxp^x(1-p)^{n-x}\\
+&= \sum_{x=0}^n x\frac{n!}{x!(n-x)!}p^x(1-p)^{n-x}
+\end{align*}
+$$
+From here, note that when $x = 0$, everything cancels out to $0$, as such, the starting parameter can be changed to $x=1$. 
+
+From here, recall that: $x! = x(x-1)!$, as such, the $x$ cancels out.
+$$
+E(X)
+ = \sum_{x=1}^n\frac{n!}{(x-1)!(n-x)!}p^x(1-p)^{n-x}
+$$
+From this point, $np$ can be factored out.
+$$
+E(X) = np\sum_{x=1}^n\frac{(n-1)!}{(x-1)!(n-x)!}p^{x-1}(1-p)^{n-x}
+$$
+From here, we let $n-x = (n-1) - (x-1)$.
+$$
+E(X) = np\sum_{x=1}^n\frac{
+(n-1)!
+}{
+(x-1)![(n-1) - (x-1)]!
+}
+p^{x-1}(1-p)^{(n-1)-(x-1)}
+$$
+Now, we can let $m = n-1$ and $y = x-1$, changing the parameters as well.
+$$
+E(X) = np\sum_{y=0}^{m}\frac{m!}{y!(m-y)!}p^y(1-p)^{m-y}
+$$
+Now, the summation can be reduced from the [[Binomial Expansion]] theorem.
+$$
+E(X) = np(p +(1-p))^m
+$$
+From here, $(p+(1-p))^m = 1^m = 1$, finally:
+$$
+E(X)
+ = np$$
 ### Geometric Distribution
 This distribution is also for binary events where the probability of success is constant. It's used to calculate the probability of an event happening at the $x$'th attempt. 
 

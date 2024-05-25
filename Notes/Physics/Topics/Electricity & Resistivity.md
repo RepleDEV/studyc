@@ -10,7 +10,7 @@ Current is the rate of charge over time, defined as:
 $$
 I = \frac{Q}{t}
 $$
-The consensus with charge is that it flows from the **positive** to the **negative** end, in opposing directions to the flow of electrons.
+The consensus with charge is that it flows from the **positive** to the **negative** end, in opposing directions to the flow of electrons, with the idea of a power cell's *negative* terminal putting out *negative*ly charged electrons which are attracted to the positive terminal.
 ## Potential Difference
 Potential difference, otherwise known as voltage, is defined as the difference of the amount of energy carried by a charge between two points, given by the equation:
 $$
@@ -43,12 +43,12 @@ VI&=\frac{W}{t}\\
 {P} &= VI
 \end{align*}
 $$
-Using ohm's law, two more equations can be derived, which is used to calculate the power dissipated:
+Using ohm's law, two more equations can be derived, which is used to calculate the power dissipated in a given resistive element, such as a resistor:
 $$
 P =\frac{V^2}{R}=I^2R
 $$
 ## Material Resistivity ($\rho$)
 A material's resistance is proportional to its *resistivity*, given in the equation:
 $$
-\rho = R\frac{A}{l}
+R = \rho\frac{l}{A}
 $$
