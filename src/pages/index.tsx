@@ -45,8 +45,6 @@ function getListOfFiles() {
   const queryRes = useStaticQuery(query) as QueryResults;
   const files = [] as {name: string; path: string;}[];
 
-  console.log(queryRes.allSitePage.nodes)
-
   // JANK!
   for (const node of queryRes.allFile.nodes) {
     const correspondingPage = queryRes.allSitePage.nodes.find((page) => page.pageContext.id == node.id);
