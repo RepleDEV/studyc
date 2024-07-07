@@ -22,12 +22,6 @@ SUVAT equations are a set of equations for one dimensional motion involving the 
 $$
 s(t) = v_0t+\frac{1}{2}a(t)t^2
 $$
-With initial velocity of zero it's:
-$$
-s(t)=\frac{1}{2}a(t)t^2
-$$
-This is also because acceleration is the **second derivative** of displacement.
-
 If the final velocity $v$ is given and $t$ seconds has passed, this equation for displacement would be:
 $$
 s(t)= v_1t-\frac{1}{2}at^2
@@ -46,6 +40,22 @@ $$
 &= v_0^2+2as
 \end{align*}
 $$
+## SUVAT Derivation
+The first few equations of SUVAT comes from the integral of **acceleration**, given that:
+$$
+a = \frac{dv}{dt}=\frac{d^2 s}{dt^2}
+$$
+Taking the first integral, we get:
+$$
+\int adt = v = at + C
+$$
+where $C$ represents the initial velocity, $v_0$.
+
+Integrating $v$, we get:
+$$
+\int vdt = s = \frac{1}{2}at^2 + v_0t + C
+$$
+Where $C$ would be the initial displacement (often would be $0$).
 ## 2 dimensional motion
 For motion in two dimensions, the angle of the forces must also be considered. Depending on the angle, there could be two forces that act on said object which faces the horizontal and vertical axes.
 

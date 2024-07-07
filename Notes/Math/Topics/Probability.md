@@ -16,7 +16,7 @@ Independent events are events where the probabilities don't change if either hap
 
 Any two events $A$ and $B$ can be proven independent if the probability of $B$ given $A$ is equal to the probability of $B$
 $$
-A\text{ and }B\text{ are independent if: } P(B\mid A) = P(A)
+A\text{ and }B\text{ are independent if: } P(B\mid A) = P(B)
 $$
 ## Addition Law
 The addition law states that any two **mutually exclusive** events are the sum of their individual probabilities:
@@ -140,6 +140,54 @@ P (X = x) = p(1-p)^{x-1}
 $$
 
 Conceptually, the probability of rolling a head for the first time at the third attempt, is equal to $P(X = 3) = p(1-p)^2$. Which reads $P(\text{tails twice AND heads once})$.
+## Expectation
+For a geometric distribution, its expectation is:
+$$
+E(X) = \frac{1}{p}
+$$
+This is due to the properties of the infinite sum of a geometric series. We start by the definition of expectation:
+$$
+\begin{align*}
+E(X) &=\sum_{x=1}^{\infty}xP(X = x) =\sum_{x=1}^{\infty}xp(1-p)^{x-1} \\
+&= P(X = 1)\times 1 + P(X = 2) \times 2 + P(X=3) \times 3 + \ldots\\
+&=p + 2p(1-p) + 3p(1-p)^2 + \ldots
+\end{align*}
+$$
+Next, we multiply both sides by $(1-p)$
+$$
+(1-p)E(X) = p(1-p) + 2p(1-p)^2 + 3p(1-p)^3 + \ldots
+$$
+Now, if we subtract this equation with the one before:
+$$
+\begin{align*}
+E(X) - (1-p)E(X) = pE(X) = p + p(1-p) +p(1-p)^2 + \ldots
+\end{align*}
+$$
+All of this because everything after the first term aligns making: $np(1-p)^{n-1} - (n-1)p^{n-1} = p(1-p)^{n-1}$.
+If we divide both sides by $p$ we get:
+$$
+E(X) = 1 + (1-p) + (1-p)^2 + \ldots = \sum_{x=0}^{\infty}(1-p)^x
+$$
+Substituting to the infinite sum formula we get:
+$$
+E(X) = \frac{1}{1-(1-p)} = \frac{1}{p}
+$$
+### Probability less/greater than $n$
+For a probability less than any integer $n$ (given that $n \geq 1$ ) it's:
+$$
+P(X\leq n) = \sum_{x=0}^{n-1}p(1-p)^{x}
+$$
+This then follows the **geometric series** formula:
+$$
+\begin{align*}
+P(X\leq n) &= p\left(\frac{1-(1-p)^{n}}{1-(1-p)}\right) = p\left(\frac{1-(1-p)^n}{p}\right)\\
+&=1-(1-p)^n
+\end{align*}
+$$
+Since $P(X \leq n) = 1 - P(X > n)$, we get:
+$$
+P(X > n) = (1-p)^n
+$$
 ## Probability Density Function
 A probability density function (PDF) represents the probability of a **continuous** random variable. Similar to a probability function with discrete random variables, the whole are under the (PDF) curve is equal to **one**.
 $$

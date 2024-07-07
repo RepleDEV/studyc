@@ -24,7 +24,7 @@ $$
 \Delta p = F \Delta t
 $$
 >[!info]
->### Its derivation
+>### Derivation
 >$$
 >\begin{align*}
 >\frac{dP}{dt} &= ma\\

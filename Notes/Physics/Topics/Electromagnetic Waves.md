@@ -29,5 +29,5 @@ I_f = I_i \times \cos^2(30^\circ)
 $$
 ### Polarizing filter on unpolarized waves
 On unpolarized waves, the waves will pass through and be polarized to the direction of the polarized filter. The intensity of the wave will be decreased by **half** of its original intensity.
-
-Unpolarized waves can be thought of as waves that faces all directions at random. For calculating its polarized intensity, the analogy is as if the wave is the area
+## Diffraction
+Electromagnetic waves when passing through a tiny slit or aperture goes through a phenomenon called **diffraction**, in that the waves *diffract* outwards after passing through the slit. The tinier the slit, the more the waves diffract.
