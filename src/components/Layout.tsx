@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function HomepageLayout({ children }: React.PropsWithChildren) {
+export default function Layout({ children }: React.PropsWithChildren) {
     return (
         <>
         {/* NAVBAR */}
         <main
-            className="my-16 mx-32 flex justify-center font-body flex-col"
+            className="px-14 py-10 w-screen h-screen font-body flex flex-row"
         >{children}</main>
         {/* FOOTER */}
         </>

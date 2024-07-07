@@ -7,7 +7,7 @@ import rehypeMathjax from "rehype-mathjax";
 import obsidianWikilink, { transformHeaders } from "../../../plugins/remark-obsidian-wikilink";
 import remarkGfm from "remark-gfm";
 
-import HomepageLayout from "../../../components/HomepageLayout";
+import Layout from "../../../components/Layout";
 import MathDisplay from "../../../components/MathDisplay";
 import Bold from "../../../components/Bold";
 import MathInline from "../../../components/MathInline";
@@ -44,7 +44,7 @@ export default function Page(props: PageProps) {
     const page = new MDPage(content, props.data.allFile.nodes);
 
     return (
-        <HomepageLayout>
+        <Layout>
             <Title>
                 {props.data.file.name}
             </Title>
@@ -111,7 +111,7 @@ export default function Page(props: PageProps) {
                     },
                 }}
             />
-        </HomepageLayout>
+        </Layout>
     );
 }
 
