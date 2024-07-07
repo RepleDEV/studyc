@@ -24,7 +24,16 @@ interface QueryResults {
   }
 }
 
+type FileList = {
+  name: string;
+  path: string;
+}[];
+
+let fileListCache: FileList = [];
+
 function getListOfFiles() {
+  if (fileListCache.length) return fileListCache;
+
   const query = graphql`
   {
     allSitePage {
@@ -43,7 +52,7 @@ function getListOfFiles() {
   `;
 
   const queryRes = useStaticQuery(query) as QueryResults;
-  const files = [] as {name: string; path: string;}[];
+  const files = [] as FileList;
 
   // JANK!
   for (const node of queryRes.allFile.nodes) {
@@ -55,17 +64,19 @@ function getListOfFiles() {
     });
   }
 
+  fileListCache = files;
   return files;
 }
 
-function ListFiles() {
+function ListFiles({ searchInput }: { searchInput?: string }) {
   const fileList = getListOfFiles();
   return (
-    <div className="flex flex-1 flex-col overflow-y-scroll">
+    <div className="flex flex-1 flex-col pt-3 pl-3 overflow-y-scroll">
       {
         fileList.map((file) => {
+          if (searchInput && !file.name.toLowerCase().includes(searchInput.toLowerCase()))return;
           return (
-            <Link to={file.path}>
+            <Link to={file.path} className="border-b-2">
               {file.name}
             </Link>
           );
@@ -85,7 +96,7 @@ function App(): React.ReactNode {
       </div>
       <div className="flex flex-1 flex-col">
         <SearchBar onInput={set_searchInput}/>
-        <ListFiles/>
+        <ListFiles searchInput={get_searchInput}/>
       </div>
     </Layout>
   );
