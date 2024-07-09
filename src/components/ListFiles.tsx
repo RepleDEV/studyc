@@ -1,22 +1,22 @@
 import React from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
 
-interface AllFile {
-  nodes: {
-    id: string;
-    name: string;
-  }[]; 
+import type { FileSystemNode } from "gatsby-source-filesystem";
+
+interface QueryNodesResult<T> {
+  nodes: T[];
 }
 
+type AllFile = QueryNodesResult<FileSystemNode>;
 
-interface AllSitePage {
-  nodes: {
-    path: string;
-    pageContext: Partial<{
-      id: string
-    }>;
-  }[];
+interface SitePageNode {
+  path: string;
+  pageContext: Partial<{
+    id: string
+  }>;
 }
+
+type AllSitePage = QueryNodesResult<SitePageNode>;
 
 interface QueryResults {
   allFile: AllFile;
