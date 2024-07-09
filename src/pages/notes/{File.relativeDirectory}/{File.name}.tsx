@@ -11,7 +11,7 @@ import Layout from "../../../components/Layout";
 import Title from "../../../components/Title";
 import obsidianBlockQuote from "../../../plugins/remark-obsidian-blockquote";
 import components from "../../../components/md_components/components";
-import { processFiles, QueryResults } from "../../../components/ListFiles";
+import { QueryResults, processFiles } from "../../../modules/getListOfFiles";
 
 export interface FileIdentity {
     relativeDirectory: string;
