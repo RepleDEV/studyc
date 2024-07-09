@@ -15,8 +15,6 @@ import Link from "../../../components/Link";
 import Title from "../../../components/Title";
 import obsidianBlockQuote from "../../../plugins/remark-obsidian-blockquote";
 
-// import "../../../styles/pages.scss";
-
 export interface FileIdentity {
     relativeDirectory: string;
     name: string;
@@ -100,9 +98,7 @@ export default function Page(props: PageProps) {
                         return <p {...props} className="mt-5">{children}</p>
                     },
                     ul({children, ...props}) {
-                        // Workaround for ordered property being the wrong type
-                        const newProps = Object.assign(props, { ordered: `${props.ordered}`}) as Record<string, any>;
-                        return <ul className="list-disc list-inside" {...newProps}>{children}</ul>
+                        return <ul className="list-disc list-inside" {...props}>{children}</ul>
                     },
                     table({children, ...props}) {
                         return <table className="border-2 border-gray-600" {...props}>{children}</table>
