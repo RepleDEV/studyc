@@ -14,6 +14,7 @@ import MathInline from "../../../components/MathInline";
 import Link from "../../../components/Link";
 import Title from "../../../components/Title";
 import obsidianBlockQuote from "../../../plugins/remark-obsidian-blockquote";
+import components from "../../../components/md_components/components";
 
 export interface FileIdentity {
     relativeDirectory: string;
@@ -59,57 +60,7 @@ export default function Page(props: PageProps) {
                     remarkGfm,
                 ]}
                 rehypePlugins={[rehypeMathjax]}
-                components={{
-                    h2({children, ...props}) {
-                        return <h2 {...props} className="text-3xl font-semibold mt-5" id={transformHeaders(children)}>{children}</h2>
-                    },
-                    h3({children, ...props}) {
-                        return <h3 {...props} className="text-2xl font-semibold mt-5" id={transformHeaders(children)}>{children}</h3>
-                    },
-                    strong({children, ...props}) {
-                        return <Bold {...props}>{ children }</Bold>
-                    },
-                    span({children, className, ...props}) {
-                        if (className?.includes("math-inline")) {
-                            return <MathInline {...props}>{children}</MathInline>
-                        }
-                        ///@ts-ignore nextline
-                        const data_type = props["data-type"] as string | null;
-                        if (data_type && data_type === "blockquote_title") {
-                            return <span className="font-semibold text-purple-600 text-lg" {...props}>{children}</span>
-                        }
-
-                        return <span className={className} {...props}>{children}</span>
-                    },
-                    blockquote({ children }) {
-                        return <blockquote className="bg-purple-200 p-5 rounded-xl mt-5">{children}</blockquote>
-                    },
-                    div({children, className, ...props}) {
-                        if (className?.includes("math-display")) {
-                            return <MathDisplay>{children}</MathDisplay>
-                        }
-
-                        return <div className={className} {...props}>{children}</div>
-                    },
-                    a({children, ...props}) {
-                        return <Link {...props}>{children}</Link>
-                    },
-                    p({children, ...props}) {
-                        return <p {...props} className="mt-5">{children}</p>
-                    },
-                    ul({children, ...props}) {
-                        return <ul className="list-disc list-inside" {...props}>{children}</ul>
-                    },
-                    table({children, ...props}) {
-                        return <table className="border-2 border-gray-600" {...props}>{children}</table>
-                    },
-                    th({children, ...props}) {
-                        return <th className="border-2 border-gray-600 text-left px-2" {...props}>{children}</th>
-                    },
-                    td({children, ...props}) {
-                        return <td className="border-2 border-gray-600 px-2" {...props}>{children}</td>
-                    },
-                }}
+                components={components}
             />
             </div>
         </Layout>
