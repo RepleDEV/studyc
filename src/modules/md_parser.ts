@@ -9,7 +9,7 @@ export default class MDPage {
     meta: Record<string, MetaType> = {};
     converted: string = "";
 
-    constructor(raw: string, fileIdentities: FileIdentity[]) {
+    constructor(raw: string) {
         this.raw = raw;
         this.getMeta();
     }
