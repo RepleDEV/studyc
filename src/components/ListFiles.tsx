@@ -23,10 +23,7 @@ interface QueryResults {
   allSitePage: AllSitePage;
 }
 
-export type FileList = {
-  name: string;
-  path: string;
-}[];
+export type FileList = (FileSystemNode & {path: string})[];
 
 export function processFiles(allFile: AllFile, allSitePage: AllSitePage) {
   const files = [] as FileList;
@@ -36,7 +33,7 @@ export function processFiles(allFile: AllFile, allSitePage: AllSitePage) {
     const correspondingPage = allSitePage.nodes.find((page) => page.pageContext.id == node.id);
     if (!correspondingPage)continue;
     files.push({
-      name: node.name,
+      ...node,
       path: correspondingPage.path
     });
   }
