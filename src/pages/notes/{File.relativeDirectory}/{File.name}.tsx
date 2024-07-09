@@ -11,6 +11,7 @@ import Layout from "../../../components/Layout";
 import Title from "../../../components/Title";
 import obsidianBlockQuote from "../../../plugins/remark-obsidian-blockquote";
 import components from "../../../components/md_components/components";
+import { processFiles, QueryResults } from "../../../components/ListFiles";
 
 export interface FileIdentity {
     relativeDirectory: string;
@@ -28,15 +29,12 @@ export interface PageProps {
                 content: string;
             }
         }
-        allFile: {
-            nodes: FileIdentity[]
-        };
-    };
+    } & QueryResults;
 }
 export default function Page(props: PageProps) {
     const content = props.data.file.internal.content;
-    const fileIdentities = props.data.allFile.nodes;
-    const page = new MDPage(content, props.data.allFile.nodes);
+    const fileList = processFiles(props.data.allFile, props.data.allSitePage);
+    const page = new MDPage(content);
 
     return (
         <Layout>
@@ -50,7 +48,7 @@ export default function Page(props: PageProps) {
             <ReactMarkdown 
                 children={page.converted}
                 remarkPlugins={[
-                    [obsidianWikilink, { fileIdentities }],
+                    [obsidianWikilink, { fileList }],
                     obsidianBlockQuote,
                     remarkMath,
                     remarkGfm,
@@ -71,8 +69,15 @@ query($id: String!) {
             content
         }
     }
+    allSitePage {
+      nodes {
+        path
+        pageContext
+      }  
+    }
     allFile {
         nodes {
+            id
             relativeDirectory
             name
             publicURL

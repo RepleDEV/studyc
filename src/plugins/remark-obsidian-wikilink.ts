@@ -1,19 +1,18 @@
 import flatMap from "unist-util-flatmap";
 import Wikilink from "../modules/wikilink";
-import { FileIdentity } from "../pages/notes/{File.relativeDirectory}/{File.name}";
 import { u } from "unist-builder";
+import { FileList } from "../components/ListFiles";
 
 const wikilinkRegex = /\!*\[\[(.+)\]\]/g;
 
 export const transformHeaders = (str: any) => str.toString().toLowerCase().replace(" ", "_");
 
 interface Options {
-    fileIdentities: FileIdentity[]
+    fileList: FileList
 }
-export default function obsidianWikilink({ fileIdentities }: Options) {
+export default function obsidianWikilink({ fileList }: Options) {
     return (tree: any) => {
         let newTree = flatMap(tree, (node: any) => {
-            // console.log(node);
             const value = node.value as string;
             const m = wikilinkRegex.exec(value);
 
@@ -21,8 +20,7 @@ export default function obsidianWikilink({ fileIdentities }: Options) {
 
             const fullLink = m[0];
             const linkContent = m[1];
-            const wikilink = new Wikilink(linkContent, fileIdentities);
-            
+            const wikilink = new Wikilink(linkContent, fileList, fullLink.startsWith("!"));
             const textBeforeWikilink = value.substring(0, m.index);
             const textAfterWikilink = value.substring(m.index + fullLink.length);
 
