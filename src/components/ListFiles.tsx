@@ -1,27 +1,48 @@
 import React from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
 
-interface QueryResults {
-  allFile: {
-    nodes: {
-      id: string;
-      name: string;
-    }[]; 
-  } 
-  allSitePage: {
-    nodes: {
-      path: string;
-      pageContext: Partial<{
-        id: string
-      }>;
-    }[];
-  }
+interface AllFile {
+  nodes: {
+    id: string;
+    name: string;
+  }[]; 
 }
 
-type FileList = {
+
+interface AllSitePage {
+  nodes: {
+    path: string;
+    pageContext: Partial<{
+      id: string
+    }>;
+  }[];
+}
+
+interface QueryResults {
+  allFile: AllFile;
+  allSitePage: AllSitePage;
+}
+
+export type FileList = {
   name: string;
   path: string;
 }[];
+
+export function processFiles(allFile: AllFile, allSitePage: AllSitePage) {
+  const files = [] as FileList;
+
+  // JANK!
+  for (const node of allFile.nodes) {
+    const correspondingPage = allSitePage.nodes.find((page) => page.pageContext.id == node.id);
+    if (!correspondingPage)continue;
+    files.push({
+      name: node.name,
+      path: correspondingPage.path
+    });
+  }
+
+  return files;
+}
 
 let fileListCache: FileList = [];
 
@@ -46,20 +67,7 @@ function getListOfFiles() {
   `;
 
   const queryRes = useStaticQuery(query) as QueryResults;
-  const files = [] as FileList;
-
-  // JANK!
-  for (const node of queryRes.allFile.nodes) {
-    const correspondingPage = queryRes.allSitePage.nodes.find((page) => page.pageContext.id == node.id);
-    if (!correspondingPage)continue;
-    files.push({
-      name: node.name,
-      path: correspondingPage.path
-    });
-  }
-
-  fileListCache = files;
-  return files;
+  return processFiles(queryRes.allFile, queryRes.allSitePage);
 }
 
 export default function ListFiles({ searchInput }: { searchInput?: string }) {
