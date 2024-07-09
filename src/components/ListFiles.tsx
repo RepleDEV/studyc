@@ -18,7 +18,7 @@ interface SitePageNode {
 
 type AllSitePage = QueryNodesResult<SitePageNode>;
 
-interface QueryResults {
+export interface QueryResults {
   allFile: AllFile;
   allSitePage: AllSitePage;
 }
