@@ -45,6 +45,10 @@ export default function Page(props: PageProps) {
 
     return (
         <Layout>
+            <div className="flex flex-[0_0_200px]">
+                <Title>StudyC</Title>
+            </div>
+            <div className="flex flex-1 flex-col overflow-y-auto overflow-x-clip">
             <Title>
                 {props.data.file.name}
             </Title>
@@ -111,6 +115,7 @@ export default function Page(props: PageProps) {
                     },
                 }}
             />
+            </div>
         </Layout>
     );
 }
