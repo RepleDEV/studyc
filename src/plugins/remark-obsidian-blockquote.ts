@@ -17,13 +17,13 @@ export default function obsidianBlockQuote() {
                 const replaced = firstParagraph.replace(blockQuoteRegex, "");
                 n.children[0].children[0].value = replaced;
 
-                n.data = { hProperties: { type: m[1] }};
+                n.data = { hProperties: { "data-type": m[1] }};
 
                 // Basically like
                 `
-                <div type={m[1]}>
+                <blockquote data-type={m[1]}>
                     <span>{bqTitleText}</span>
-                </div>
+                </blockquote>
                 `
 
                 const bqTitleText = m[2] || (m[1][0].toUpperCase() + m[1].slice(1));
