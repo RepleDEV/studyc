@@ -13,6 +13,18 @@ const linkNodeGenerator = (text: string, href: string) => u("link", {
     u("text", text)
 ]});
 
+function getLinkNode(m: RegExpExecArray, fileList: FileList) {
+    const fullLink = m[0];
+    const linkContent = m[1];
+    const wikilink = new Wikilink(linkContent, fileList, fullLink.startsWith("!"));
+
+    let url = wikilink.path == wikilink.link ? "#" : wikilink.path;
+    if (wikilink.blockTarget && wikilink.link.includes("#"))url += "#" + transformHeaders(wikilink.blockTarget);
+
+    const rNode = wikilink.type === "page" ? linkNodeGenerator(wikilink.title, url) : u("image", { url: wikilink.path })
+    return rNode;
+}
+
 interface Options {
     fileList: FileList
 }
@@ -20,26 +32,28 @@ export default function obsidianWikilink({ fileList }: Options) {
     return (tree: any) => {
         let newTree = flatMap(tree, (node: any) => {
             const value = node.value as string;
-            const m = wikilinkRegex.exec(value);
+            let m = wikilinkRegex.exec(value);
 
             if (!m)return [node];
 
-            const fullLink = m[0];
-            const linkContent = m[1];
-            const wikilink = new Wikilink(linkContent, fileList, fullLink.startsWith("!"));
-            const textBeforeWikilink = value.substring(0, m.index);
-            const textAfterWikilink = value.substring(m.index + fullLink.length);
+            let lastIndex = 0;
+            const res: Record<string, unknown>[] = [];
+            while (m != null) {
+                if (m.index === wikilinkRegex.lastIndex) {
+                    wikilinkRegex.lastIndex++;
+                }
 
-            let url = wikilink.path == wikilink.link ? "#" : wikilink.path;
-            if (wikilink.blockTarget && wikilink.link.includes("#"))url += "#" + transformHeaders(wikilink.blockTarget);
+                const textBeforeWikilink = value.substring(lastIndex, m.index);
+                res.push(u("text", textBeforeWikilink));
+                lastIndex = m.index + m[0].length;
 
-            const rNode = wikilink.type === "page" ? linkNodeGenerator(wikilink.title, url) : u("image", { url: wikilink.path })
+                const rNode = getLinkNode(m, fileList);
+                res.push(rNode);
 
-            const res = [
-                u("text", textBeforeWikilink),
-                rNode,
-                u("text", textAfterWikilink),
-            ];
+                m = wikilinkRegex.exec(value);
+            }
+            const textAfterWikilink = value.substring(lastIndex);
+            res.push(u("text", textAfterWikilink))
 
             return res;
         });
