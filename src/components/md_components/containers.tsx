@@ -5,7 +5,14 @@ import MathDisplay from "../MathDisplay";
 
 const containers: Components = {
     blockquote({ children, ...props }) {
-        return <blockquote className="bg-purple-200 p-5 rounded-xl mt-5" {...props}>{children}</blockquote>
+        return <blockquote
+            className={`
+                bg-purple-200 p-5 rounded-xl mt-5 
+                data-[type=warning]:bg-yellow-100
+                data-[type=done]:bg-green-100
+                `}
+            {...props}>
+            {children}</blockquote>
     },
     div({children, className, ...props}) {
         if (className?.includes("math-display")) {
