@@ -4,8 +4,8 @@ import type { Components } from "react-markdown/lib/ast-to-react";
 import MathDisplay from "../MathDisplay";
 
 const containers: Components = {
-    blockquote({ children }) {
-        return <blockquote className="bg-purple-200 p-5 rounded-xl mt-5">{children}</blockquote>
+    blockquote({ children, ...props }) {
+        return <blockquote className="bg-purple-200 p-5 rounded-xl mt-5" {...props}>{children}</blockquote>
     },
     div({children, className, ...props}) {
         if (className?.includes("math-display")) {

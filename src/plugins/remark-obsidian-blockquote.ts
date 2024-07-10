@@ -17,6 +17,8 @@ export default function obsidianBlockQuote() {
                 const replaced = firstParagraph.replace(blockQuoteRegex, "");
                 n.children[0].children[0].value = replaced;
 
+                n.data = { hProperties: { type: m[1] }};
+
                 // Basically like
                 `
                 <div type={m[1]}>
@@ -39,12 +41,8 @@ export default function obsidianBlockQuote() {
                             }
                         })
                     ],
-                    data: {
-                        hProperties: {
-                            type: m[1]
-                        }
-                    }
                 });
+
                 n.children.unshift(bqTitleNode)
             }
         });
