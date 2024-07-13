@@ -3,7 +3,7 @@ import Wikilink from "../modules/wikilink";
 import { u } from "unist-builder";
 import { FileList } from "../modules/getListOfFiles";
 
-const wikilinkRegex = /\!*\[\[(.+)\]\]/g;
+const wikilinkRegex = /\!*\[\[(.+?)\]\]/g;
 
 export const transformHeaders = (str: any) => str.toString().toLowerCase().replace(" ", "_");
 
