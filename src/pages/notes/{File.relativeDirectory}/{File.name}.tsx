@@ -11,7 +11,7 @@ import Layout from "../../../components/Layout";
 import Title from "../../../components/Title";
 import obsidianBlockQuote from "../../../plugins/remark-obsidian-blockquote";
 import components from "../../../components/md_components/components";
-import { QueryResults, processFiles } from "../../../modules/getListOfFiles";
+import { QueryResults, processFiles } from "../../../modules/listFiles";
 import SearchBar from "../../../components/SearchBar";
 
 export interface FileIdentity {

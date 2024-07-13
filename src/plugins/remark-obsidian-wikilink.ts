@@ -1,7 +1,7 @@
 import flatMap from "unist-util-flatmap";
 import Wikilink from "../modules/wikilink";
 import { u } from "unist-builder";
-import { FileList } from "../modules/getListOfFiles";
+import { FileList } from "../modules/listFiles";
 
 const wikilinkRegex = /\!*\[\[(.+?)\]\]/g;
 

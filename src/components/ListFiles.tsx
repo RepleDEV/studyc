@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
-import { QueryResults, FileList, processFiles } from "../modules/getListOfFiles";
+import { QueryResults, FileList, processFiles } from "../modules/listFiles";
 
 let fileListCache: FileList = [];
 
