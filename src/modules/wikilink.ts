@@ -1,4 +1,4 @@
-import type { FileList } from "../components/ListFiles";
+import type { FileList } from "../modules/getListOfFiles";
 
 export default class Wikilink {
     link: string;
