@@ -1,4 +1,3 @@
-import { map } from "unist-util-map";
 import { u } from "unist-builder";
 import { visit } from "unist-util-visit";
 

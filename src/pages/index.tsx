@@ -1,10 +1,7 @@
-import React,{ useState, useContext, PropsWithChildren } from "react"
+import React,{ useState } from "react"
 import Layout from "../components/Layout";
 import Title from "../components/Title";
-import slugify from "slugify";
 import SearchBar from "../components/SearchBar";
-import TopicList from "../components/TopicList";
-import Topics from "../components/Topics";
 import ListFiles from "../components/ListFiles";
 
 

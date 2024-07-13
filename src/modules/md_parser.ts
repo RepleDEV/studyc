@@ -1,6 +1,4 @@
 import matter from "gray-matter";
-import type { FileIdentity } from "../pages/notes/{File.relativeDirectory}/{File.name}";
-import Wikilink from "./wikilink";
 
 type MetaType = string | string[] | number;
 
