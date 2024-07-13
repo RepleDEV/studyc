@@ -25,7 +25,8 @@ function getListOfFiles() {
   `;
 
   const queryRes = useStaticQuery(query) as QueryResults;
-  return processFiles(queryRes.allFile, queryRes.allSitePage);
+  fileListCache = processFiles(queryRes.allFile, queryRes.allSitePage);
+  return fileListCache;
 }
 
 export default function ListFiles({ searchInput }: { searchInput?: string }) {
