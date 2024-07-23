@@ -5,7 +5,7 @@ export default function Layout({ children }: React.PropsWithChildren) {
         <>
         {/* NAVBAR */}
         <main
-            className="px-14 py-10 w-screen h-screen font-body flex flex-row"
+            className="px-14 pt-10 w-screen h-screen font-body flex flex-row"
         >{children}</main>
         {/* FOOTER */}
         </>
