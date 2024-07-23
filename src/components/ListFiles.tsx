@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import { QueryResults, FileList, processFiles } from "../modules/listFiles";
+import FileListing from "./FileListing";
 
 let fileListCache: FileList = [];
 
@@ -36,11 +37,7 @@ export default function ListFiles({ searchInput }: { searchInput?: string }) {
       {
         fileList.map((file) => {
           if (searchInput && !file.name.toLowerCase().includes(searchInput.toLowerCase()))return;
-          return (
-            <Link to={file.path} className="border-b-2">
-              {file.name}
-            </Link>
-          );
+          return <FileListing file={file} key={file.id}/>
         })
       }
     </div>

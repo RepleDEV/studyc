@@ -20,7 +20,8 @@ export interface QueryResults {
   allSitePage: AllSitePage;
 }
 
-export type FileList = (FileSystemNode & {path: string})[];
+export type ExtendedFSNode = FileSystemNode & {path: string};
+export type FileList = ExtendedFSNode[];
 
 export function processFiles(allFile: AllFile, allSitePage: AllSitePage) {
   const files = [] as FileList;
