@@ -33,7 +33,7 @@ function getListOfFiles() {
 export default function ListFiles({ searchInput }: { searchInput?: string }) {
   const fileList = getListOfFiles();
   return (
-    <div className="flex flex-1 flex-col pt-3 pl-3 overflow-y-scroll">
+    <div className="flex flex-1 flex-col pt-3 px-3 overflow-y-scroll">
       {
         fileList.map((file) => {
           if (searchInput && !file.name.toLowerCase().includes(searchInput.toLowerCase()))return;
