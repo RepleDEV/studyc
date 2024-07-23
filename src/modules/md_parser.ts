@@ -2,7 +2,7 @@ import matter from "gray-matter";
 
 type MetaType = string | string[] | number;
 
-export default class MDPage {
+export default class MDPageParser {
     raw: string = "";
     meta: Record<string, MetaType> = {};
     converted: string = "";

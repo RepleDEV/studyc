@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import { graphql } from "gatsby";
-import MDPage from "../../../modules/md_parser";
-import ReactMarkdown from "react-markdown";
-import remarkMath from "remark-math";
-import rehypeMathjax from "rehype-mathjax";
-import obsidianWikilink  from "../../../plugins/remark-obsidian-wikilink";
-import remarkGfm from "remark-gfm";
+import MDPageParser from "../../../modules/md_parser";
+import { FileSystemNode } from "gatsby-source-filesystem";
+import { QueryResults, processFiles } from "../../../modules/listFiles";
 
 import Layout from "../../../components/Layout";
 import Title from "../../../components/Title";
-import obsidianBlockQuote from "../../../plugins/remark-obsidian-blockquote";
-import components from "../../../components/md_components/components";
-import { QueryResults, processFiles } from "../../../modules/listFiles";
 import SearchBar from "../../../components/SearchBar";
-import { FileSystemNode } from "gatsby-source-filesystem";
+import MDPage from "../../../components/MDPage";
 
 export interface PageProps {
     params: FileSystemNode;
@@ -29,7 +23,7 @@ export interface PageProps {
 export default function Page(props: PageProps) {
     const content = props.data.file.internal.content;
     const fileList = processFiles(props.data.allFile, props.data.allSitePage);
-    const page = new MDPage(content);
+    const page = new MDPageParser(content);
 
     const [get_searchInput, set_searchInput] = useState("");
 
@@ -44,17 +38,7 @@ export default function Page(props: PageProps) {
                     <Title>
                         {props.data.file.name}
                     </Title>
-                    <ReactMarkdown 
-                        children={page.converted}
-                        remarkPlugins={[
-                            [obsidianWikilink, { fileList }],
-                            obsidianBlockQuote,
-                            remarkMath,
-                            remarkGfm,
-                        ]}
-                        rehypePlugins={[rehypeMathjax]}
-                        components={components}
-                    />
+                    <MDPage fileList={fileList}>{page.converted}</MDPage>
                 </div>
             </div>
         </Layout>
