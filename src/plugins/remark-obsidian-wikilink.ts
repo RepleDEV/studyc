@@ -21,7 +21,15 @@ function getLinkNode(m: RegExpExecArray, fileList: FileList) {
     let url = wikilink.path == wikilink.link ? "#" : wikilink.path;
     if (wikilink.blockTarget && wikilink.link.includes("#"))url += "#" + transformHeaders(wikilink.blockTarget);
 
-    const rNode = wikilink.type === "page" ? linkNodeGenerator(wikilink.title, url) : u("image", { url: wikilink.path })
+    let imageUrl = wikilink.path;
+    if (process.env.NODE_ENV !== "development") {
+        // TODO: DO NOT MAKE THIS HARDCODED
+        imageUrl = `https://raw.githubusercontent.com/RepleDEV/studyc/public_beta/Images/${wikilink.link}`;
+    }
+
+    const rNode = wikilink.type === "page" ?
+        linkNodeGenerator(wikilink.title, url) :
+        u("image", { url: imageUrl })
     return rNode;
 }
 

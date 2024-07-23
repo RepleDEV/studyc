@@ -1,6 +1,6 @@
 import type { GatsbyConfig } from "gatsby"
 
-module.exports = {
+const config = {
   plugins: [
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
@@ -23,15 +23,20 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        "path": `${__dirname}/Images`
-      }
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {},
     },
   ],
 } as GatsbyConfig;
+
+if (process.env.NODE_ENV === "development") {
+  config.plugins?.push({
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: "images",
+      "path": `${__dirname}/Images`
+    }
+  });
+}
+
+module.exports = config;
