@@ -13,16 +13,10 @@ import obsidianBlockQuote from "../../../plugins/remark-obsidian-blockquote";
 import components from "../../../components/md_components/components";
 import { QueryResults, processFiles } from "../../../modules/listFiles";
 import SearchBar from "../../../components/SearchBar";
+import { FileSystemNode } from "gatsby-source-filesystem";
 
-export interface FileIdentity {
-    relativeDirectory: string;
-    name: string;
-    publicURL: string;
-    sourceInstanceName: string;
-    base: string;
-}
 export interface PageProps {
-    params: FileIdentity;
+    params: FileSystemNode;
     data: {
         file: {
             name: string;
