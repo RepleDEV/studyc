@@ -31,7 +31,9 @@ function getListOfFiles() {
 }
 
 export default function ListFiles({ searchInput }: { searchInput?: string }) {
-  const fileList = getListOfFiles();
+  let fileList = getListOfFiles();
+  fileList = fileList.sort((a, b) => a.name.localeCompare(b.name));
+
   return (
     <div className="flex flex-1 flex-col pt-3 px-3 overflow-y-scroll">
       {
