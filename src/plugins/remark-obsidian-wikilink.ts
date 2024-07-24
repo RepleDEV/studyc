@@ -24,7 +24,7 @@ function getLinkNode(m: RegExpExecArray, fileList: FileList) {
     let imageUrl = wikilink.path;
     if (process.env.NODE_ENV !== "development") {
         // TODO: DO NOT MAKE THIS HARDCODED
-        url = `/studyc/${url}`;
+        url = `/studyc${url}`;
         imageUrl = `https://raw.githubusercontent.com/RepleDEV/studyc/public_beta/Images/${wikilink.link}`;
     }
 
