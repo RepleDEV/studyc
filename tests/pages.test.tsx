@@ -1,18 +1,24 @@
 import React from "react";
 import { render } from "@testing-library/react"
 import "@testing-library/jest-dom"
-
-import Page, { PageProps } from "../src/pages/notes/{File.relativeDirectory}/{File.name}";
 import fs from "fs";
 
+import Page, { PageProps } from "../src/pages/notes/{File.relativeDirectory}/{File.name}";
+import FSNodeFactory from "./modules/FSNodeFactory";
+import SPNFactory from "./modules/SPNFactory";
+
+const testPageFSN = FSNodeFactory("testPage", "md", "page");
+const imgFSN = FSNodeFactory("img", "png", "image");
+
+const fileNodes = [
+    testPageFSN,
+    imgFSN
+];
+
+const sitePageNodes = fileNodes.map(SPNFactory);
+
 const pageProps: PageProps = {
-    params: {
-        base: "testPage.md",
-        relativeDirectory: "tests",
-        name: "testPage",
-        publicURL: "/static/1337/testPage.md",
-        sourceInstanceName: "pages",
-    },
+    params: testPageFSN,
     data: {
         file: {
             name: "testPage",
@@ -20,23 +26,11 @@ const pageProps: PageProps = {
                 content: "",
             }
         },
+        allSitePage: {
+            nodes: sitePageNodes,
+        },
         allFile: {
-            nodes: [
-                {
-                    base: "testPage.md",
-                    relativeDirectory: "tests",
-                    name: "testPage",
-                    publicURL: "/static/1337/testPage.md",
-                    sourceInstanceName: "pages",
-                },
-                {
-                    base: "img.png",
-                    relativeDirectory: "tests",
-                    name: "img",
-                    publicURL: "/static/1337",
-                    sourceInstanceName: "images"
-                }
-            ],
+            nodes: fileNodes,
         }
     }
 }
@@ -46,8 +40,8 @@ describe("Page component testing", () => {
     pageProps.data.file.internal.content = testPage;
 
     test("Displays the correct title", () => {
-        const page = render(<Page {...pageProps}/>);
-        expect(page.queryByTestId("page-title")).toHaveTextContent(pageProps.params.name)
+       const page = render(<Page {...pageProps}/>);
+       expect(page.queryByTestId("page-title")).toHaveTextContent(pageProps.params.name)
     });
 
     test("Headers", () => {
