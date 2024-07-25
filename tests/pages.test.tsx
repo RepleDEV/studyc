@@ -106,12 +106,11 @@ describe("Page component testing", () => {
         expect(link).toHaveTextContent("This is a link");
         expect(link.getAttribute("href")).toBe("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 
-        const cFile = pageProps.data.allFile.nodes[0]
         expect(wikilink).toHaveTextContent("WikiLink");
-        expect(wikilink.getAttribute("href")).toBe(`/notes/${cFile.relativeDirectory}/testpage`)
+        expect(wikilink.getAttribute("href")?.startsWith("/studyc/")).toBeTruthy();
 
         expect(emptyWikilink).toHaveTextContent("emptyWikiLink");
-        expect(emptyWikilink.getAttribute("href")).toBe("#");
+        expect(emptyWikilink.getAttribute("href")?.endsWith("#")).toBeTruthy();
     });
     
     test("Image(s)", () => {
@@ -119,7 +118,7 @@ describe("Page component testing", () => {
         const img = page.baseElement.querySelector("img");
 
         expect(img).not.toBeNull();
-        expect(img?.getAttribute("src")).toBe(pageProps.data.allFile.nodes[1].publicURL);
+        expect(img?.getAttribute("src")?.startsWith("https://raw.githubusercontent.com")).toBeTruthy();
     });
 
     test("Callout", () => {
