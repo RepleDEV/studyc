@@ -4,7 +4,7 @@ import fs from "fs"
 const testPage = fs.readFileSync(`${__dirname}/testPage.md`, { encoding: "utf-8" });
 
 describe("Parse front-matter (meta) from md", () => {
-    const parser = new MDPage(testPage, []);
+    const parser = new MDPage(testPage);
 
     test("General Metadata", () => {
         expect(parser.meta.meta).toBe("data");
