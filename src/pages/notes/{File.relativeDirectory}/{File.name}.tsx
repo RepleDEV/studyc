@@ -8,6 +8,7 @@ import Layout from "../../../components/Layout";
 import Title from "../../../components/Title";
 import SearchBar from "../../../components/SearchBar";
 import MDPage from "../../../components/MDPage";
+import FileTitle from "../../../components/FileTitle";
 
 export interface PageProps {
     params: FileSystemNode;
@@ -35,9 +36,9 @@ export default function Page(props: PageProps) {
             <div className="flex flex-1 flex-col overflow-y-auto overflow-x-clip">
                 <SearchBar onInput={set_searchInput} placeholder="Search in file"/>
                 <div className="pt-5 flex flex-1 flex-col overflow-y-auto overflow-x-clip">
-                    <Title>
+                    <FileTitle>
                         {props.data.file.name}
-                    </Title>
+                    </FileTitle>
                     <MDPage fileList={fileList}>{page.converted}</MDPage>
                 </div>
             </div>
