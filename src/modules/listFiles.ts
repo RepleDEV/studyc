@@ -6,7 +6,7 @@ interface QueryNodesResult<T> {
 
 type AllFile = QueryNodesResult<FileSystemNode>;
 
-interface SitePageNode {
+export interface SitePageNode {
   path: string;
   pageContext: Partial<{
     id: string
