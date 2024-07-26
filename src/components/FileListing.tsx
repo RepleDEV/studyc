@@ -7,7 +7,7 @@ interface FileListingProps extends React.PropsWithChildren {
 }
 export default function FileListing({ file }: FileListingProps) {
     const subject = file.path.split("/")[2];
-    const url = process.env.NODE_ENV === "development" ? file.path : `/studyc${file.path}`;
+    const url = file.path;
     
     return (
         <Link to={url} className="border-b-2 group">

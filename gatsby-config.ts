@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby"
 
 const config = {
+  pathPrefix: "/studyc/",
   plugins: [
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
