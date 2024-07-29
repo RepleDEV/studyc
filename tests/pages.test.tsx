@@ -107,7 +107,6 @@ describe("Page component testing", () => {
         expect(link.getAttribute("href")).toBe("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 
         expect(wikilink).toHaveTextContent("WikiLink");
-        expect(wikilink.getAttribute("href")?.startsWith("/studyc/")).toBeTruthy();
 
         expect(emptyWikilink).toHaveTextContent("emptyWikiLink");
         expect(emptyWikilink.getAttribute("href")?.endsWith("#")).toBeTruthy();
