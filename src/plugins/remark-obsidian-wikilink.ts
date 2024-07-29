@@ -30,7 +30,7 @@ function getLinkNode(m: RegExpExecArray, fileList: FileList) {
 	let imageUrl = wikilink.path;
 	if (process.env.NODE_ENV !== "development") {
 		// TODO: DO NOT MAKE THIS HARDCODED
-		imageUrl = `https://raw.githubusercontent.com/RepleDEV/studyc/public_beta/Images/${wikilink.link}`;
+		imageUrl = `https://raw.githubusercontent.com/RepleDEV/studyc/main/Images/${wikilink.link}`;
 	}
 
 	const rNode =
