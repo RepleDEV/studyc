@@ -7,6 +7,7 @@ const config = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sass",
     "gatsby-plugin-postcss",
+    "gatsby-plugin-pnpm",
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
