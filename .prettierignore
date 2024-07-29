@@ -1,0 +1,12 @@
+node_modules/
+__mocks__/
+.cache/
+.obsidian/
+@/
+assets/
+coverage/
+Homework/
+Notes/
+public/
+static/
+.git/

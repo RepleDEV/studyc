@@ -10,19 +10,21 @@ import obsidianWikilink from "../plugins/remark-obsidian-wikilink";
 import components from "./md_components/components";
 
 interface MDPageProps {
-    fileList: FileList;
-    children: string;
+	fileList: FileList;
+	children: string;
 }
 export default function MDPage(props: MDPageProps) {
-    return <ReactMarkdown 
-        children={props.children}
-        remarkPlugins={[
-            [obsidianWikilink, { fileList: props.fileList }],
-            obsidianBlockQuote,
-            remarkMath,
-            remarkGfm,
-        ]}
-        rehypePlugins={[rehypeMathjax]}
-        components={components}
-    />
+	return (
+		<ReactMarkdown
+			children={props.children}
+			remarkPlugins={[
+				[obsidianWikilink, { fileList: props.fileList }],
+				obsidianBlockQuote,
+				remarkMath,
+				remarkGfm,
+			]}
+			rehypePlugins={[rehypeMathjax]}
+			components={components}
+		/>
+	);
 }

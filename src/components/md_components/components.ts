@@ -7,11 +7,11 @@ import containers from "./containers";
 import list from "./list";
 
 const components: Components = {
-    ...headers,
-    ...text_variations,
-    ...table_parts,
-    ...containers,
-    ...list,
+	...headers,
+	...text_variations,
+	...table_parts,
+	...containers,
+	...list,
 };
 
 export default components;
