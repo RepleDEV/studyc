@@ -2,15 +2,19 @@
 meta: data
 tags: tag1, tag2
 ---
-# h1
-## h2
-### h3
-This is a paragraph. **This is bold**, *italic*, $$f(x)$$. 
 
-* [This is a link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-* [[testPage|WikiLink]]
-* [[emptyWikiLink]]
-* ![[img.png]]
+# h1
+
+## h2
+
+### h3
+
+This is a paragraph. **This is bold**, _italic_, $$f(x)$$.
+
+-   [This is a link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+-   [[testPage|WikiLink]]
+-   [[emptyWikiLink]]
+-   ![[img.png]]
 
 $$
 e^{i\pi} + 1 = 0

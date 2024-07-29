@@ -1,28 +1,44 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from "gatsby";
 
-module.exports = {
-  plugins: [
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sass",
-    "gatsby-plugin-postcss",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pages",
-        path: `${__dirname}/Notes`
-      }
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        "path": `${__dirname}/Images`
-      }
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {},
-    },
-  ],
+const config = {
+	pathPrefix: "/studyc/",
+	plugins: [
+		"gatsby-plugin-sharp",
+		"gatsby-transformer-sharp",
+		"gatsby-plugin-sass",
+		"gatsby-plugin-postcss",
+		"gatsby-plugin-pnpm",
+		{
+			resolve: "gatsby-plugin-react-svg",
+			options: {
+				rule: {
+					include: /assets\/svg/,
+					omitKeys: ["width", "height"],
+				},
+			},
+		},
+		{
+			resolve: "gatsby-source-filesystem",
+			options: {
+				name: "pages",
+				path: `${__dirname}/Notes`,
+			},
+		},
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {},
+		},
+	],
 } as GatsbyConfig;
+
+if (process.env.NODE_ENV === "development") {
+	config.plugins?.push({
+		resolve: "gatsby-source-filesystem",
+		options: {
+			name: "images",
+			path: `${__dirname}/Images`,
+		},
+	});
+}
+
+module.exports = config;

@@ -1,51 +1,78 @@
 import flatMap from "unist-util-flatmap";
 import Wikilink from "../modules/wikilink";
-import { FileIdentity } from "../pages/notes/{File.relativeDirectory}/{File.name}";
 import { u } from "unist-builder";
+import { FileList } from "../modules/listFiles";
 
-const wikilinkRegex = /\!*\[\[(.+)\]\]/g;
+const wikilinkRegex = /\!*\[\[(.+?)\]\]/g;
 
-export const transformHeaders = (str: any) => str.toString().toLowerCase().replace(" ", "_");
+export const transformHeaders = (str: any) =>
+	str.toString().toLowerCase().replace(" ", "_");
+
+const linkNodeGenerator = (text: string, href: string) =>
+	u("link", {
+		url: href,
+		children: [u("text", text)],
+	});
+
+function getLinkNode(m: RegExpExecArray, fileList: FileList) {
+	const fullLink = m[0];
+	const linkContent = m[1];
+	const wikilink = new Wikilink(
+		linkContent,
+		fileList,
+		fullLink.startsWith("!"),
+	);
+
+	let url = wikilink.path == wikilink.link ? "#" : wikilink.path;
+	if (wikilink.blockTarget && wikilink.link.includes("#"))
+		url += "#" + transformHeaders(wikilink.blockTarget);
+
+	let imageUrl = wikilink.path;
+	if (process.env.NODE_ENV !== "development") {
+		// TODO: DO NOT MAKE THIS HARDCODED
+		imageUrl = `https://raw.githubusercontent.com/RepleDEV/studyc/public_beta/Images/${wikilink.link}`;
+	}
+
+	const rNode =
+		wikilink.type === "page"
+			? linkNodeGenerator(wikilink.title, url)
+			: u("image", { url: imageUrl });
+	return rNode;
+}
 
 interface Options {
-    fileIdentities: FileIdentity[]
+	fileList: FileList;
 }
-export default function obsidianWikilink({ fileIdentities }: Options) {
-    return (tree: any) => {
-        let newTree = flatMap(tree, (node: any) => {
-            // console.log(node);
-            const value = node.value as string;
-            const m = wikilinkRegex.exec(value);
+export default function obsidianWikilink({ fileList }: Options) {
+	return (tree: any) => {
+		let newTree = flatMap(tree, (node: any) => {
+			const value = node.value as string;
+			let m = wikilinkRegex.exec(value);
 
-            if (!m)return [node];
+			if (!m) return [node];
 
-            const fullLink = m[0];
-            const linkContent = m[1];
-            const wikilink = new Wikilink(linkContent, fileIdentities);
-            
-            const textBeforeWikilink = value.substring(0, m.index);
-            const textAfterWikilink = value.substring(m.index + fullLink.length);
+			let lastIndex = 0;
+			const res: Record<string, unknown>[] = [];
+			while (m != null) {
+				if (m.index === wikilinkRegex.lastIndex) {
+					wikilinkRegex.lastIndex++;
+				}
 
-            let url = wikilink.path == wikilink.link ? "#" : wikilink.path;
-            if (wikilink.blockTarget && wikilink.link.includes("#"))url += "#" + transformHeaders(wikilink.blockTarget);
+				const textBeforeWikilink = value.substring(lastIndex, m.index);
+				res.push(u("text", textBeforeWikilink));
+				lastIndex = m.index + m[0].length;
 
-            const rNode = wikilink.type === "page" ? 
-                u("link", { 
-                    url: url,
-                    children: [
-                    u("text", wikilink.title)
-                ]}) :
-                u("image", { url: wikilink.path })
+				const rNode = getLinkNode(m, fileList);
+				res.push(rNode);
 
-            const res = [
-                u("text", textBeforeWikilink),
-                rNode,
-                u("text", textAfterWikilink),
-            ];
+				m = wikilinkRegex.exec(value);
+			}
+			const textAfterWikilink = value.substring(lastIndex);
+			res.push(u("text", textAfterWikilink));
 
-            return res;
-        });
+			return res;
+		});
 
-        return newTree;
-    }
+		return newTree;
+	};
 }
