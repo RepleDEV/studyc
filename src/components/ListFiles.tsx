@@ -1,14 +1,10 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import { QueryResults, FileList, processFiles, File } from "../modules/listFiles";
 import FileListing from "./FileListing";
 import Fuse from "fuse.js";
 
-let fileListCache: FileList = [];
-
 function getListOfFiles() {
-	if (fileListCache.length) return fileListCache;
-
 	const query = graphql`
 		{
 			allSitePage {
@@ -27,13 +23,14 @@ function getListOfFiles() {
 	`;
 
 	const queryRes = useStaticQuery(query) as QueryResults;
-	fileListCache = processFiles(queryRes.allFile, queryRes.allSitePage);
-	return fileListCache;
+
+	return processFiles(queryRes.allFile, queryRes.allSitePage);
 }
 
 export default function ListFiles({ searchInput }: { searchInput?: string }) {
-	let fileList = getListOfFiles();
-	fileList = fileList.sort((a, b) => a.name.localeCompare(b.name));
+	const fileList = useMemo(() => {
+		return getListOfFiles().sort((a, b) => a.name.localeCompare(b.name));
+	} , []);
 
 	const fuse = new Fuse(fileList, {
 		keys: ["name", "category"]
