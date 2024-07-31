@@ -20,8 +20,28 @@ export interface QueryResults {
 	allSitePage: AllSitePage;
 }
 
-export type ExtendedFSNode = FileSystemNode & { path: string };
-export type FileList = ExtendedFSNode[];
+export interface File {
+	id: string;
+	name: string;
+	path: string;
+	category: string;
+	base: string;
+	publicURL: string;
+}
+
+export type FileList = File[];
+
+export class File implements File {
+	constructor(file: FileSystemNode, path: string) {
+		this.id = file.id;
+		this.name = file.name;
+		this.path = path;
+		this.category = path.split("/")[2];
+
+		this.base = file.base;
+		this.publicURL = file.publicURL as string || "";
+	}
+}
 
 export function processFiles(allFile: AllFile, allSitePage: AllSitePage) {
 	const files = [] as FileList;
@@ -32,10 +52,7 @@ export function processFiles(allFile: AllFile, allSitePage: AllSitePage) {
 			(page) => page.pageContext.id == node.id,
 		);
 		if (!correspondingPage) continue;
-		files.push({
-			...node,
-			path: correspondingPage.path,
-		});
+		files.push(new File(node, correspondingPage.path));
 	}
 
 	return files;

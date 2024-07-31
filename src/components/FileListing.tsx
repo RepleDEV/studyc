@@ -1,12 +1,12 @@
 import React from "react";
-import { ExtendedFSNode } from "../modules/listFiles";
+import { File } from "../modules/listFiles";
 import { Link } from "gatsby";
 
 interface FileListingProps extends React.PropsWithChildren {
-	file: ExtendedFSNode;
+	file: File;
 }
 export default function FileListing({ file }: FileListingProps) {
-	const subject = file.path.split("/")[2];
+	const subject = file.category;
 	const url = file.path;
 
 	return (

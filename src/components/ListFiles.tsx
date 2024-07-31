@@ -1,7 +1,8 @@
 import React from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
-import { QueryResults, FileList, processFiles } from "../modules/listFiles";
+import { QueryResults, FileList, processFiles, File } from "../modules/listFiles";
 import FileListing from "./FileListing";
+import Fuse from "fuse.js";
 
 let fileListCache: FileList = [];
 
@@ -34,14 +35,14 @@ export default function ListFiles({ searchInput }: { searchInput?: string }) {
 	let fileList = getListOfFiles();
 	fileList = fileList.sort((a, b) => a.name.localeCompare(b.name));
 
+	const fuse = new Fuse(fileList, {
+		keys: ["name", "category"]
+	});
+	const searchResults = searchInput ? fuse.search(searchInput).map((v) => v.item) : fileList;
+
 	return (
 		<div className="flex flex-1 flex-col pt-3 px-3 overflow-y-scroll">
-			{fileList.map((file) => {
-				if (
-					searchInput &&
-					!file.name.toLowerCase().includes(searchInput.toLowerCase())
-				)
-					return;
+			{searchResults.map((file) => {
 				return <FileListing file={file} key={file.id} />;
 			})}
 		</div>
