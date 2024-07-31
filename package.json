@@ -17,6 +17,7 @@
 		"buffer": "^6.0.3",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.0.0",
+		"fuse.js": "^7.0.0",
 		"gatsby": "^5.13.7",
 		"gatsby-plugin-pnpm": "^1.2.10",
 		"gatsby-plugin-sass": "^6.13.1",
