@@ -47,7 +47,7 @@ export default function ListFiles({ searchInput }: { searchInput?: string }) {
 				<span className="basis-32">Last Update</span>
 				<span className="ml-auto">Subject</span>
 			</div>
-			<div className="flex flex-1 flex-col pt-3 py-3 overflow-y-scroll">
+			<div className="flex flex-1 flex-col pb-3 overflow-y-scroll">
 				{searchResults.map((file) => {
 					return <FileListing file={file} key={file.id} />;
 				})}
