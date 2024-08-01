@@ -1,4 +1,5 @@
 import type { FileSystemNode } from "gatsby-source-filesystem";
+import moment from "moment";
 
 interface QueryNodesResult<T> {
 	nodes: T[];
@@ -27,6 +28,7 @@ export interface File {
 	category: string;
 	base: string;
 	publicURL: string;
+	lastModified: moment.Moment;
 }
 
 export type FileList = File[];
@@ -40,6 +42,12 @@ export class File implements File {
 
 		this.base = file.base;
 		this.publicURL = file.publicURL as string || "";
+
+		const fields = file.fields as Record<string, unknown>
+
+		if (fields && fields.lastModified) {
+			this.lastModified = moment(fields.lastModified as number);
+		}
 	}
 }
 

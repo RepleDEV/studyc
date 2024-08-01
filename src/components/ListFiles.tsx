@@ -17,6 +17,9 @@ function getListOfFiles() {
 				nodes {
 					id
 					name
+					fields {
+						lastModified
+					}
 				}
 			}
 		}
