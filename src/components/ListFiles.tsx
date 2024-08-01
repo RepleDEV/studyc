@@ -31,14 +31,17 @@ function getListOfFiles() {
 }
 
 export default function ListFiles({ searchInput }: { searchInput?: string }) {
-	const fileList = useMemo(() => {
-		return getListOfFiles().sort((a, b) => a.name.localeCompare(b.name));
+	const fileList = getListOfFiles();
+
+	const searchResult = useMemo(() => {
+		fileList.sort((a, b) => a.name.localeCompare(b.name));
+
+		const fuse = new Fuse(fileList, {
+			keys: ["name", "category"]
+		});
+		return searchInput ? fuse.search(searchInput).map((v) => v.item) : fileList;
 	} , []);
 
-	const fuse = new Fuse(fileList, {
-		keys: ["name", "category"]
-	});
-	const searchResults = searchInput ? fuse.search(searchInput).map((v) => v.item) : fileList;
 
 	return (
 		<>
@@ -48,7 +51,7 @@ export default function ListFiles({ searchInput }: { searchInput?: string }) {
 				<span className="ml-auto">Subject</span>
 			</div>
 			<div className="flex flex-1 flex-col pb-3 overflow-y-scroll">
-				{searchResults.map((file) => {
+				{searchResult.map((file) => {
 					return <FileListing file={file} key={file.id} />;
 				})}
 			</div>
