@@ -20,7 +20,7 @@ For the coefficients form the **pascal's triangle**. A triangle that is formed w
 * 1 6 15 20 15 6 1
 Any number in this triangle is the sum of the two numbers above it, and these numbers forms the coefficient for the $k$'th term of the binomial expansion.
 
-The formula for the $k$'th term of the expansion is actually the [[Combinations & Permutations#]].
+The formula for the $k$'th term of the expansion is actually part of the [[Combinations & Permutations]].
 $$
 ^{n}C_{k}={n\choose k}=\frac{n!}{(n-k)!\times k!}
 $$
