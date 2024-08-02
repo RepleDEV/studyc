@@ -29,7 +29,7 @@ Integrating Hooke's law with respect to its extension, we get:
 $$
 \begin{align*}
 EPE &= \int F \space d\Delta l\\
-&= \int k\Delta x \space d\Delta l\\
+&= \int k\Delta l \space d\Delta l\\
 &=\frac{1}{2}k\Delta l^2
 \end{align*}
 $$

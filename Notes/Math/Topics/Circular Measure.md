@@ -13,8 +13,15 @@ This is called an **arc**, which is a section of the circumference of a circle. 
 $$
 L=\theta r
 $$
-> [!info]
-> From this we could also deduce the fact that the perimeter is the length times the angle of a full circle: $2\pi$.
+## Arc length with an integral
+Given the equation $r = c$ where $c$ is a constant, we can calculate arc lengths with the integral of an arc length in polar coordinates.
+$$
+L = \int_0^\theta \sqrt{r^2 + {\frac{dr}{d\theta}}^2}d\theta
+$$
+Since $r$ is a constant, $\frac{dr}{d\theta} = 0$, as such, the integral simplifies to:
+$$
+L = \int_0^\theta rd\theta=[r\theta]_0^\theta=\theta r
+$$
 ## Sector
 The same could also be done for the area of a part of a circle.
 $$
@@ -25,14 +32,6 @@ A_{sec} &= \frac{\theta}{2\pi}\times A\\
 \end{align*}
 $$
 This area is called a **sector** of a circle (for $\theta$ radians).
->[!info]
->One other thing I noticed is that:
->$$
->\begin{align*}
->A_{sec} &= \int L \space dr\\
->&= \int \theta r \space dr
->\end{align*}
->$$
 ## Chord
 A chord is the line that connects two points that sits at any point in a circle (where the resulting line isn't the diameter). The length of a chord can be thought as the length of the base of an isosceles triangle with side lengths $r$.
 ![[Pasted image 20230814194748.png]]
