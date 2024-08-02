@@ -62,8 +62,8 @@ Functions can also be **transformed**, it can be:
 Function translation is where the function is moved across the two axes.
 $$
 \begin{align*}
-f(x + 1) &\rightarrow \text{translate towards negative $x$}\\
-f(x) + 1 &\rightarrow \text{translate towards positive $y$}
+f(x + c) &\rightarrow \text{translate towards negative $x$}\\
+f(x) + c &\rightarrow \text{translate towards positive $y$}
 \end{align*}
 $$
 > [!warning]
