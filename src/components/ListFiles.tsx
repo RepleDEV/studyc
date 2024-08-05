@@ -40,7 +40,7 @@ export default function ListFiles({ searchInput }: { searchInput?: string }) {
 			keys: ["name", "category"]
 		});
 		return searchInput ? fuse.search(searchInput).map((v) => v.item) : fileList;
-	} , []);
+	} , [searchInput]);
 
 
 	return (
