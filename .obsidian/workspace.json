@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "d763583c79b41d61",
+        "id": "7dfb97c486363326",
         "type": "tabs",
         "children": [
           {
-            "id": "73e22c6243063065",
+            "id": "307b57ca8a22c998",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Vectors.md",
+                "file": "Notes/Math/Topics/Integration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "704da3c5dc6b1209",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Math/Topics/Binomial Expansion.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +62,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Vectors.md",
+                "file": "Notes/Math/Topics/Binomial Expansion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Vectors.md",
+                "file": "Notes/Math/Topics/Binomial Expansion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Vectors.md"
+                "file": "Notes/Math/Topics/Binomial Expansion.md"
               }
             }
           },
@@ -138,7 +151,7 @@
             }
           },
           {
-            "id": "f8882255733643e8",
+            "id": "88074ecd349f34bf",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -169,54 +182,54 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "73e22c6243063065",
+  "active": "704da3c5dc6b1209",
   "lastOpenFiles": [
-    "Notes/Math/Topics/Variance & Standard Deviation.md",
-    "Notes/Math/Topics/Trigonometry.md",
-    "Notes/Math/Topics/Stem & Leaf diagram.md",
-    "Notes/Math/Topics/Statistics Intro.md",
-    "Notes/Math/Topics/Sequences and Series.md",
-    "Notes/Math/Topics/Quadratics.md",
-    "Notes/Math/Topics/Pythagorean Theorem.md",
-    "Notes/Math/Topics/Probability.md",
-    "Notes/Math/Topics/Polynomial Identities.md",
-    "Notes/Math/Topics/Linear Functions.md",
-    "Notes/Math/Topics/Integration.md",
-    "Notes/Physics/Topics/Waves.md",
-    "Notes/Chemistry/Topics/Atoms.md",
-    "Notes/Math/Topics/Histograms.md",
-    "Notes/Math/Topics/Functions.md",
-    "Notes/Math/Topics/Factorizing Polynomials.md",
-    "Notes/Math/Topics/Factorial.md",
     "Notes/Math/Topics/Exponentiation Rules.md",
-    "Notes/Math/Topics/Differentiation.md",
-    "Notes/Math/Topics/Coordinate Geometry.md",
-    "Notes/Math/Topics/Combinations & Permutations.md",
-    "Notes/Math/Topics/Circular Measure.md",
-    "Notes/Math/Topics/Central Tendency.md",
     "Notes/Math/Topics/Binomial Expansion.md",
-    "Notes/Math/Topics/Angles.md",
-    "Notes/Math/Topics/Absolute Functions.md",
+    "tests/modules/FSNodeFactory.ts",
+    "tests/modules/SPNFactory.ts",
+    "tests/modules",
+    "src/components/md_components/list.tsx",
+    "src/components/md_components/text_variations.tsx",
+    "src/components/md_components/table_parts.tsx",
+    "src/components/md_components/components.ts",
+    "src/components/md_components/headers.tsx",
+    "src/components/md_components/containers.tsx",
+    "src/components/md_components",
+    "public/static/f8ff45d2db98a818f49ae04f2c81fba8/Physics.md",
+    "public/static/f3c5f018e9ca19afec872a43a3a1049c/Work & Power.md",
+    "public/static/f1f2f8c49c3b0d8ed7464410de4138be/Vectors.md",
+    "public/static/e972acd6123dd654336a5212eb8545a9/Kirchhoff's Law & DC Circuits.md",
+    "public/static/e4760ab24354a9d6f5e19c8af7df80e1/Combinations & Permutations.md",
+    "public/static/e16cea2c5aeb504231118004bc4b6fc4/Linear Functions.md",
+    "public/static/dff2eb1aa7ed9b9f62668b6ee34aecbb/Differentiation.md",
+    "public/static/d41d8cd98f00b204e9800998ecf8427e/Chemistry.md",
+    "public/static/d4024c93a0ffc07af98cb6b6fc710b82/Masses of Atoms.md",
+    "public/static/cdab9ca76c79fd70aaf22d05e0fa458d/Trigonometry.md",
+    "public/static/cb87db08e7b083888a7cb0c6b8b3306a/Angles.md",
+    "public/static/c8f732c84696192dfff35889307758ac/Scalars and Vectors.md",
+    "public/static/c8a59921eb622ff7e7f6b947406f52ca/Reversible Reactions.md",
+    "public/static/c0ead328fa16b105beb8db8fd860747b/Partial Pressures.md",
+    "public/static/bc02e3d43ab5a18c4f8de04aac979bca/Central Tendency.md",
+    "public/static/bfb69411340f710162730d7d372261b5/Circular Measure.md",
+    "public/static/b905774978981686e876b9d618ffb717/Errors and Uncertainties.md",
+    "public/static/b161e49b298672ed8644fd750b1dae9d/Statistics Intro.md",
+    "public/static/a70a4812776ae0530100d3e92101fe0f/Chemical Formulas.md",
+    "public/static/a2549d38e13f9ed70e2db2eb27d17d4a/Chemical Equations.md",
+    "public/static/a14e1ff5122943f4b510be3d9af87a23/Functional Groups.md",
+    "public/static/92e4cee3c4ec4590b0e67bb0be9ee684/Factorizing Polynomials.md",
+    "public/static/99cc0fac90a89977efc4fa331e9aa696/Density and Pressure.md",
+    "public/static/8fdf0b76a239d41984776b90f9179818/Momentum.md",
+    "assets/svg/sigma.svg",
+    "assets/svg/question_mark.svg",
     "Images/Pasted image 20240211213004.png",
     "Images/Pasted image 20231122113221.png",
-    "tests/wikilink.test.ts",
-    "tests/pages.test.tsx",
-    "tests/md_parser.test.ts",
-    "tests",
-    "src/plugins/remark-obsidian-blockquote.ts",
-    "setup-test-env.js",
-    "loadershim.js",
-    "jest.config.js",
-    "jest-preprocess.js",
-    "__mocks__/file-mock.js",
     "Images/Pasted image 20230906122737.png",
     "Images/Pasted image 20230823150608.png",
     "Images/Pasted image 20230823150408.png",
     "Images/Pasted image 20230823145700.png",
     "Images/Pasted image 20230823145648.png",
     "Images/Pasted image 20230815091954.png",
-    "Images/Pasted image 20230815091849.png",
-    "Images/Pasted image 20230815091539.png",
     "Untitled.canvas"
   ]
 }
