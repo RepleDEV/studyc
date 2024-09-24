@@ -30,3 +30,16 @@ $$
  {n \choose k}a^{n-k}\times b^k
 }
 $$
+## General Binomial Expansion
+Given a binomial $f(x)$ defined as:
+$$
+f(x) = (1+x)^n
+$$
+Where $n \in \mathbb{R}$. The expansion of $f$ will be:
+$$
+f(x) = 1 + nx + \frac{n}{2!}x+\frac{n(n-1)}{3!} + \dots
+$$
+In general:
+$$
+(1+x)^n = \sum_{i=0}^{\infty}{\frac{\prod_{j=0}^{i}{(n-j)}}{i!}x^i}
+$$
