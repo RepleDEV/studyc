@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a45b6b0ad97f8359",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Math/Topics/Binomial Expansion.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -182,10 +194,24 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "704da3c5dc6b1209",
+  "active": "a45b6b0ad97f8359",
   "lastOpenFiles": [
-    "Notes/Math/Topics/Exponentiation Rules.md",
+    "Notes/Math/Topics/Probability.md",
+    "Notes/Math/Topics/Quadratics.md",
+    "Notes/Math/Topics/Statistics Intro.md",
+    "Notes/Math/Topics/Polynomial Identities.md",
+    "Notes/Physics/Topics/Errors and Uncertainties.md",
+    "Notes/Physics/Topics/Electromagnetic Waves.md",
+    "Notes/Physics/Topics/Momentum.md",
+    "Notes/Chemistry/Topics/Stoichiometry.md",
+    "Notes/Chemistry/Topics/Reversible Reactions.md",
+    "Notes/Chemistry/Topics/Functional Groups.md",
+    "Notes/Chemistry/Topics/Chemical Bonding.md",
+    "Notes/Math/Topics/Integration.md",
+    "Notes/Chemistry/Topics/Chemical Formulas.md",
+    "public/static/19eff014c2de47202a786f0bdd100afa/Electromagnetic Waves.md",
     "Notes/Math/Topics/Binomial Expansion.md",
+    "Notes/Math/Topics/Exponentiation Rules.md",
     "tests/modules/FSNodeFactory.ts",
     "tests/modules/SPNFactory.ts",
     "tests/modules",
@@ -206,20 +232,6 @@
     "public/static/d41d8cd98f00b204e9800998ecf8427e/Chemistry.md",
     "public/static/d4024c93a0ffc07af98cb6b6fc710b82/Masses of Atoms.md",
     "public/static/cdab9ca76c79fd70aaf22d05e0fa458d/Trigonometry.md",
-    "public/static/cb87db08e7b083888a7cb0c6b8b3306a/Angles.md",
-    "public/static/c8f732c84696192dfff35889307758ac/Scalars and Vectors.md",
-    "public/static/c8a59921eb622ff7e7f6b947406f52ca/Reversible Reactions.md",
-    "public/static/c0ead328fa16b105beb8db8fd860747b/Partial Pressures.md",
-    "public/static/bc02e3d43ab5a18c4f8de04aac979bca/Central Tendency.md",
-    "public/static/bfb69411340f710162730d7d372261b5/Circular Measure.md",
-    "public/static/b905774978981686e876b9d618ffb717/Errors and Uncertainties.md",
-    "public/static/b161e49b298672ed8644fd750b1dae9d/Statistics Intro.md",
-    "public/static/a70a4812776ae0530100d3e92101fe0f/Chemical Formulas.md",
-    "public/static/a2549d38e13f9ed70e2db2eb27d17d4a/Chemical Equations.md",
-    "public/static/a14e1ff5122943f4b510be3d9af87a23/Functional Groups.md",
-    "public/static/92e4cee3c4ec4590b0e67bb0be9ee684/Factorizing Polynomials.md",
-    "public/static/99cc0fac90a89977efc4fa331e9aa696/Density and Pressure.md",
-    "public/static/8fdf0b76a239d41984776b90f9179818/Momentum.md",
     "assets/svg/sigma.svg",
     "assets/svg/question_mark.svg",
     "Images/Pasted image 20240211213004.png",

@@ -43,3 +43,21 @@ In general:
 $$
 (1+x)^n = \sum_{i=0}^{\infty}{\frac{\prod_{j=0}^{i}{(n-j)}}{i!}x^i}
 $$
+Given that $n$ is a positive integer.
+## Binomial Formula Generalization
+The binomial expansion formula can be generalized for all rational $n$ with a [[Maclaurin Series]] where: 
+$$
+f(x) = (1+x)^n
+$$
+We can see it's first derivative results in:
+$$
+f'(x) = n(1+x)^{n-1}
+$$
+And it's successive derivative continues the [[Notes/Math/Topics/Differentiation#Power rule|power rule]], giving:
+$$
+f^{(k)}(x) = \left[n(n-1)(n-2)\dots(n-k)\right](1+x)^{n-k}
+$$
+Giving:
+$$
+(1+x)^n=1+nx+\frac{n(n-1)}{2!}x^2+\frac{n(n-1)(n-2)}{3!}+\dots
+$$
