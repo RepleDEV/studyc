@@ -30,4 +30,21 @@ $$
 ### Polarizing filter on unpolarized waves
 On unpolarized waves, the waves will pass through and be polarized to the direction of the polarized filter. The intensity of the wave will be decreased by **half** of its original intensity.
 ## Diffraction
-Electromagnetic waves when passing through a tiny slit or aperture goes through a phenomenon called **diffraction**, in that the waves *diffract* outwards after passing through the slit. The tinier the slit, the more the waves diffract.
+Electromagnetic waves when passing through a tiny slit or aperture goes through a phenomenon called **diffraction**, in that the waves *diffract* outwards after passing through the slit. The tinier the slit, the more the waves diffract. This is analogous to circular waves being created when a body of water is disturbed. When multiple slits are present, the waves *interfere* with each other, creating both destructive and constructive interference. This way, when a screen is put up, a *diffraction pattern* emerges, alternating between **dark** and **bright** fringes. 
+
+The equation that relates all of diffraction is:
+$$
+\frac{ax}{D}=n\lambda
+$$
+Where:
+* $a$: size of the slits
+* $x$: distance between adjacent fringes of the same type (either both dark or both bright)
+* $D$: distance between the slit and the screen
+* $n$: the $n$'th (bright) fringe
+* $\lambda$: the wavelength of the light
+
+Also know that:
+$$
+\sin(\theta)=\frac{x}{D}
+$$
+Where $\theta$ is the angle from the slit to the first bright fringe.
