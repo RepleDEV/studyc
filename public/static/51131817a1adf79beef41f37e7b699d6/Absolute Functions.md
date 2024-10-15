@@ -6,7 +6,7 @@ x & \text{if} & x \geq 0 \\
 -x & \text{if} & x < 0
 \end{cases}
 $$
-Simply put, given any input $x$, $|x|$ will **always** output the positive sign of $x$. 
+Simply put, given any input $x$, $|x|$ will **always** output the positive sign of $x$. Another way of describing the absolute function is that it gives the distance of any number from the origin.
 ## Equations
 From this, we can deduce that: $|x| = c$ (where both $x$ and $c$ are real numbers) will have two solutions $x =\pm c$. This is true for any $x$. 
 
@@ -32,5 +32,5 @@ $$
 $$
 and
 $$
-|a| \geq b \Leftrightarrow a \geq b \text{ or } a \leq b
+|a| \geq b \Leftrightarrow a \geq b \text{ or } a \leq -b
 $$
