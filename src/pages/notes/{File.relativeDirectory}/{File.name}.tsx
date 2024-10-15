@@ -26,17 +26,12 @@ export default function Page(props: PageProps) {
     const fileList = processFiles(props.data.allFile, props.data.allSitePage);
     const page = new MDPageParser(content);
 
-    const [get_searchInput, set_searchInput] = useState("");
-
     return (
         <Layout>
             <div className="flex flex-[0_0_200px]">
                 <Title>StudyC</Title>
             </div>
             <div className="flex flex-1 flex-col overflow-y-auto overflow-x-clip">
-                <div className="h-[58px]">
-                    Test
-                </div>
                 <div className="pt-5 flex flex-1 flex-col overflow-y-auto overflow-x-clip">
                     <FileTitle>
                         {props.data.file.name}
