@@ -1,1 +1,0 @@
-Physical quantities represent the **measurable** properties of an object. A physical quantity consists of a **numerical magnitude and a [[SI Units|unit]]**.

@@ -34,7 +34,9 @@ export default function Page(props: PageProps) {
                 <Title>StudyC</Title>
             </div>
             <div className="flex flex-1 flex-col overflow-y-auto overflow-x-clip">
-                <SearchBar onInput={set_searchInput} placeholder="Search in file"/>
+                <div className="h-[58px]">
+                    Test
+                </div>
                 <div className="pt-5 flex flex-1 flex-col overflow-y-auto overflow-x-clip">
                     <FileTitle>
                         {props.data.file.name}
