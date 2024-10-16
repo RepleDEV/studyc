@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md",
+                "file": "Notes/Math/Topics/Factor & Remainder Theorem.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md",
+                "file": "Notes/Math/Topics/Factor & Remainder Theorem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md",
+                "file": "Notes/Math/Topics/Factor & Remainder Theorem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md"
+                "file": "Notes/Math/Topics/Factor & Remainder Theorem.md"
               }
             }
           },
@@ -196,10 +196,28 @@
   },
   "active": "a45b6b0ad97f8359",
   "lastOpenFiles": [
+    "public/static/ceaec026cc4f0deb56d01a08c52ada8b/Gravity.md",
+    "public/static/ceaec026cc4f0deb56d01a08c52ada8b",
+    "public/static/c9c37baed78914913dc7d8f3fdacca7b/Circular Motion.md",
+    "public/static/c9c37baed78914913dc7d8f3fdacca7b",
+    "public/static/ad0fe67e53915ff6df863ad78aa82b3f/Binomial Expansion.md",
+    "public/static/ad0fe67e53915ff6df863ad78aa82b3f",
+    "public/static/8ba3683a94382d4100a2d48aeb522bcc/Factor & Remainder Theorem.md",
+    "public/static/8ba3683a94382d4100a2d48aeb522bcc",
+    "public/static/51131817a1adf79beef41f37e7b699d6/Absolute Functions.md",
+    "public/static/51131817a1adf79beef41f37e7b699d6",
+    "public/static/440d7ee493cc739a1e77e1c537fa4f09/Thermodynamics.md",
+    "public/static/440d7ee493cc739a1e77e1c537fa4f09",
+    "public/page-data/notes/physics/topics/thermodynamics/page-data.json",
+    "public/page-data/notes/physics/topics/thermodynamics",
+    "public/page-data/notes/math/topics/factor-and-remainder-theorem/page-data.json",
+    "public/page-data/notes/math/topics/factor-and-remainder-theorem",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Math/Topics/Polynomial Identities.md",
+    "Notes/Math/Topics/Binomial Expansion.md",
     "Notes/Math/Topics/Probability.md",
     "Notes/Math/Topics/Quadratics.md",
     "Notes/Math/Topics/Statistics Intro.md",
-    "Notes/Math/Topics/Polynomial Identities.md",
     "Notes/Physics/Topics/Errors and Uncertainties.md",
     "Notes/Physics/Topics/Electromagnetic Waves.md",
     "Notes/Physics/Topics/Momentum.md",
@@ -210,28 +228,10 @@
     "Notes/Math/Topics/Integration.md",
     "Notes/Chemistry/Topics/Chemical Formulas.md",
     "public/static/19eff014c2de47202a786f0bdd100afa/Electromagnetic Waves.md",
-    "Notes/Math/Topics/Binomial Expansion.md",
     "Notes/Math/Topics/Exponentiation Rules.md",
-    "tests/modules/FSNodeFactory.ts",
-    "tests/modules/SPNFactory.ts",
-    "tests/modules",
-    "src/components/md_components/list.tsx",
-    "src/components/md_components/text_variations.tsx",
-    "src/components/md_components/table_parts.tsx",
-    "src/components/md_components/components.ts",
-    "src/components/md_components/headers.tsx",
-    "src/components/md_components/containers.tsx",
-    "src/components/md_components",
     "public/static/f8ff45d2db98a818f49ae04f2c81fba8/Physics.md",
     "public/static/f3c5f018e9ca19afec872a43a3a1049c/Work & Power.md",
     "public/static/f1f2f8c49c3b0d8ed7464410de4138be/Vectors.md",
-    "public/static/e972acd6123dd654336a5212eb8545a9/Kirchhoff's Law & DC Circuits.md",
-    "public/static/e4760ab24354a9d6f5e19c8af7df80e1/Combinations & Permutations.md",
-    "public/static/e16cea2c5aeb504231118004bc4b6fc4/Linear Functions.md",
-    "public/static/dff2eb1aa7ed9b9f62668b6ee34aecbb/Differentiation.md",
-    "public/static/d41d8cd98f00b204e9800998ecf8427e/Chemistry.md",
-    "public/static/d4024c93a0ffc07af98cb6b6fc710b82/Masses of Atoms.md",
-    "public/static/cdab9ca76c79fd70aaf22d05e0fa458d/Trigonometry.md",
     "assets/svg/sigma.svg",
     "assets/svg/question_mark.svg",
     "Images/Pasted image 20240211213004.png",
