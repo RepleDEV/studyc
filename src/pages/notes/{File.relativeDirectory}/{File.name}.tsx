@@ -31,6 +31,7 @@ export default function Page(props: PageProps) {
             <div className="flex flex-[0_0_200px]">
                 <Title>StudyC</Title>
             </div>
+            <div className="flex bg-gray-400 h-[88%] mx-2 flex-[0_0_2px] self-center" />
             <div className="flex flex-1 flex-col overflow-y-auto overflow-x-clip">
                 <div className="pt-5 flex flex-1 flex-col overflow-y-auto overflow-x-clip">
                     <FileTitle>

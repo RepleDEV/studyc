@@ -16,6 +16,7 @@ function App(): React.ReactNode {
 					please suggest a better name for this project.
 				</div>
 			</div>
+            <div className="flex bg-gray-400 h-[65%] mx-2 flex-[0_0_2px] self-center" />
 			<div className="flex flex-1 flex-col">
 				<SearchBar onInput={set_searchInput} />
 				<ListFiles searchInput={get_searchInput} />
