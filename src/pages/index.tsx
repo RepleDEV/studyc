@@ -9,7 +9,7 @@ function App(): React.ReactNode {
 
 	return (
 		<Layout>
-			<div className="hidden md:flex flex-col flex-[0_0_200px">
+			<div className="hidden md:flex flex-col flex-[0_0_200px]">
 				<Title>StudyC</Title>
 				<div className="mt-auto mb-3 pr-3 leading-4">
 					studyc made by sesa.<br/><br/>
