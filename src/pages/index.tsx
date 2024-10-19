@@ -18,6 +18,7 @@ function App(): React.ReactNode {
 			</div>
             <div className="hidden md:flex bg-gray-400 h-[65%] mx-2 flex-[0_0_2px] self-center" />
 			<div className="flex flex-1 flex-col">
+				<Title className="md:hidden mb-5">StudyC</Title>
 				<SearchBar onInput={set_searchInput} />
 				<ListFiles searchInput={get_searchInput} />
 			</div>
