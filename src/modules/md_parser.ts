@@ -18,7 +18,7 @@ export default class MDPageParser {
 	 * Checks if math enclosings ($$) have \n or <space> on either side & adds it when necessary
 	 */
 	fixMathEnclosing() {
-		const regex = /(?<!\n| )\$\$|\$\$(?!\n| )/g;
+		const regex = /(?<!\n)\$\$|\$\$(?!\n)/g;
 		let text = this.converted
 		let m = regex.exec(text);
 
@@ -27,13 +27,15 @@ export default class MDPageParser {
 				regex.lastIndex++;
 			}
 
-			let index = m.index;
+			let l = m.index;
+			let r = m.index + 1;
 
-			// Checks if front side has newline
-			if (this.converted[m.index] == "\n")
-				index += 2
+			if (text[l - 1] == "\n")
+				l -= 1;
+			if (text[r + 1] == "\n")
+				r += 1;
 
-			this.converted = this.converted.slice(0, index) + "\n" + this.converted.slice(index);
+			this.converted = this.converted.slice(0, l) + "\n$$\n" + this.converted.slice(r + 1);
 			
 			text = this.converted
 			m = regex.exec(text);
