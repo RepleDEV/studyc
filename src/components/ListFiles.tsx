@@ -47,7 +47,7 @@ export default function ListFiles({ searchInput }: { searchInput?: string }) {
 		<>
 			<div className="flex py-3 flex-row border-b-2 font-semibold">
 				<span className="basis-2/5">File name</span>
-				<span className="basis-32">Last Update</span>
+				<span className="hidden md:block basis-32">Last Update</span>
 				<span className="ml-auto">Subject</span>
 			</div>
 			<div className="flex flex-1 flex-col pb-3 overflow-y-scroll">
