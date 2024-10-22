@@ -8,9 +8,10 @@ const containers: Components = {
 		return (
 			<blockquote
 				className={`
-                bg-purple-200 p-5 rounded-xl mt-5 
+                bg-green-100 p-5 rounded-xl mt-5 
                 data-[type=warning]:bg-yellow-100
                 data-[type=done]:bg-green-100
+				data-[type=info]:bg-light_blue
                 `}
 				{...props}
 			>
