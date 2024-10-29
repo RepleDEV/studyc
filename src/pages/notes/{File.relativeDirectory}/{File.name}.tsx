@@ -26,16 +26,14 @@ export default function Page(props: PageProps) {
     const fileList = processFiles(props.data.allFile, props.data.allSitePage);
     const page = new MDPageParser(content);
 
-    const [get_searchInput, set_searchInput] = useState("");
-
     return (
         <Layout>
-            <div className="flex flex-[0_0_200px]">
+            <div className="hidden md:flex flex-[0_0_200px]">
                 <Title>StudyC</Title>
             </div>
+            <div className="hidden md:flex bg-gray-400 h-[88%] mr-4 flex-[0_0_2px] self-center" />
             <div className="flex flex-1 flex-col overflow-y-auto overflow-x-clip">
-                <SearchBar onInput={set_searchInput} placeholder="Search in file"/>
-                <div className="pt-5 flex flex-1 flex-col overflow-y-auto overflow-x-clip">
+                <div className="pt-5 pb-14 flex flex-1 flex-col overflow-y-auto overflow-x-clip">
                     <FileTitle>
                         {props.data.file.name}
                     </FileTitle>

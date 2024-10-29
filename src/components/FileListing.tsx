@@ -15,7 +15,7 @@ export default function FileListing({ file }: FileListingProps) {
 				<span className="basis-2/5 font-medium overflow-ellipsis group-hover:translate-x-2 transition-transform">
 					{file.name}
 				</span>
-				<span className="basis-32 overflow-ellipsis text-gray-500">
+				<span className="hidden md:block basis-32 overflow-ellipsis text-gray-500">
 					{file.lastModified.fromNow()}
 				</span>
 				<span className="ml-auto text-gray-500">{subject}</span>
