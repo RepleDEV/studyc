@@ -7,12 +7,9 @@ $$
 y=mx+b 
 $$
 ## Point-slope form
-
-^9104a2
-
 In this form, $m$ is the slope, and $(a, b)$ is a point the line passes through.
 $$ y-b=m(x-a) $$
-This can be thought of as $y=mx+b$ where the graph $y$ is translated $a$ units to the right, and $b$ units vertically.
+The origins of this form come from a [[Notes/Math/Topics/Functions#Translation|function translation]] where the function is translated to $(a, b)$ 
 ## Standard form
 $$ax+by=c$$
 Here, the slope is:

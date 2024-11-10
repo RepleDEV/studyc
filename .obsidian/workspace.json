@@ -16,7 +16,9 @@
                 "file": "Notes/Math/Topics/Integration.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Integration"
             }
           },
           {
@@ -25,10 +27,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md",
+                "file": "Notes/Math/Topics/Angles.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Angles"
+            }
+          },
+          {
+            "id": "5f790e6f35f38dd8",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
@@ -51,8 +65,10 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "byModifiedTime"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -67,7 +83,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -75,14 +93,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 268
+    "width": 344
   },
   "right": {
     "id": "99e9bea6891297dc",
@@ -98,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md",
+                "file": "Notes/Math/Topics/Coordinate Geometry.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +126,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Coordinate Geometry"
             }
           },
           {
@@ -115,10 +137,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md",
+                "file": "Notes/Math/Topics/Coordinate Geometry.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Coordinate Geometry"
             }
           },
           {
@@ -129,7 +153,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -138,8 +164,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md"
-              }
+                "file": "Notes/Math/Topics/Coordinate Geometry.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Coordinate Geometry"
             }
           },
           {
@@ -147,7 +175,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -159,7 +189,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ],
@@ -184,8 +216,32 @@
   },
   "active": "704da3c5dc6b1209",
   "lastOpenFiles": [
-    "Notes/Math/Topics/Exponentiation Rules.md",
-    "Notes/Math/Topics/Binomial Expansion.md",
+    "Notes/Math/Topics/Trigonometry.md",
+    "Notes/Math/Topics/Functions.md",
+    "Notes/Math/Topics/Integration.md",
+    "Notes/Math/Topics/Angles.md",
+    "Notes/Math/Topics/Circular Measure.md",
+    "Notes/Math/Topics/Linear Functions.md",
+    "Notes/Math/Topics/Coordinate Geometry.md",
+    "public/static/dff2eb1aa7ed9b9f62668b6ee34aecbb/Differentiation.md",
+    "public/static/80fdf70a4ba33f181391d6ae846ffd7f/Coordinate Geometry.md",
+    "Notes/Math/Topics/Probability.md",
+    "Notes/Math/Topics/Quadratics.md",
+    "Notes/Math/Topics/Differentiation.md",
+    "Notes/Math/Topics/Absolute Functions.md",
+    "Notes/Physics/Topics/Circular Motion.md",
+    "Notes/English/English.md",
+    "Notes/Chemistry/Topics/Atoms.md",
+    "Notes/Physics/Topics/Gravity.md",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Math/Topics/Combinations & Permutations.md",
+    "Notes/Physics/Topics/Density and Pressure.md",
+    "Notes/Physics/Topics/Kirchhoff's Law & DC Circuits.md",
+    "Notes/Physics/Topics/Kinematics.md",
+    "Notes/Physics/Topics/Errors and Uncertainties.md",
+    "Notes/Physics/Topics/Energy.md",
+    "Notes/Physics/Topics/Electromagnetic Waves.md",
+    "Notes/Physics/Topics/Electricity & Resistivity.md",
     "tests/modules/FSNodeFactory.ts",
     "tests/modules/SPNFactory.ts",
     "tests/modules",
@@ -196,30 +252,6 @@
     "src/components/md_components/headers.tsx",
     "src/components/md_components/containers.tsx",
     "src/components/md_components",
-    "public/static/f8ff45d2db98a818f49ae04f2c81fba8/Physics.md",
-    "public/static/f3c5f018e9ca19afec872a43a3a1049c/Work & Power.md",
-    "public/static/f1f2f8c49c3b0d8ed7464410de4138be/Vectors.md",
-    "public/static/e972acd6123dd654336a5212eb8545a9/Kirchhoff's Law & DC Circuits.md",
-    "public/static/e4760ab24354a9d6f5e19c8af7df80e1/Combinations & Permutations.md",
-    "public/static/e16cea2c5aeb504231118004bc4b6fc4/Linear Functions.md",
-    "public/static/dff2eb1aa7ed9b9f62668b6ee34aecbb/Differentiation.md",
-    "public/static/d41d8cd98f00b204e9800998ecf8427e/Chemistry.md",
-    "public/static/d4024c93a0ffc07af98cb6b6fc710b82/Masses of Atoms.md",
-    "public/static/cdab9ca76c79fd70aaf22d05e0fa458d/Trigonometry.md",
-    "public/static/cb87db08e7b083888a7cb0c6b8b3306a/Angles.md",
-    "public/static/c8f732c84696192dfff35889307758ac/Scalars and Vectors.md",
-    "public/static/c8a59921eb622ff7e7f6b947406f52ca/Reversible Reactions.md",
-    "public/static/c0ead328fa16b105beb8db8fd860747b/Partial Pressures.md",
-    "public/static/bc02e3d43ab5a18c4f8de04aac979bca/Central Tendency.md",
-    "public/static/bfb69411340f710162730d7d372261b5/Circular Measure.md",
-    "public/static/b905774978981686e876b9d618ffb717/Errors and Uncertainties.md",
-    "public/static/b161e49b298672ed8644fd750b1dae9d/Statistics Intro.md",
-    "public/static/a70a4812776ae0530100d3e92101fe0f/Chemical Formulas.md",
-    "public/static/a2549d38e13f9ed70e2db2eb27d17d4a/Chemical Equations.md",
-    "public/static/a14e1ff5122943f4b510be3d9af87a23/Functional Groups.md",
-    "public/static/92e4cee3c4ec4590b0e67bb0be9ee684/Factorizing Polynomials.md",
-    "public/static/99cc0fac90a89977efc4fa331e9aa696/Density and Pressure.md",
-    "public/static/8fdf0b76a239d41984776b90f9179818/Momentum.md",
     "assets/svg/sigma.svg",
     "assets/svg/question_mark.svg",
     "Images/Pasted image 20240211213004.png",
