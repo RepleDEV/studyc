@@ -10,3 +10,7 @@ To find velocity we can conclude that:
 $$
 \frac{ds}{dt} = v=\frac{ds}{d\theta} \cdot \frac{d\theta}{dt} = r\omega
 $$
+For acceleration, it is important to understand that for *linear* circular motion, the acceleration only changes the **direction** of the velocity. For an object that moves in circular motion, it can be visualized that the *velocity* is a [[Notes/Math/Topics/Vectors|vector]] that spins around tangentially. The acceleration is defined as:
+$$
+a = \frac{v^2}{r} = \omega^2r
+$$

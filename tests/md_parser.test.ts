@@ -18,4 +18,16 @@ describe("Parse front-matter (meta) from md", () => {
 		// Start of string shouldn't be ---
 		expect(parser.converted).toEqual(expect.not.stringMatching(/^---/));
 	});
+	test.each(
+		[
+			" $$ ",
+			" \n$$ ",
+			" $$\n ",
+			" \n$$\n "
+		]
+	)("Dealing with faulty math double tags: %j", (str) => {
+		const parser = new MDPage(str);
+		parser.fixMathEnclosing();
+		expect(parser.converted).toBe(" \n$$\n ");
+	});
 });
