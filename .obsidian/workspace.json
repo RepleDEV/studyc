@@ -4,47 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "7dfb97c486363326",
+        "id": "d58817d7bd8243b8",
         "type": "tabs",
         "children": [
           {
-            "id": "307b57ca8a22c998",
+            "id": "6eab75e2d53f78ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Integration.md",
+                "file": "Notes/Math/Topics/Differentiation.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "704da3c5dc6b1209",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Math/Topics/Binomial Expansion.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a45b6b0ad97f8359",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Math/Topics/Factor & Remainder Theorem.md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Differentiation"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -64,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -79,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -87,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -110,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Factor & Remainder Theorem.md",
+                "file": "Notes/Math/Topics/Differentiation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Differentiation"
             }
           },
           {
@@ -127,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Factor & Remainder Theorem.md",
+                "file": "Notes/Math/Topics/Differentiation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Differentiation"
             }
           },
           {
@@ -141,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -150,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Factor & Remainder Theorem.md"
-              }
+                "file": "Notes/Math/Topics/Differentiation.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Differentiation"
             }
           },
           {
@@ -159,7 +150,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -171,7 +164,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ],
@@ -194,44 +189,44 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a45b6b0ad97f8359",
+  "active": "debdb0281db2308e",
   "lastOpenFiles": [
+    "Notes/Math/Topics/Quadratics.md",
+    "Notes/Math/Topics/Probability.md",
+    "Notes/Math/Topics/Polynomial Identities.md",
+    "Notes/Math/Topics/Pythagorean Theorem.md",
+    "Notes/Math/Topics/Functions.md",
+    "Notes/Math/Topics/Central Tendency.md",
+    "Notes/English/English.md",
+    "Notes/Math/Topics/Factorizing Polynomials.md",
+    "Notes/Math/Topics/Variance & Standard Deviation.md",
+    "Notes/Math/Topics/Trigonometry.md",
+    "Notes/Math/Topics/Vectors.md",
+    "Notes/Math/Topics/Differentiation.md",
+    "Notes/Math/Topics/Integration.md",
+    "Notes/Math/Topics/Factorial.md",
+    "Notes/Physics/Topics/Thermodynamics.md",
+    "Notes/Physics/Topics/SI Units.md",
+    "Notes/Physics/Topics/Waves.md",
+    "Notes/Physics/Topics/Momentum.md",
+    "Notes/Physics/Topics/Gravity.md",
+    "Notes/Physics/Topics/Electricity & Resistivity.md",
+    "Notes/Chemistry/Topics/Ideal Gas Law.md",
+    "public/static/440d7ee493cc739a1e77e1c537fa4f09/Thermodynamics.md",
+    "Notes/Math/Topics/Thermodynamics.md",
+    "Notes/Math/Topics/Factor & Remainder Theorem.md",
+    "Notes/Math/Topics/Binomial Expansion.md",
     "public/static/ceaec026cc4f0deb56d01a08c52ada8b/Gravity.md",
     "public/static/ceaec026cc4f0deb56d01a08c52ada8b",
-    "public/static/c9c37baed78914913dc7d8f3fdacca7b/Circular Motion.md",
     "public/static/c9c37baed78914913dc7d8f3fdacca7b",
-    "public/static/ad0fe67e53915ff6df863ad78aa82b3f/Binomial Expansion.md",
     "public/static/ad0fe67e53915ff6df863ad78aa82b3f",
-    "public/static/8ba3683a94382d4100a2d48aeb522bcc/Factor & Remainder Theorem.md",
     "public/static/8ba3683a94382d4100a2d48aeb522bcc",
-    "public/static/51131817a1adf79beef41f37e7b699d6/Absolute Functions.md",
     "public/static/51131817a1adf79beef41f37e7b699d6",
-    "public/static/440d7ee493cc739a1e77e1c537fa4f09/Thermodynamics.md",
     "public/static/440d7ee493cc739a1e77e1c537fa4f09",
     "public/page-data/notes/physics/topics/thermodynamics/page-data.json",
     "public/page-data/notes/physics/topics/thermodynamics",
     "public/page-data/notes/math/topics/factor-and-remainder-theorem/page-data.json",
     "public/page-data/notes/math/topics/factor-and-remainder-theorem",
-    "Notes/Math/Topics/Factorizing Polynomials.md",
-    "Notes/Math/Topics/Polynomial Identities.md",
-    "Notes/Math/Topics/Binomial Expansion.md",
-    "Notes/Math/Topics/Probability.md",
-    "Notes/Math/Topics/Quadratics.md",
-    "Notes/Math/Topics/Statistics Intro.md",
-    "Notes/Physics/Topics/Errors and Uncertainties.md",
-    "Notes/Physics/Topics/Electromagnetic Waves.md",
-    "Notes/Physics/Topics/Momentum.md",
-    "Notes/Chemistry/Topics/Stoichiometry.md",
-    "Notes/Chemistry/Topics/Reversible Reactions.md",
-    "Notes/Chemistry/Topics/Functional Groups.md",
-    "Notes/Chemistry/Topics/Chemical Bonding.md",
-    "Notes/Math/Topics/Integration.md",
-    "Notes/Chemistry/Topics/Chemical Formulas.md",
-    "public/static/19eff014c2de47202a786f0bdd100afa/Electromagnetic Waves.md",
-    "Notes/Math/Topics/Exponentiation Rules.md",
-    "public/static/f8ff45d2db98a818f49ae04f2c81fba8/Physics.md",
-    "public/static/f3c5f018e9ca19afec872a43a3a1049c/Work & Power.md",
-    "public/static/f1f2f8c49c3b0d8ed7464410de4138be/Vectors.md",
     "assets/svg/sigma.svg",
     "assets/svg/question_mark.svg",
     "Images/Pasted image 20240211213004.png",

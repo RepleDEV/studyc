@@ -15,3 +15,16 @@ These three temperature scales have different ways of dictating what "0 degrees"
 	* $212^{\circ}F$ = Boiling point of water (at 1 atm pressure)
 * Kelvin
 	* $0^{\circ}K$ is defined as **absolute zero** where there is no movement of the particles of an object, i.e. no internal energy.
+
+> [!warning] Thermometers
+> Internal energy itself is impossible to measure directly, therefore thermometers use indirect methods of measuring temperature by measuring various properties that change as temperature changes, such as:
+> * expansion of a liquid (such as with mercury thermometers)
+> * change in electrical resistance
+> * change of electrical resistance of a thermistor
+> * change in the voltage output of a thermocouple
+> * change in pressure of a fixed volume of gas
+## Specific heat capacity
+The specific heat capacity of a substance is defined as **the energy required to raise the temperature of 1 kg of the substance by 1 degree celsius**.
+$$
+c = 
+$$
