@@ -13,7 +13,7 @@ This is called an **arc**, which is a section of the circumference of a circle. 
 $$
 L=\theta r
 $$
-## Arc length with an integral
+## Arc length with an [[Notes/Math/Topics/Integration|integral]]
 Given the equation $r = c$ where $c$ is a constant, we can calculate arc lengths with the integral of an arc length in polar coordinates.
 $$
 L = \int_0^\theta \sqrt{r^2 + {\frac{dr}{d\theta}}^2}d\theta
@@ -39,4 +39,4 @@ From here we can deduce that the length of the chord is twice the length of the 
 $$
 L_{crd}=2\sin(\frac{\theta}{2})\times r
 $$
-For the angle of the resulting isosceles triangle, the [[Trigonometry#Trigonometric formula for area of any triangle]] can be used.
+For the angle of the resulting isosceles triangle, this [[Trigonometry#Trigonometric formula for area of any triangle|formula]] can be used.

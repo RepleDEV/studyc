@@ -18,32 +18,29 @@ Another way (arguably an easier way) of thinking about trigonometric functions i
 ![[Pasted image 20230807094926.png]]
 Given a circle with radius of $1$, the point $P$ that sits on the circle with angle $\theta$ relative to the center of the circle, will be equal to $(\cos(\theta), \sin(\theta))$.
 
-Notice how the $cos$ and $sin$ coordinates form a right triangle, with the radius being the hypotenuse.
+Notice how the $\cos$ and $\sin$ coordinates form a right triangle, with the radius being the hypotenuse.
 
-The tangent ($tan$) function is defined as the ratio of the **opposite** side to the **adjacent side** to an angle of a right triangle. Knowing the the unit circle, it would be:
+The tangent ($\tan$) function is defined as the ratio of the **opposite** side to the **adjacent side** to an angle of a right triangle. Knowing the the unit circle, it would be:
 $$\tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}$$
 With $\sin$ being the $y$ coordinate and $cos$ being the $x$ coordinate, using the definition of a [[slope]], $\tan(\theta)$ is equals to the **slope** of a straight line with angle $\theta$. 
 >[!warning]
 >If you see the unit circle again, the **tangent** of the circle at angles $\frac{\pi}{2}$ and $\frac{3}{2\pi}$, it will be a vertical line, for which a slope for a vertical line is **undefined**. Which means that the **tangent** of $0$ and $\pi$ is **undefined**.
 ## Related angles
-For any angle $\theta$ in the first quadrant, there exists an equivalent angle in the second quadrant where the **sine** of said angle is equal to $\sin(\theta)$, and it is the **mirror angle** of $\theta$ (angle reflected across the **x-axis**).
+For any angle $\theta$ in the first quadrant, there exists an equivalent angle in the second quadrant where the **sine** of said angle is equal to $\sin(\theta)$, and it is the **mirror angle** of $\theta$ (angle reflected across the **y-axis**).
 ![[Pasted image 20230906122737.png]]
+Therefore, for $\theta \in [0, 2\pi]$, there are two values for $\theta$ in which its sine is equal. 
 $$
 \sin(\theta)=\sin(\pi-\theta)
 $$
-If the same two angles are reflected across the **y-axis** it will be equal to the negative of the sine of $\theta$.
+For **cosine**, the angle must be reflected across the **x-axis**.
 $$
-\sin(\theta)=-\sin(2\pi-\theta)
+\cos(\theta)=\cos(2\pi-\theta)
 $$
-For **cosine**, it is reversed.
-$$
-\cos(\theta)=\cos(2\pi-\theta)=-\cos(\pi-\theta)
-$$
-Lastly, for **tangent**, the slope of the tangent at any point $P$ that sits on a circle, will be equal the point that is in the other side of $P$. Which means that, the angle $\theta$ must be reflected in **both** the **y-axis** and the **x-axis**.
+Lastly, for **tangent**, the slope of the line that crosses through the center and a point $P$ that sits on a circle will be equal if $P$ was on the opposite end of the circle's diameter which crosses through $P$. Which means that the angle $\theta$ must be reflected in **both** the **y-axis** and the **x-axis**.
 $$
 \begin{align*}
-\text{Reflect across the $x$-axis:}&= \tan(\pi-\theta)\\
-\text{Reflect across the $y$-axis:}&= \tan(2\pi-(\pi-\theta))\\
+\text{Reflect across the $y$-axis:}&= \tan(\pi-\theta)\\
+\text{Reflect across the $x$-axis:}&= \tan(2\pi-(\pi-\theta))\\
 \tan(\theta)&= \tan(\pi+\theta)
 \end{align*}
 $$
@@ -55,15 +52,15 @@ Trigonometric functions also have their inverses, where they take the ratio of t
 >[!warning]
 >Due to [[Angles#Angular equivalence|angular equivalence]], any multiple of $2\pi$ plus the output of the inverse functions will also be correct. This is also the case for [[#Related angles]].
 >
->Usually, angles will be reduced to within the range of $0\leq\theta\leq2\pi$ unless stated.
-## Function transformations
-Trigonometric functions are **periodic** functions, which means that they repeat their values at regular intervals. For the **sine** and **cosine** functions, the period is $2\pi$ (for **tangent** it is $\pi$), which means that after $2\pi$, the output would then repeat.
+>Usually, angles will be reduced to within the range of $0\leq\theta\leq2\pi$ unless stated otherwise.
+## Trigonometric transformations (1)
+Trigonometric functions are **periodic** functions, which means that they repeat their values at set intervals. For the **sine** and **cosine** functions the period is $2\pi$, and for **tangent** it is $\pi$. Which means that after $2\pi$, and $\pi$ respectively the function would then repeat.
 
-Every formula works from [[Functions#Function Transformations]].
+For transformations, every formula works from [[Functions#Function Transformations]].
 
 For the functions **sine** and **cosine**, the function produces a **sinusoidal** wave (sine wave), which means that **sine** and **cosine** has an **amplitude**. For $\sin(x)$ and $\cos(x)$, the **amplitude**, is $1$, with the range being $[0,1]$. When transformed, the amplitude and/or range may change depending on the transformation.
 ## Trigonometric identities
-By seeing the unit circle once again, we could see that the circle's radius of $1$ forms the hypotenuse of a right triangle with side lengths $\sin(\theta)$ and $\cos(\theta)$. By using the [[Pythagorean Theorem]], we can deduce the fact that:
+By seeing the unit circle once again, we could see that the circle's radius of $1$ forms the hypotenuse of a right triangle with side lengths $\sin(\theta)$ and $\cos(\theta)$. By using the [[Pythagorean Theorem]], we can deduce the *identity*:
 $$
 \sin^2(\theta)+\cos^2(\theta)=1
 $$
@@ -88,6 +85,51 @@ This leads to:
 * Reciprocal of $\sin$: $\frac{1}{\sin(\theta)}=\csc(\theta)$
 * Reciprocal of $\cos$: $\frac{1}{\cos(\theta)}=\sec(\theta)$
 * Reciprocal of $\tan$: $\frac{1}{\tan(\theta)}=\cot(\theta)$
+## Compound angles
+For compound angles these are the formulas:
+* $\sin(A \pm B) = \sin A \cos B \pm \sin B \cos A$
+* $\cos(A \pm B) = \cos A \cos B \mp \sin A \sin B$ 
+
+## Trigonometric transformations (2)
+Given the function:
+$$
+f(\theta) = R\sin(\theta + \gamma)
+$$
+Where $R$ and $\gamma$ are positive constants the function can be rewritten as:
+$$
+a\sin \theta + b\cos \theta
+$$
+If we rewrite $f(\theta)$ with the compound angles formula, we get:
+$$
+\begin{align*}
+f(\theta) &= R(\sin \theta \cos \gamma + \sin \gamma \cos \theta)\\
+&= R\sin \theta \cos \gamma + R\sin \gamma \cos \theta
+\end{align*}
+$$
+Matching coefficients, we get:
+$$
+\begin{align*}
+a &= R\cos \gamma \\
+b &= R\sin \gamma
+\end{align*}
+$$
+We then get:
+$$
+\frac{b}{a} = \frac{R\sin \gamma}{R \cos \gamma} = \tan \gamma
+$$
+If we square both sides we get:
+$$
+\begin{align*}
+a^2 + b^2 &= R^2\cos^2\gamma + R^2\sin^2\gamma\\
+&=R^2(\cos^2\gamma + \sin^2 \gamma) \\
+&= R^2\\
+R &= \sqrt{a^2 + b^2}
+\end{align*}
+$$
+Therefore:
+$$
+a\sin\theta+b\cos\theta = (\sqrt{ a^2 + b^2 })\sin(\theta+\arctan(\frac{b}{a}))
+$$
 ## Trigonometric formula for area of any triangle
 The area of any triangle is half of the base times the height.
 $$

@@ -3,7 +3,7 @@ tags: polynomial, quadratic, factorizing
 ---
 #### [[Quadratics#^442076|Jump to Conclusion]]
 ## What's a quadratic?
-A quadratic equation is a **second degree polynomial.** 
+A quadratic equation is a **second degree** polynomial.
 For example:
 $$
 6x^2 + 11x - 35 = 0
@@ -35,7 +35,7 @@ $$
 x = \frac{5}{3} \text{ or } x=-\frac{7}{2}
 $$
 ## Quadratic Inequalities
-Before solving **quadratic inequalities**, it's useful to know the "shape" of the curve. If the coefficient of $x^2$ is **positive**, the curve of the parabola is opening **upwards**. And if it's **negative** then it is opening **downwards**.
+Before solving **quadratic inequalities**, it's useful to know the "shape" of the curve. If the coefficient of $x^2$ is **positive**, the curve of the parabola will open **upwards**. And if it's **negative** then it will open **downwards**.
 This is an **upward** parabola ($x^2$):
 ![[Pasted image 20230718183722.png]]
 And, this is a **downward** parabola ($-x^2$):
