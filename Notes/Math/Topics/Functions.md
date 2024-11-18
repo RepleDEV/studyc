@@ -1,5 +1,9 @@
 ---
-tags: functions, function, transforms, domain, range
+tags:
+  - function
+  - transforms
+  - domain
+  - range
 ---
 **Functions** take an input and gives an output.
 $$
@@ -13,7 +17,7 @@ Each function has a **domain** and a **range**.
 
 For example: the function $f(x) = x^2$. This function can take any input $x$ so long that $x$ is a real number and it will give a real number as its output. Which means that the function's domain is: $\{ x \in \mathbb{R} \}$ (reads **x is element of all real numbers**). For the range, there is no valid $x$ value that is a real number and where the function will output a negative number. So, the range is $\{y \in \mathbb{R}, 0 \leq y\}$.
 
-Another example would be $g(x) = \frac{1}{x}$. Here, the domain is all real numbers again, but with the exception of $x = 0$ as when $x=0$ the function evaluates to $\frac{1}{0}$. Thus, the domain of $g(x)$ would be $\{x\in\mathbb{R},x \neq 0\}$. The range would also be $\{y\in\mathbb{R}, y \neq 0\}$. as there are no possible solutions for $\frac{1}{x}=0$ except for $\infty$ or $-\infty$.
+Another example would be $g(x) = \frac{1}{x}$. Here, the domain is all real numbers again, but with the exception of $x = 0$ as when $x=0$ the function evaluates to $\frac{1}{0}$. Thus, the domain of $g(x)$ would be $\{x\in\mathbb{R},x \neq 0\}$. The range would also be $\{y\in\mathbb{R}, y \neq 0\}$. as there are no possible solutions for $\frac{1}{x}=0$.
 ## Piecewise Functions
 Functions can be made of multiple equations, these are called **piecewise functions**. Here's a simple example:
 $$
@@ -26,14 +30,14 @@ $$
 ## Composite Functions
 In short: **functions of functions**. Functions that take another function as input. For example:
 $$
-f(g(x)) = (f\circ g)(x)
+f(g(x)) = (f\circ g)(x)=fg(x)
 $$
 This function is pronounced **f of g of x**. There are two ways to compute the value of the function, which are:
 * Computing each function separately
 * Computing the implicit equation of the composite function
 The first one is to simply compute $g(x)$ first, and inputting the value to $f(x)$.
 $$
-x\rightarrow g(x)\rightarrow f(x) = (f\circ g)(x)
+x\rightarrow g\rightarrow f = (f\circ g)(x)
 $$
 The second one is to simply substitute $x = g(x)$ to $f(x)$. For example:
 $$
@@ -83,7 +87,7 @@ Functions can also be thought as **mapping** a set of inputs to a set of outputs
 Functions take an input $x$ and outputs one value, where it is graphed as $y = f(x)$. 
 Here, we can think of it as the function taking $x$: a number line, as the input, and outputting a vertical number line: $y$, that is according to the function $f$'s definition. 
 
-This concept is useful to understand as function transformations is basically as if you're "moving" the coordinate plane. For the translation $f(x+1)$, it's as if the $x$ number line is shifted to the **right** by one unit, which is why the output is as if it's to the **left** of its original position. For the transformation $y + 1 = f(x)$, it's as if you're "moving" the $y$ number line up one unit.
+This concept is useful to understand as function transformations is basically as if you're "moving" the coordinate plane. For the translation $f(x+1)$, it's as if the $x$ number line is shifted to the **right** by one unit, which is why the output seems like it is as if it is to the **left** of its original position. For the transformation $y + 1 = f(x)$, it's as if you're "moving" the $y$ number line up one unit.
 
 For scaling it's as if you're "zooming in" on an axis or a plane if it is scaled by a factor of $n\{n \in \mathbb{R},1 \leq n \}$.
 $$

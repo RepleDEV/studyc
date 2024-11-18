@@ -1,37 +1,22 @@
 {
-  "collapse-filter": true,
-  "search": "",
-  "showTags": true,
+  "collapse-filter": false,
+  "search": "path:Notes  ",
+  "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": false,
-  "showOrphans": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [
-    {
-      "query": "path:Studies/Notes/Math/Topics",
-      "color": {
-        "a": 1,
-        "rgb": 12800237
-      }
-    },
-    {
-      "query": "path:Studies",
-      "color": {
-        "a": 1,
-        "rgb": 14725458
-      }
-    }
-  ],
+  "colorGroups": [],
   "collapse-display": true,
-  "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
+  "showArrow": true,
+  "textFadeMultiplier": -1.2,
+  "nodeSizeMultiplier": 0.958762886597938,
   "lineSizeMultiplier": 1,
-  "collapse-forces": false,
-  "centerStrength": 0.634020618556701,
-  "repelStrength": 7.83505154639175,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.6316046111627712,
+  "scale": 0.5031564844896514,
   "close": true
 }

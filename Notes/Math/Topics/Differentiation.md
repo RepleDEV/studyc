@@ -42,9 +42,27 @@ $$
 \frac{d}{dx}\left[f(x)+g(x)\right]=\frac{d}{dx}f(x)+\frac{d}{dx}g(x)
 $$
 ## Product rule
-I don't have or have forgotten the explanation for this.
 $$
 \frac{d}{dx}\left[f(x)\cdot g(x)\right]=\left[\frac{d}{dx} f(x)\right]g(x) + f(x)\left[\frac{d}{dx}g(x)\right]
+$$
+### Product rule proof
+Consider the function $y = uv$ where $u$ and $v$ are functions of $x$. Any small change to $x$, results in a change in $y$, $u$, and $v$.
+
+Now, given a small change in $x$: $\delta x$, we get:
+$$
+y + \delta y =uv + \delta(u \cdot v) = (u+\delta u)(v + \delta v)
+$$
+We multiply and we get:
+$$
+uv + \delta(u \cdot v) = uv + u \delta v + v\delta u + \delta u \delta v
+$$
+As $\delta x$ approaches $0$, $\delta u \delta v$ becomes negligible and can be ignored. Simplifying, we get:
+$$
+\delta (u \cdot v) = u \delta v + v \delta u
+$$
+Dividing by $\delta x$:
+$$
+\frac{\delta(u \cdot v)}{\delta x} = u \frac{\delta v}{\delta x} + v \frac{\delta u}{\delta x}
 $$
 ## Quotient rule
 $$
