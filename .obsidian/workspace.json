@@ -4,24 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "d58817d7bd8243b8",
+        "id": "7dfb97c486363326",
         "type": "tabs",
         "children": [
           {
-            "id": "6eab75e2d53f78ec",
+            "id": "307b57ca8a22c998",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Differentiation.md",
+                "file": "Notes/Math/Topics/Integration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Differentiation"
+              "title": "Integration"
+            }
+          },
+          {
+            "id": "704da3c5dc6b1209",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Math/Topics/Trigonometry.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Trigonometry"
+            }
+          },
+          {
+            "id": "32d9ec748775d0f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Chemistry/Topics/Electrochemistry.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Electrochemistry"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -40,7 +69,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -77,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268
+    "width": 230
   },
   "right": {
     "id": "99e9bea6891297dc",
@@ -93,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Differentiation.md",
+                "file": "Notes/Math/Topics/Coordinate Geometry.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Differentiation"
+              "title": "Backlinks for Coordinate Geometry"
             }
           },
           {
@@ -112,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Differentiation.md",
+                "file": "Notes/Math/Topics/Coordinate Geometry.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Differentiation"
+              "title": "Outgoing links from Coordinate Geometry"
             }
           },
           {
@@ -139,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Differentiation.md"
+                "file": "Notes/Math/Topics/Coordinate Geometry.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Differentiation"
+              "title": "Outline of Coordinate Geometry"
             }
           },
           {
@@ -189,44 +218,44 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "debdb0281db2308e",
+  "active": "32d9ec748775d0f4",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Notes/Math/Topics/Quadratics.md",
-    "Notes/Math/Topics/Probability.md",
-    "Notes/Math/Topics/Polynomial Identities.md",
-    "Notes/Math/Topics/Pythagorean Theorem.md",
-    "Notes/Math/Topics/Functions.md",
-    "Notes/Math/Topics/Central Tendency.md",
-    "Notes/English/English.md",
-    "Notes/Math/Topics/Factorizing Polynomials.md",
-    "Notes/Math/Topics/Variance & Standard Deviation.md",
-    "Notes/Math/Topics/Trigonometry.md",
-    "Notes/Math/Topics/Vectors.md",
-    "Notes/Math/Topics/Differentiation.md",
-    "Notes/Math/Topics/Integration.md",
-    "Notes/Math/Topics/Factorial.md",
-    "Notes/Physics/Topics/Thermodynamics.md",
-    "Notes/Physics/Topics/SI Units.md",
+    "public/static/f4404e99666f5597c1aba9f783ceae9b/Differentiation.md",
+    "public/static/f4404e99666f5597c1aba9f783ceae9b",
+    "public/static/cbbbc671fc7b7e56449af3a837f1ca0a/Quadratics.md",
+    "public/static/cbbbc671fc7b7e56449af3a837f1ca0a",
+    "public/page-data/404/page-data.json",
+    "public/page-data/404",
+    "public/page-data/404.html/page-data.json",
+    "public/page-data/404.html",
+    "public/static/ca7b1f3471b8ad9be1de4f0ca736c5b5/Functions.md",
+    "public/static/ca7b1f3471b8ad9be1de4f0ca736c5b5",
+    "public/static/c740176547bbf2faa5532714348e02a5/Gravity.md",
+    "public/static/c740176547bbf2faa5532714348e02a5",
+    "public/static/993df27cae44df88d5bda5bcac28948c/Angles.md",
+    "public/static/993df27cae44df88d5bda5bcac28948c",
+    "public/static/63fc8405d383c7d0948924b312c734b7/Coordinate Geometry.md",
+    "public/static/63fc8405d383c7d0948924b312c734b7",
+    "public/static/4f04ea15be3f7a7bc1754639d09a56d5/Thermodynamics.md",
+    "public/static/4c28916893d8d47e3420107aea531dcc/Trigonometry.md",
+    "public/static/20d1cab54b8ef98d0fe75b81b9868032/Linear Functions.md",
+    "public/static/1033531ccc218c10da3ea59ac14d832d/Circular Measure.md",
+    "Notes/Chemistry/Topics/Redox Reactions.md",
+    "Notes/Chemistry/Topics/Electrochemistry.md",
+    "Notes/Physics/Topics/Electromagnetic Waves.md",
+    "public/static/19eff014c2de47202a786f0bdd100afa/Electromagnetic Waves.md",
     "Notes/Physics/Topics/Waves.md",
-    "Notes/Physics/Topics/Momentum.md",
-    "Notes/Physics/Topics/Gravity.md",
-    "Notes/Physics/Topics/Electricity & Resistivity.md",
-    "Notes/Chemistry/Topics/Ideal Gas Law.md",
+    "Notes/Math/Topics/Angles.md",
+    "public/static/ceaec026cc4f0deb56d01a08c52ada8b/Gravity.md",
+    "public/static/c9c37baed78914913dc7d8f3fdacca7b/Circular Motion.md",
+    "public/static/ad0fe67e53915ff6df863ad78aa82b3f/Binomial Expansion.md",
+    "public/static/8ba3683a94382d4100a2d48aeb522bcc/Factor & Remainder Theorem.md",
+    "public/static/51131817a1adf79beef41f37e7b699d6/Absolute Functions.md",
     "public/static/440d7ee493cc739a1e77e1c537fa4f09/Thermodynamics.md",
-    "Notes/Math/Topics/Thermodynamics.md",
-    "Notes/Math/Topics/Factor & Remainder Theorem.md",
-    "Notes/Math/Topics/Binomial Expansion.md",
-    "public/static/ceaec026cc4f0deb56d01a08c52ada8b",
-    "public/static/c9c37baed78914913dc7d8f3fdacca7b",
-    "public/static/ad0fe67e53915ff6df863ad78aa82b3f",
-    "public/static/8ba3683a94382d4100a2d48aeb522bcc",
-    "public/static/51131817a1adf79beef41f37e7b699d6",
-    "public/static/440d7ee493cc739a1e77e1c537fa4f09",
-    "public/page-data/notes/physics/topics/thermodynamics/page-data.json",
-    "public/page-data/notes/physics/topics/thermodynamics",
-    "public/page-data/notes/math/topics/factor-and-remainder-theorem/page-data.json",
-    "public/page-data/notes/math/topics/factor-and-remainder-theorem",
+    "Notes/Math/Topics/Trigonometry.md",
+    "Notes/Math/Topics/Functions.md",
+    "Notes/Math/Topics/Integration.md",
+    "Notes/Math/Topics/Circular Measure.md",
     "assets/svg/sigma.svg",
     "assets/svg/question_mark.svg",
     "Images/Pasted image 20240211213004.png",
