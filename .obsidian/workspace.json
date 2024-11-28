@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7dfb97c486363326",
+        "id": "d58817d7bd8243b8",
         "type": "tabs",
         "children": [
           {
-            "id": "307b57ca8a22c998",
+            "id": "6eab75e2d53f78ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,31 +22,29 @@
             }
           },
           {
-            "id": "704da3c5dc6b1209",
+            "id": "5caee1a0aa215952",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Math/Topics/Trigonometry.md",
+                "file": "Notes/Physics/Topics/Momentum.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Trigonometry"
+              "title": "Momentum"
             }
           },
           {
-            "id": "32d9ec748775d0f4",
+            "id": "986e1ecc52c99817",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "Notes/Chemistry/Topics/Electrochemistry.md",
-                "mode": "source",
-                "source": false
+                "currentVersion": "1.7.7"
               },
               "icon": "lucide-file",
-              "title": "Electrochemistry"
+              "title": "Release Notes 1.7.7"
             }
           }
         ],
@@ -69,7 +67,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime"
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -106,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230
+    "width": 268
   },
   "right": {
     "id": "99e9bea6891297dc",
@@ -122,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Math/Topics/Coordinate Geometry.md",
+                "file": "Notes/Math/Topics/Integration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +130,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Coordinate Geometry"
+              "title": "Backlinks for Integration"
             }
           },
           {
@@ -141,12 +139,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Math/Topics/Coordinate Geometry.md",
+                "file": "Notes/Math/Topics/Integration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Coordinate Geometry"
+              "title": "Outgoing links from Integration"
             }
           },
           {
@@ -168,10 +166,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Math/Topics/Coordinate Geometry.md"
+                "file": "Notes/Math/Topics/Integration.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Coordinate Geometry"
+              "title": "Outline of Integration"
             }
           },
           {
@@ -218,12 +216,25 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "32d9ec748775d0f4",
+  "active": "debdb0281db2308e",
   "lastOpenFiles": [
+    "Notes/Chemistry/Topics/Electrochemistry.md",
+    "Notes/Physics/Topics/Dynamics.md",
+    "Notes/Physics/Topics/Kinematics.md",
+    "Notes/Math/Topics/Vectors.md",
+    "Notes/Physics/Topics/Scalars and Vectors.md",
+    "Notes/Physics/Topics/SI Units.md",
+    "Notes/Physics/Topics/Errors and Uncertainties.md",
     "public/static/f4404e99666f5597c1aba9f783ceae9b/Differentiation.md",
     "public/static/f4404e99666f5597c1aba9f783ceae9b",
     "public/static/cbbbc671fc7b7e56449af3a837f1ca0a/Quadratics.md",
     "public/static/cbbbc671fc7b7e56449af3a837f1ca0a",
+    "public/static/4c28916893d8d47e3420107aea531dcc/Trigonometry.md",
+    "public/static/4c28916893d8d47e3420107aea531dcc",
+    "public/static/20d1cab54b8ef98d0fe75b81b9868032/Linear Functions.md",
+    "public/static/20d1cab54b8ef98d0fe75b81b9868032",
+    "public/static/1033531ccc218c10da3ea59ac14d832d/Circular Measure.md",
+    "public/static/1033531ccc218c10da3ea59ac14d832d",
     "public/page-data/404/page-data.json",
     "public/page-data/404",
     "public/page-data/404.html/page-data.json",
@@ -231,31 +242,18 @@
     "public/static/ca7b1f3471b8ad9be1de4f0ca736c5b5/Functions.md",
     "public/static/ca7b1f3471b8ad9be1de4f0ca736c5b5",
     "public/static/c740176547bbf2faa5532714348e02a5/Gravity.md",
-    "public/static/c740176547bbf2faa5532714348e02a5",
     "public/static/993df27cae44df88d5bda5bcac28948c/Angles.md",
-    "public/static/993df27cae44df88d5bda5bcac28948c",
     "public/static/63fc8405d383c7d0948924b312c734b7/Coordinate Geometry.md",
-    "public/static/63fc8405d383c7d0948924b312c734b7",
     "public/static/4f04ea15be3f7a7bc1754639d09a56d5/Thermodynamics.md",
-    "public/static/4c28916893d8d47e3420107aea531dcc/Trigonometry.md",
-    "public/static/20d1cab54b8ef98d0fe75b81b9868032/Linear Functions.md",
-    "public/static/1033531ccc218c10da3ea59ac14d832d/Circular Measure.md",
-    "Notes/Chemistry/Topics/Redox Reactions.md",
-    "Notes/Chemistry/Topics/Electrochemistry.md",
-    "Notes/Physics/Topics/Electromagnetic Waves.md",
-    "public/static/19eff014c2de47202a786f0bdd100afa/Electromagnetic Waves.md",
-    "Notes/Physics/Topics/Waves.md",
-    "Notes/Math/Topics/Angles.md",
-    "public/static/ceaec026cc4f0deb56d01a08c52ada8b/Gravity.md",
-    "public/static/c9c37baed78914913dc7d8f3fdacca7b/Circular Motion.md",
-    "public/static/ad0fe67e53915ff6df863ad78aa82b3f/Binomial Expansion.md",
-    "public/static/8ba3683a94382d4100a2d48aeb522bcc/Factor & Remainder Theorem.md",
-    "public/static/51131817a1adf79beef41f37e7b699d6/Absolute Functions.md",
-    "public/static/440d7ee493cc739a1e77e1c537fa4f09/Thermodynamics.md",
+    "Notes/Math/Topics/Differentiation.md",
+    "Notes/Math/Topics/Sequences and Series.md",
     "Notes/Math/Topics/Trigonometry.md",
     "Notes/Math/Topics/Functions.md",
-    "Notes/Math/Topics/Integration.md",
-    "Notes/Math/Topics/Circular Measure.md",
+    "Untitled.md",
+    "Notes/Math/Topics/Quadratics.md",
+    "Notes/Math/Topics/Probability.md",
+    "Notes/Math/Topics/Polynomial Identities.md",
+    "Notes/Math/Topics/Pythagorean Theorem.md",
     "assets/svg/sigma.svg",
     "assets/svg/question_mark.svg",
     "Images/Pasted image 20240211213004.png",
