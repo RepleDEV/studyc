@@ -20,7 +20,7 @@ The *derivative* is notated in several ways, the two most common used is:
 * **Lagrange**'s notation
 	* Notated as: $f'(x)$, which denotes the *derivative* of $f(x)$
 * **Leibniz**'s notation
-	* Notated as: $\frac{dy}{dx}f(x)$.
+	* Notated as: $\frac{dy}{dx}$, as it is the derivative of $y$ with *respect* to $x$.
 ## Power rule
 While derivatives can be solved by its definition, patterns will emerge, then they develop into rules, one of which is the **power rule**. Taking the derivative of $x$ raised to the power of $n$ with respect to $x$, results to $n$ multiplied by $x$ raised to the power of $n-1$.
 $$
@@ -40,6 +40,17 @@ $$
 The distributive property of derivatives states that the derivative of a **sum of terms** will be the **sum** of the **derivatives of the individual terms**.
 $$
 \frac{d}{dx}\left[f(x)+g(x)\right]=\frac{d}{dx}f(x)+\frac{d}{dx}g(x)
+$$
+proof:
+$$
+\begin{align*}
+\text{Let: } \lambda(x) &= f(x)+g(x)\\
+\therefore \lambda(x+h) &= f(x+h)+g(x+h)\\
+\frac{d}{dx}\lambda(x)&= \lim_{h\to0}\frac{\lambda(x+h) + \lambda(x)}{h}\\
+\frac{d}{dx}[f(x)+g(x)]&=\lim_{h\to0}{\frac{f(x+h)+f(x)+g(x+h)+g(x)}{h}}\\
+&=\lim_{h\to0}\frac{f(x+h)+f(x)}{h}+\lim_{h\to0}\frac{g(x+h)+g(x)}{h}\\
+&=\frac{d}{dx}f(x)+\frac{d}{dx}g(x)
+\end{align*}
 $$
 ## Product rule
 $$
@@ -94,10 +105,19 @@ $$
 $$
 ## Exponentials
 $$
-\frac{d}{dx}a^x=a^x\ln(a)
+\frac{d}{dx}a^x=a^x\ln a
+$$
+Proof:
+$$
+\begin{align*}
+\frac{d}{dx}a^x&=\frac{d}{dx}(e^{\ln a})^x\\
+&=\frac{d}{dx}e^{x\ln a}\\
+&=e^{x\ln a}\ln a\\
+&=a^x \ln a
+\end{align*}
 $$
 ## Local Extrema / Second Derivative
-One of the uses for derivatives is finding **local/global extrema**, which are **maximum/minimum points** in a function. During these points, the derivative of said function will either be $0$ or be undefined. The **second derivative** denotes whether the **extremum** is a **maximum** or **minimum** point.
+One of the uses for derivatives is finding **local/global extrema**, which are **maximum/minimum points** in a function. During these points, the derivative of said function will either be $0$ or be undefined. The **second derivative** denotes whether the **extremum** is a (local) **maximum** or **minimum** point.
 $$
 \text{Second Derivative: }\frac{d^2}{dx^2}f(x)=f''(x)
 $$

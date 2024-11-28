@@ -71,3 +71,7 @@ Here, we have $k$ as the first term and $r$ as the common ratio.
 $$
 \sum_{k=0}^{n-1}(ar^k)=a\left(\frac{1-r^n}{1-r}\right)
 $$
+Taking the limit as $n\to\infty$, $r^n \to 0 \iff |r| < 1$, therefore we get its infinite sum:
+$$
+\sum_{k=0}^{\infty}{(ar^k)}=\frac{a}{1-r} \iff |r|<1
+$$

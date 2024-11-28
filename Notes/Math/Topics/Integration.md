@@ -1,12 +1,30 @@
 Integration is the method of reversing the process of differentiation. Where differentiation finds the slope of a function at a given point, integration gives the area under the function, given a set of boundaries.
 ## Fundamental Theorem of Calculus
-The first fundamental theorem of calculus defines the **antiderivative**. Given a function $f$ that is continuous over the interval $[a,b]$, and $F$ be defined for all $x$ in $[a,b]$, by:
+The first fundamental theorem of calculus defines the **antiderivative**. In that, for any function $f(x)$ that is continuous and defined along the interval $[a, b]$, the derivative of its antiderivative equals to itself.
 $$
-F(x) = \int_a^x{f(t) \space dt}
+\frac{d}{dx}\int_a^x{f(t)dt}=f(x)
 $$
-Then, $F'(x) = f(x)$. For all $x$ in $(a, b)$, $F$ is an antiderivative of $f$.
-
-This theorem is then used in the **second part** of the theorem, saying that:
+We can then say that:
+$$
+F'(x) = f(x)
+$$
+Therefore:
+$$
+F(x)=\int_a^xf(t)dt + C
+$$
+Where $C$ is the *constant of integration* (as its derivative is $0$). Inputting $x = a$, we get:
+$$
+F(a)=\int_a^af(t)dt+C
+$$
+Where the integral is calculating the area under the function $f$ from $a$ to $a$, which is essentially a line. A line has $0$ area, therefore:
+$$
+F(a)=C
+$$
+We then have:
+$$
+F(x)=\int_a^xf(t)dt+F(a)
+$$
+Renaming $x$ to $b$, and $t$ to $x$, we get the **second part** of the theorem, saying that:
 $$
 \int_a^b f(x)\space dx = F(b) - F(a)
 $$

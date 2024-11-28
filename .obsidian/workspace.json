@@ -216,9 +216,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "debdb0281db2308e",
+  "active": "986e1ecc52c99817",
   "lastOpenFiles": [
+<<<<<<< Updated upstream
     "Notes/Chemistry/Topics/Electrochemistry.md",
+=======
+>>>>>>> Stashed changes
     "Notes/Physics/Topics/Dynamics.md",
     "Notes/Physics/Topics/Kinematics.md",
     "Notes/Math/Topics/Vectors.md",
@@ -254,6 +257,10 @@
     "Notes/Math/Topics/Probability.md",
     "Notes/Math/Topics/Polynomial Identities.md",
     "Notes/Math/Topics/Pythagorean Theorem.md",
+<<<<<<< Updated upstream
+=======
+    "Notes/Math/Topics/Central Tendency.md",
+>>>>>>> Stashed changes
     "assets/svg/sigma.svg",
     "assets/svg/question_mark.svg",
     "Images/Pasted image 20240211213004.png",
