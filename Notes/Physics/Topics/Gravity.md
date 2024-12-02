@@ -1,6 +1,6 @@
 According to (...), any two bodies of mass will **always** be attracted to each other, i.e., they will always have force pulling each other to one another. This force is defined as:
 $$
-F_g = G\frac{m_1m_2}{r^2}
+F_g = G\frac{Mm}{r^2}
 $$
 From this, we can derive a few things:
 ## Gravitational Potential Energy
@@ -15,4 +15,9 @@ Gravitational potential $V$ is defined as the work done per unit mass to move an
 From the definition of $U$ from earlier, we get that:
 $$
 V = \frac{U}{m} = -G\frac{M}{r}
+$$
+## Gravitational field
+The gravitational field is defined the gravitational strength affected on a body of mass. Defined as force per unit mass. From this, we can get that:
+$$
+g = \frac{F}{m} = G\frac{M}{r^2}
 $$

@@ -48,3 +48,26 @@ Finally:
 $$
 W =E_k= \frac{1}{2}mv^2
 $$
+Without calculus, we first assume work with a constant force:
+$$
+W = Fs
+$$
+Substituting $F = ma$:
+$$
+W = mas
+$$
+Using the equation of motion ([[Notes/Physics/Topics/Kinematics|Kinematics]]):
+$$
+\begin{align*}
+v^2 &= v_0^2 + 2as\\
+as &=\frac{v^2-v_0^2}{2}
+\end{align*}
+$$
+Multiplying both sides by $m$:
+$$
+W=mas=m\left(\frac{v^2-v_0^2}{2}\right)
+$$
+Given an initial velocity $v_o$ of $0$, we get that:
+$$
+W = \frac{1}{2}mv^2
+$$
