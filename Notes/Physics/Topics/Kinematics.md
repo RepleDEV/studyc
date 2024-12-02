@@ -1,3 +1,7 @@
+---
+tags:
+  - classical_mechanics
+---
 Kinematics is a branch of classical mechanics that deals with the description of motion, including the position, velocity, and acceleration of objects without considering the forces that cause the motion. 
 
 Kinematics involves these properties in a moving object:
@@ -47,24 +51,25 @@ a = \frac{dv}{dt}=\frac{d^2 s}{dt^2}
 $$
 Taking the first integral, we get:
 $$
-\int adt = v = at + C
+\begin{align*}
+\int adt &= \int dv \\
+at + C &= v
+\end{align*}
 $$
 where $C$ represents the initial velocity, $v_0$.
 
-Integrating $v$, we get:
-$$
-\int vdt = s = \frac{1}{2}at^2 + v_0t + C
-$$
-Where $C$ would be the initial displacement (often would be $0$).
-## 2 dimensional motion
-For motion in two dimensions, the angle of the forces must also be considered. Depending on the angle, there could be two forces that act on said object which faces the horizontal and vertical axes.
-
-For an object that is thrown vertically with angle $\theta$ to the horizontal, and an initial velocity of $v_0$, the horizontal velocity of said object will be **constant** (given no air resistance of course), and it would be the **cosine** of $\theta$ times $v_0$. For the vertical velocity, it would be the **sine** of $\theta$ times $v$.
+Integrating once more, we get:
 $$
 \begin{align*}
-V_h &= \cos(\theta)\times v\\
-V_v &= \sin(\theta)\times v\\
-
+\int v= \int\frac{ds}{dt} &= \int at+v_0\\
+ds &=(at+v_0)dt
 \end{align*}
 $$
-The SUVAT equations still apply here.
+$$
+\begin{align*}
+\int vdt = s = \frac{1}{2}at^2 + v_0t + C
+\end{align*}
+$$
+Where $C$ would be the initial displacement (often would be $0$).
+>[!warning]
+>Note that these suvat equations only apply for constant velocities and accelerations. 

@@ -1,15 +1,50 @@
-According to newton's **first law of thermodynamics**, it states that energy is **always conserved**, and it cannot be created nor destroyed. This essentially means that the total energy present (and accounted for) in a system will always be the same.
+Energy is a quantity of *work* that is transferrable to and from a body or system. According to newton's **first law of thermodynamics**, it states that energy is **always conserved**, and it cannot be created nor destroyed. 
 
-One example of energy is in **kinetic energy**.
+Energy is mainly categorized into two forms, **potential** and **kinetic**. Potential energy is a form of energy where work is **stored** to a body or a system and where it has the potential to release that energy. Meanwhile, kinetic energy is the form of energy as a consequence of **movement**.
+## Classical mechanics definition
+Work or energy is defined conceptually as:
 $$
-KE= \frac{1}{2}mv^2
+W = \int_C \pmb{F} \cdot d\pmb{s}
 $$
-Kinetic energy represents the amount of energy of an object that is the result of it having velocity.
-> [!info]
-> One interesting note is the fact that $KE$ is the antiderivative (with respect to velocity) of momentum, $p = mv$.
+Where work, is defined as the [[Notes/Math/Topics/Integration|line integral]] of force along the path $C$. 
 
-Another form of energy is in the form of **gravitational potential energy**, which is the (potential) energy stored in an object from it gaining height.
+In one dimension, it's simply
 $$
-GPE = mgh
+W = \int F ds
 $$
-The concept of energy is tied to the idea of [[Work & Power]], in that, it is the result of applying constant force over some distance. The amount of work put into a system will equal to the amount of energy it will have, be it in the form of **kinetic energy** or **potential energy**.
+## Power
+Power is defined as the rate of change of energy.
+$$
+P = \frac{dW}{dt}
+$$
+Simplistically:
+$$
+P = \frac{W}{t}
+$$
+Substituting $W = Fs$, we get that:
+$$
+P = \frac{Fs}{t} = Fv
+$$
+## Mechanical kinetic energy
+Mechanical kinetic energy represents the amount of energy of a non-rotating object that is the result of it having velocity.
+
+Given the formal definition of work, and the fact that $F = ma$ ([[Notes/Physics/Topics/Dynamics|Dynamics]]), we get that:
+$$
+W = \int  Fds = \int ma \space ds
+$$
+Acceleration can be defined using chain rule:
+$$
+a = \frac{d^2s}{dt^2} = \frac{dv}{ds}\cdot\frac{ds}{dt} = \frac{dv}{ds}\cdot v
+$$
+Therefore:
+$$
+W = \int ma \space ds = \int m\frac{dv}{ds}\cdot v \space ds
+$$
+We then can see that the $ds$ cancels out.
+$$
+W = \int mv dv
+$$
+Finally:
+$$
+W =E_k= \frac{1}{2}mv^2
+$$
