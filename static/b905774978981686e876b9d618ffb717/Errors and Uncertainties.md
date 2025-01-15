@@ -32,9 +32,9 @@ $$
 Say we have two measurements, $d$ and $m$.
 * $d=(50\pm1)\text{m}$
 * $m = (25\pm0.5)\text{m}$
-Now, we sum the two. $dm$. Their uncertainties must also be summed together.
+Now, we sum the two: $d + m$. Their uncertainties must also be summed together.
 $$
-d+m = (25\pm1.5)\text{m}
+d+m = (25\pm (1 + 0.5))\text{m}
 $$
 ### Multiplying uncertainties
 For multiplying uncertainties, their **relative** uncertainties must be summed. Same example as before:
@@ -52,3 +52,4 @@ r &= dm\\
 \end{align*}
 $$
 ### Exponents of uncertainties
+As exponents are simply repeated multiplication, the percentage uncertainty of a variable raised to a power is the variable's percentage uncertainty multiplied by the power it's being raised to.
