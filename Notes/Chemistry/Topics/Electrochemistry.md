@@ -79,4 +79,31 @@ Conversely, with a positive voltage, the more positive the voltage is the better
 ## Standard cell potential
 The standard cell potential $E^{\ominus}_{\text{cell}}$ is the voltage developed (under standard conditions) when two half cells are joined to make a whole galvanic cell. For a whole galvanic cell, the electron flows from the half-cell that has the more negative electrode potential towards the half-cell that has a less negative electrode potential. This is due to the fact that a more negative electrode potential correlates to a higher readiness for the substance to donate its electron.
 ## Redox reaction feasibility
-By measuring the standard cell potential between two substances, we can predict if the two substances can react with each other within a redox reaction. Given two substances $\ce{X}$ and $\ce{Y}$. The electrode potential of $\ce{X}$ is more negative than $\ce{Y}$. Therefore, $\ce{X}$ would reduce $\ce{Y}$ ions, however, $\ce{Y}$ would not reduce $\ce{X}$ ions.
+By measuring the standard cell potential between two substances, we can predict if the two substances can react with each other within a redox reaction. Given two substances $\ce{X}$ and $\ce{Y}$. The electrode potential of $\ce{X}$ is more negative than $\ce{Y}$. Therefore, $\ce{X}$ ions would reduce $\ce{Y}$, however, $\ce{Y}$ would not reduce $\ce{X}$ ions. 
+
+The resulting reaction would be:
+$$
+\ce{X- + Y -> X +Y-}
+$$
+This is given that the electrode potentials of $\ce{X}$ and $\ce{Y}$ are in their oxidized forms.
+$$
+\begin{align*}
+\ce{
+X + e- &<=> X- \\
+Y + e- &<=> Y-
+}
+\end{align*}
+$$
+However, if the electrode potentials of $\ce{X}$ and $\ce{Y}$ are in their reduced form, and the electrode potential of $\ce{X}$ is more positive than $\ce{Y}$, then $\ce{Y}$ would reduce $\ce{X}$ ions, but not the other way around.
+$$
+\ce{Y + X+ -> Y+ + X}
+$$
+Given the electrode potentials are:
+$$
+\begin{align*}
+\ce{
+X+ +e- &<=> X \\
+Y+ + e- &<=> Y
+}
+\end{align*}
+$$

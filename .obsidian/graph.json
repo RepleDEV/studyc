@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "path:Notes  ",
+  "search": "path:Notes/Math  ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.5031564844896514,
-  "close": true
+  "scale": 0.7898925489164631,
+  "close": false
 }

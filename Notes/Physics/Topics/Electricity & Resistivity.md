@@ -2,7 +2,7 @@ Electricity is the concept of the flow of energy through the exchange of **elect
 ## Electrons
 Given a power source, with ends repelling and attracting electrons, having a positive and negative end. Its negative end repels electrons, with its positive end attracting them.
 
-This way, electrons "flow" through a circuit, transferring energy in the process
+This way, electrons "flow" through a circuit, transferring energy in the process.
 ## Charge
 Each electron has its own charge, given in the units of **coulombs**. One single electron has a charge of roughly: $1.6 \times 10^{-19} \space \text{C}$, also known as the **elementary charge**. The total charge in a circuit is equal to the product of the number of electrons and the elementary charge constant.
 ## Current
@@ -25,7 +25,7 @@ $$
 Where:
 * $I$: current
 * $A$: cross-sectional area of the medium (such as a wire)
-* $n$: number of electrons
+* $n$: number of electrons per unit of volume
 * $v$: drift velocity
 * $q$: elementary charge
 
@@ -50,5 +50,10 @@ $$
 ## Material Resistivity ($\rho$)
 A material's resistance is proportional to its *resistivity*, given in the equation:
 $$
-R = \rho\frac{l}{A}
+R = \rho\frac{L}{A}
 $$
+Where:
+* $R$: resistance
+* $\rho$: resistivity
+* $L$: length of the material
+* $A$: cross-sectional area of the material perpendicular to its length.
