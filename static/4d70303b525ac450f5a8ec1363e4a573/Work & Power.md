@@ -1,0 +1,1 @@
+Merged to [[Notes/Physics/Topics/Energy|Energy]].
