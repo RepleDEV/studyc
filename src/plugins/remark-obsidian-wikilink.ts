@@ -17,6 +17,7 @@ const linkNodeGenerator = (text: string, href: string) =>
 function getLinkNode(m: RegExpExecArray, fileList: FileList) {
 	const fullLink = m[0];
 	const linkContent = m[1];
+	console.log(m);
 	const wikilink = new Wikilink(
 		linkContent,
 		fileList,
