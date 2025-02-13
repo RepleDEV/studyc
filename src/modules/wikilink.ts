@@ -21,6 +21,7 @@ export default class Wikilink {
 			this.type = isImage ? "image" : "page";
 			if (this.path.includes("notes/")) {
 				this.path = "/" + this.path;
+				this.path = this.path.replaceAll(" ", "-");
 			} else {
 				this.getFullPath(fileList);
 			}
