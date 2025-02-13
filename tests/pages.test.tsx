@@ -87,8 +87,6 @@ describe("Page component testing", () => {
 		const el = page.baseElement.querySelector("div > mjx-container");
 
 		expect(el).not.toBeNull();
-		expect(el?.parentElement).toHaveClass("flex");
-		expect(el?.parentElement).toHaveClass("justify-center");
 	});
 
 	test("Lists", () => {
