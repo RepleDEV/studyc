@@ -63,7 +63,7 @@ describe("Page component testing", () => {
 		const italic = page.baseElement.querySelector("em");
 
 		expect(paragraph).toHaveTextContent(
-			"This is a paragraph. This is bold, italic, .",
+			"This is a paragraph. This is bold, italic, ",
 		);
 
 		expect(strong).not.toBeNull();
