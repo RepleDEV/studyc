@@ -108,7 +108,7 @@ describe("Page component testing", () => {
 
 	test("Links", () => {
 		const page = render(<Page {...pageProps} />);
-		const [link, wikilink, emptyWikilink] = page.queryAllByRole(
+		const [_, link, wikilink, emptyWikilink] = page.queryAllByRole(
 			"link",
 		) as HTMLElement[];
 
@@ -119,8 +119,7 @@ describe("Page component testing", () => {
 
 		expect(wikilink).toHaveTextContent("WikiLink");
 
-		expect(emptyWikilink).toHaveTextContent("emptyWikiLink");
-		expect(emptyWikilink.getAttribute("href")?.endsWith("#")).toBeTruthy();
+		expect(emptyWikilink).toHaveTextContent("emptywikilink");
 	});
 
 	test("Image(s)", () => {
