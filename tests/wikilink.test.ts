@@ -44,6 +44,15 @@ describe("Handling non-full links", () => {
 	});
 });
 
+describe("Handling full links", () => {
+	const link = "notes/math/topics/file name";
+	const wikilink = new Wikilink(link, fileList);
+
+	test("Full link handling", () => {
+		expect(wikilink.path).toBe("/notes/math/topics/file-name");
+	})
+})
+
 describe("Image links", () => {
 	const link = "img.png";
 	const wikilink = new Wikilink(link, fileList, true);
