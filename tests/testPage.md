@@ -9,7 +9,7 @@ tags: tag1, tag2
 
 ### h3
 
-This is a paragraph. **This is bold**, _italic_, $$f(x)$$.
+This is a paragraph. **This is bold**, _italic_, $\text{This is an inline math block}$.
 
 -   [This is a link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 -   [[testPage|WikiLink]]
