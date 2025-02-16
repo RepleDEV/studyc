@@ -7,7 +7,10 @@ import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import obsidianBlockQuote from "../plugins/remark-obsidian-blockquote";
 import obsidianWikilink from "../plugins/remark-obsidian-wikilink";
+import remarkHeaderCounter from "../plugins/remarkHeaderCounter";
 import components from "./md_components/components";
+
+import { useHeadersState } from "./ContentOverview";
 
 interface MDPageProps {
 	fileList: FileList;
@@ -18,6 +21,7 @@ export default function MDPage(props: MDPageProps) {
 		<ReactMarkdown
 			children={props.children}
 			remarkPlugins={[
+				[ remarkHeaderCounter, { headerCountCallback: useHeadersState((state) => state.setHeaders) } ],
 				[obsidianWikilink, { fileList: props.fileList }],
 				obsidianBlockQuote,
 				remarkMath,
