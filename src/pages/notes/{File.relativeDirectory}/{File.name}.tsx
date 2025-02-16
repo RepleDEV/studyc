@@ -9,6 +9,7 @@ import Title from "../../../components/Title";
 import SearchBar from "../../../components/SearchBar";
 import MDPage from "../../../components/MDPage";
 import FileTitle from "../../../components/FileTitle";
+import ContentOverview from "../../../components/ContentOverview";
 
 export interface PageProps {
     params: FileSystemNode;
@@ -28,8 +29,9 @@ export default function Page(props: PageProps) {
 
     return (
         <Layout>
-            <div className="hidden md:flex flex-[0_0_200px]">
+            <div className="hidden md:flex flex-col flex-[0_0_200px]">
                 <Title>StudyC</Title>
+                <ContentOverview/>
             </div>
             <div className="hidden md:flex bg-gray-400 h-[88%] mr-4 flex-[0_0_2px] self-center" />
             <div className="flex flex-1 flex-col overflow-y-auto overflow-x-clip">
