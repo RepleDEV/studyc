@@ -5,10 +5,12 @@ import { HeaderObject } from "../plugins/remarkHeaderCounter";
 interface HeaderState {
     headers: HeaderObject[],
     setHeaders: (headers: HeaderObject[]) => void
+    pushHeader: (header: HeaderObject) => void
 }
 export const useHeadersState = create<HeaderState>()((set) => ({
     headers: [],
     setHeaders: (headers) => set(() => ({ headers })),
+    pushHeader: (header) => set((state) => ({ headers: [...state.headers, header] })),
 }));
 
 function HeaderNavigation({ children, depth }: React.PropsWithChildren<{ depth: number }>) {
