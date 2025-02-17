@@ -1,11 +1,19 @@
-import * as React from "react";
+import React from "react";
 import type { Components } from "react-markdown/lib/ast-to-react";
 
 import { transformHeaders } from "../../plugins/remark-obsidian-wikilink";
 
-const headers: Components = {
-	h2({ children, ...props }) {
-		return (
+function HeaderFactory
+	<T extends React.ElementType>
+	({ depth, children, ...props}: 
+		React.ComponentPropsWithoutRef<T> &
+		{
+			depth?: number
+		}
+	) {
+	let el = <h1 {...props}></h1>;
+	if (depth == 2)	{
+		el = ( 
 			<h2
 				{...props}
 				className="text-3xl font-semibold mt-5"
@@ -14,9 +22,8 @@ const headers: Components = {
 				{children}
 			</h2>
 		);
-	},
-	h3({ children, ...props }) {
-		return (
+	} else if (depth == 3) {
+		el = (
 			<h3
 				{...props}
 				className="text-2xl font-semibold mt-5"
@@ -25,6 +32,17 @@ const headers: Components = {
 				{children}
 			</h3>
 		);
+	}
+
+	return <>{el}</>;
+}
+
+const headers: Components = {
+	h2(props) {
+		return HeaderFactory<'h2'>({ depth: 2, ...props });
+	},
+	h3(props) {
+		return HeaderFactory<'h3'>({ depth: 3, ...props});
 	},
 };
 
