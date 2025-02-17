@@ -3,6 +3,7 @@ import { visit } from "unist-util-visit";
 export interface HeaderObject {
     text: string;
     depth: number;
+    scrollHeight: number;
 }
 interface Options {
     headerCountCallback?: (headers: HeaderObject[]) => any;
@@ -16,6 +17,7 @@ export default function remarkHeaderCounter({ headerCountCallback }: Options) {
                 headers.push({
                     text: n.children[0].value,
                     depth: n.depth,
+                    scrollHeight: 0,
                 });
             }
         });

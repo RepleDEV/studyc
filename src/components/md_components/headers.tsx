@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import type { Components } from "react-markdown/lib/ast-to-react";
 
 import { transformHeaders } from "../../plugins/remark-obsidian-wikilink";
+import { useHeadersState } from "../ContentOverview";
 
 function HeaderFactory
 	<T extends React.ElementType>
 	({ depth, children, ...props}: 
 		React.ComponentPropsWithoutRef<T> &
 		{
-			depth?: number
+			depth: number
 		}
 	) {
 	let el = <h1 {...props}></h1>;
@@ -33,8 +34,21 @@ function HeaderFactory
 			</h3>
 		);
 	}
+	const ref = useRef<HTMLDivElement>(null);
+	// Check first if ref.current is defined, else 0
+	const pushHeader = useHeadersState((state) => state.pushHeader);
 
-	return <>{el}</>;
+	useEffect(() => {
+		const scrollHeight = ref.current ? ref.current.getBoundingClientRect().top : 0;
+
+		pushHeader({
+			depth,
+			text: children,
+			scrollHeight,
+		});
+	}, [ref]);
+
+	return <div ref={ref}>{el}</div>;
 }
 
 const headers: Components = {

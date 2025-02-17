@@ -21,7 +21,6 @@ export default function MDPage(props: MDPageProps) {
 		<ReactMarkdown
 			children={props.children}
 			remarkPlugins={[
-				[ remarkHeaderCounter, { headerCountCallback: useHeadersState((state) => state.setHeaders) } ],
 				[obsidianWikilink, { fileList: props.fileList }],
 				obsidianBlockQuote,
 				remarkMath,
