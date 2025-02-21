@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import { FileList } from "../modules/listFiles";
 
 import ReactMarkdown from "react-markdown";
@@ -7,10 +7,7 @@ import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import obsidianBlockQuote from "../plugins/remark-obsidian-blockquote";
 import obsidianWikilink from "../plugins/remark-obsidian-wikilink";
-import remarkHeaderCounter from "../plugins/remarkHeaderCounter";
 import components from "./md_components/components";
-
-import { useHeadersState } from "./ContentOverview";
 
 interface MDPageProps {
 	fileList: FileList;
