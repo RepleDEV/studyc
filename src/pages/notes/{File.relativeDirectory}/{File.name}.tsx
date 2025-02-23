@@ -37,7 +37,7 @@ export default function Page(props: PageProps) {
 		let scrollPosition: [number, number] = [0, 0];
 		let ticking = false;
 
-        if (!ref.current)return;
+        if (!ref.current) return;
 
         const el = ref.current;
         const deltaH = el.parentElement?.offsetHeight || 0;
