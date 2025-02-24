@@ -45,8 +45,12 @@ export default function ContentOverview() {
 
 
         return headers.map<React.ReactNode>(
-            (header) => (
-            <HeaderNavigation depth={header.depth} visible={scrollPosition[0] < header.scrollHeight && scrollPosition[1] > header.scrollHeight}>
+            (header, i) => (
+            <HeaderNavigation 
+                depth={header.depth} 
+                visible={scrollPosition[0] < header.scrollHeight && scrollPosition[1] > header.scrollHeight}
+                key={i}
+                >
                 {header.text}
             </HeaderNavigation>
         ))
