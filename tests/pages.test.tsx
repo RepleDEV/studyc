@@ -58,9 +58,10 @@ describe("Page component testing", () => {
 
 	test("Paragraph", () => {
 		const page = render(<Page {...pageProps} />);
-		const paragraph = page.baseElement.querySelector("p");
-		const strong = page.baseElement.querySelector("strong");
-		const italic = page.baseElement.querySelector("em");
+		const mainArticleElement = page.baseElement.querySelector("main > div:nth-child(3)");
+		const paragraph = mainArticleElement?.querySelector("p");
+		const strong = mainArticleElement?.querySelector("strong");
+		const italic = mainArticleElement?.querySelector("em");
 
 		expect(paragraph).toHaveTextContent(
 			"This is a paragraph. This is bold, italic, ",
