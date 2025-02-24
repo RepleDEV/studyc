@@ -51,7 +51,8 @@
 		"unist-util-flatmap": "^1.0.0",
 		"unist-util-index": "^4.0.0",
 		"unist-util-map": "^4.0.0",
-		"unist-util-visit": "^5.0.0"
+		"unist-util-visit": "^5.0.0",
+		"zustand": "^5.0.3"
 	},
 	"repository": {
 		"type": "git",
