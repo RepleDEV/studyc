@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Physics/Topics/Thermodynamics.md",
+                "file": "Notes/Chemistry/Topics/Entropy & Gibbs Free Energy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Thermodynamics"
+              "title": "Entropy & Gibbs Free Energy"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -191,6 +192,23 @@
   },
   "active": "6eab75e2d53f78ec",
   "lastOpenFiles": [
+    "public/static/d663b52d7406231ab85b5906f91b77d0/Electrochemistry.md",
+    "public/static/d663b52d7406231ab85b5906f91b77d0",
+    "public/static/49b9d0e5a7393fb652299de45be28000/Kirchhoff's Law & Circuits.md",
+    "public/static/49b9d0e5a7393fb652299de45be28000",
+    "public/static/125d5cf891c531c8968e1aeed375e5bd/Electricity & Resistivity.md",
+    "public/static/125d5cf891c531c8968e1aeed375e5bd",
+    "public/page-data/notes/physics/topics/kirchhoff-s-law-and-circuits/page-data.json",
+    "public/page-data/notes/physics/topics/kirchhoff-s-law-and-circuits",
+    "public/notes/physics/topics/kirchhoff-s-law-and-circuits/index.html",
+    "public/notes/physics/topics/kirchhoff-s-law-and-circuits",
+    "src/plugins/remarkHeaderCounter.ts",
+    "public/component---src-pages-notes-file-relative-directory-file-name-tsx-a3758020d23e72542305.js.map",
+    "public/component---src-pages-notes-file-relative-directory-file-name-tsx-a3758020d23e72542305.js.LICENSE.txt",
+    "Notes/Physics/Topics/Thermodynamics.md",
+    "Notes/Chemistry/Topics/Reaction Kinetics.md",
+    "Notes/Chemistry/Topics/Chemical Equations.md",
+    "Notes/Physics/Topics/Electric Fields.md",
     "Notes/Chemistry/Topics/Electrochemistry.md",
     "Notes/Physics/Topics/Kirchhoff's Law & Circuits.md",
     "Notes/Physics/Topics/Kinematics.md",
@@ -210,23 +228,6 @@
     "public/static/10c1e73f927b9c4f4647cdd976ffa66a/Energy.md",
     "public/static/4f04ea15be3f7a7bc1754639d09a56d5/Thermodynamics.md",
     "Notes/Physics/Topics/Deformation of Solids & Springs.md",
-    "Notes/Math/Topics/Vectors.md",
-    "Notes/Physics/Topics/Scalars and Vectors.md",
-    "public/static/b905774978981686e876b9d618ffb717/Errors and Uncertainties.md",
-    "Notes/Physics/Topics/SI Units.md",
-    "Notes/Math/Topics/Factor & Remainder Theorem.md",
-    "Notes/Math/Topics/Quadratics.md",
-    "public/static/cbbbc671fc7b7e56449af3a837f1ca0a/Quadratics.md",
-    "public/static/f4404e99666f5597c1aba9f783ceae9b",
-    "public/static/cbbbc671fc7b7e56449af3a837f1ca0a",
-    "public/static/4c28916893d8d47e3420107aea531dcc",
-    "public/static/20d1cab54b8ef98d0fe75b81b9868032",
-    "public/static/1033531ccc218c10da3ea59ac14d832d",
-    "public/page-data/404/page-data.json",
-    "public/page-data/404",
-    "public/page-data/404.html/page-data.json",
-    "public/page-data/404.html",
-    "public/static/ca7b1f3471b8ad9be1de4f0ca736c5b5",
     "assets/svg/sigma.svg",
     "assets/svg/question_mark.svg",
     "Images/Pasted image 20240211213004.png",
