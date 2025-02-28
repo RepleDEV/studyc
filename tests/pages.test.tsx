@@ -47,6 +47,15 @@ describe("Page component testing", () => {
 		);
 	});
 
+	test("Content overview", () => {
+		const page = render(<Page {...pageProps} />);
+		const headers = page.baseElement.querySelectorAll("main > div:nth-child(1) p");
+
+		expect(headers[0]).toHaveTextContent("h1");
+		expect(headers[1]).toHaveTextContent("h2");
+		expect(headers[2]).toHaveTextContent("h3");
+	});
+
 	test("Headers", () => {
 		const page = render(<Page {...pageProps} />);
 

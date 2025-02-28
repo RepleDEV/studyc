@@ -12,7 +12,7 @@ function HeaderFactory
 			depth: number
 		}
 	) {
-	let el = <h1 {...props}></h1>;
+	let el = <h1 {...props} id={transformHeaders(children)}>{children}</h1>;
 	if (depth == 2)	{
 		el = ( 
 			<h2
@@ -52,6 +52,9 @@ function HeaderFactory
 }
 
 const headers: Components = {
+	h1(props) {
+		return HeaderFactory<'h1'>({ depth: 1, ...props });
+	},
 	h2(props) {
 		return HeaderFactory<'h2'>({ depth: 2, ...props });
 	},
