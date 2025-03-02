@@ -26,5 +26,18 @@ These three temperature scales have different ways of dictating what "0 degrees"
 ## Specific heat capacity
 The specific heat capacity of a substance is defined as **the energy required to raise the temperature of 1 kg of the substance by 1 degree celsius**.
 $$
-c = 
+Q = mc\Delta T
+$$
+Where:
+* $Q$ is the heat energy
+* $m$ is the mass
+* $c$ specific heat capacity
+* $\Delta T$ change in temperature
+## Specific latent heat
+Specific latent heat $L$ is the energy required to change a substance's state without changing its temperature. There are two specific latent heats:
+* **fusion**: between liquid and solid
+* **vaporisation**: between gas and liquid
+
+$$
+Q = mL
 $$
