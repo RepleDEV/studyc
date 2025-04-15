@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import { QueryResults, FileList, processFiles, File } from "../modules/listFiles";
 import FileListing from "./FileListing";
@@ -42,11 +42,19 @@ export default function ListFiles({ searchInput }: { searchInput?: string }) {
 		return searchInput ? fuse.search(searchInput).map((v) => v.item) : fileList;
 	} , [searchInput]);
 
+	const [fileNameSort, setFileNameSort] = useState(1);
+	if (fileNameSort != 0)
+		searchResult.sort(({ name: a }, { name: b }) => fileNameSort * a.localeCompare(b));
 
 	return (
 		<>
-			<div className="flex py-3 flex-row border-b-2 font-semibold">
-				<span className="basis-2/5">File name</span>
+			<div className="flex py-3 flex-row border-b-2 font-semibold select-none">
+				<span className="basis-2/5 cursor-pointer"
+					onClick={(e) => {
+						e.stopPropagation();
+						setFileNameSort(!fileNameSort ? 1 : fileNameSort * -1);
+					}}
+				>File name</span>
 				<span className="hidden md:block basis-32">Last Update</span>
 				<span className="ml-auto">Subject</span>
 			</div>
