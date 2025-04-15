@@ -46,16 +46,27 @@ export default function ListFiles({ searchInput }: { searchInput?: string }) {
 	if (fileNameSort != 0)
 		searchResult.sort(({ name: a }, { name: b }) => fileNameSort * a.localeCompare(b));
 
+	const [lastUpdateSort, setLastUpdateSort] = useState(0);
+	if (lastUpdateSort != 0)
+		searchResult.sort(({ lastModified: a }, { lastModified: b }) => lastUpdateSort * ((+a) - (+b)));
+
 	return (
 		<>
 			<div className="flex py-3 flex-row border-b-2 font-semibold select-none">
 				<span className="basis-2/5 cursor-pointer"
 					onClick={(e) => {
 						e.stopPropagation();
+						setLastUpdateSort(0);
 						setFileNameSort(!fileNameSort ? 1 : fileNameSort * -1);
 					}}
 				>File name</span>
-				<span className="hidden md:block basis-32">Last Update</span>
+				<span className="hidden md:block basis-32 cursor-pointer"
+					onClick={((e) => {
+						e.stopPropagation();
+						setFileNameSort(0);
+						setLastUpdateSort(!lastUpdateSort ? 1 : lastUpdateSort * -1);
+					})}
+				>Last Update</span>
 				<span className="ml-auto">Subject</span>
 			</div>
 			<div className="flex flex-1 flex-col pb-3 overflow-y-scroll">
