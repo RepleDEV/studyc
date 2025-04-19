@@ -5,7 +5,7 @@ export default function Title({ children, className, ...props }: PropsWithChildr
 	return (
 		<div className={"flex h-[58px] items-center " + className}>
 			<Link
-				className="text-4xl h-fit font-semibold lowercase tracking-tight text-purple"
+				className="text-4xl h-fit font-semibold lowercase tracking-tight text-white"
 				{...props} to="/"
 			>
 				{children}
