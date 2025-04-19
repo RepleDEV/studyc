@@ -8,12 +8,17 @@ function App(): React.ReactNode {
 	const [get_searchInput, set_searchInput] = useState("");
 
 	return (
-		<Layout>
-			<div className="hidden md:flex flex-col flex-[0_0_200px]">
+		<Layout margins={false} >
+			<div className="pl-14 pt-10 hidden md:flex flex-col flex-[0_0_256px] bg-dark_blue">
 				<Title>StudyC</Title>
 				<div className="mt-auto mb-3 pr-3 leading-4"></div>
 			</div>
-			<div className="flex flex-1 flex-col">
+			<div className="pt-0 h-screen flex">
+				<div className="h-full w-3 bg-red-600"/>
+				<div className="h-full w-3 bg-orange-500"/>
+				<div className="h-full w-3 bg-yellow-200"/>
+			</div>
+			<div className="pr-14 pl-7 pt-10 flex flex-1 flex-col">
 				<Title className="md:hidden mb-5">StudyC</Title>
 				<SearchBar onInput={set_searchInput} />
 				<ListFiles searchInput={get_searchInput} />
