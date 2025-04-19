@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Layout({ children }: React.PropsWithChildren) {
+export default function Layout({ children, margins }: React.PropsWithChildren<{ margins?: boolean }>) {
 	return (
 		<>
 			{/* NAVBAR */}
-			<main className="px-14 pt-10 w-screen h-screen font-body flex flex-row">
+			<main className={`${margins == false ? "" : "px-14 pt-10" } w-screen h-screen font-body flex flex-row`}>
 				{children}
 			</main>
 			{/* FOOTER */}
