@@ -66,7 +66,7 @@ export default function ListFiles({ searchInput }: { searchInput?: string }) {
 				{fileNameSort < 0 && <ArrowDown className="w-5 inline-block" />}
 				{fileNameSort > 0 && <ArrowUp className="w-5 inline-block" />}
 				</span>
-				<span className="hidden md:block basis-32 cursor-pointer"
+				<span className="hidden md:flex basis-32 cursor-pointer items-center"
 					onClick={((e) => {
 						e.stopPropagation();
 						setFileNameSort(0);
