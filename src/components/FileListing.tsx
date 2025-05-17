@@ -10,8 +10,8 @@ export default function FileListing({ file }: FileListingProps) {
 	const url = file.path;
 
 	return (
-		<Link to={url} className="border-b-2 group">
-			<div className="flex flex-row my-1">
+		<Link to={url} className="border-b-2 group text-sm">
+			<div className="flex flex-row my-2">
 				<span className="basis-2/5 font-medium overflow-ellipsis group-hover:translate-x-2 transition-transform">
 					{file.name}
 				</span>
