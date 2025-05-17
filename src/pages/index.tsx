@@ -3,6 +3,9 @@ import Layout from "../components/Layout";
 import Title from "../components/Title";
 import SearchBar from "../components/SearchBar";
 import ListFiles from "../components/ListFiles";
+import SideBarSubject from "../components/SideBarSubject";
+
+import Sigma from "../../assets/svg/sigma.svg";
 
 function App(): React.ReactNode {
 	const [get_searchInput, set_searchInput] = useState("");
@@ -10,8 +13,10 @@ function App(): React.ReactNode {
 	return (
 		<Layout margins={false} >
 			<div className="pl-14 pt-10 hidden md:flex flex-col flex-[0_0_256px] bg-dark_blue">
-				<Title>StudyC</Title>
-				<div className="mt-auto mb-3 pr-3 leading-4"></div>
+				<Title className="mr-7 border-b-2 border-white">StudyC</Title>
+				<div className="text-white mt-12 mb-3 pr-3 leading-4">
+					<SideBarSubject text="math"><Sigma className="fill-white"/></SideBarSubject>
+				</div>
 			</div>
 			<div className="pt-0 h-screen flex">
 				<div className="h-full w-3 bg-red-600"/>
