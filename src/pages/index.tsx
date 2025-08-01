@@ -15,7 +15,7 @@ function App(): React.ReactNode {
 			<div className="pl-14 pt-10 hidden md:flex flex-col flex-[0_0_256px] bg-dark_blue">
 				<Title className="mr-7 border-b-2 border-white">StudyC</Title>
 				<div className="text-white mt-12 mb-3 pr-3 leading-4">
-					<SideBarSubject text="math"><Sigma className="fill-white"/></SideBarSubject>
+					<SideBarSubject text="math"><Sigma className="stroke-white stroke-2"/></SideBarSubject>
 				</div>
 			</div>
 			<div className="pt-0 h-screen flex">
