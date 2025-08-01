@@ -78,7 +78,9 @@ module.exports = {
 				"accordion-up": "accordion-up 0.2s ease-out",
 			},
 			fontFamily: {
-				body: ["Space Grotesk"],
+				display: ["Helvetica Now Display"],
+				body: ["Helvetica Now Display"],
+				text: ["Helvetica Now Text"],
 			},
 		},
 	},

@@ -23,7 +23,7 @@ function App(): React.ReactNode {
 				<div className="h-full w-3 bg-orange-500"/>
 				<div className="h-full w-3 bg-yellow-200"/>
 			</div>
-			<div className="pr-14 pl-7 pt-10 flex flex-1 flex-col">
+			<div className="pr-14 pl-7 pt-10 flex flex-1 flex-col font-display">
 				<Title className="md:hidden mb-5">StudyC</Title>
 				<SearchBar onInput={set_searchInput} />
 				<ListFiles searchInput={get_searchInput} />

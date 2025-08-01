@@ -4,7 +4,7 @@ export default function Layout({ children, margins }: React.PropsWithChildren<{ 
 	return (
 		<>
 			{/* NAVBAR */}
-			<main className={`${margins == false ? "" : "px-14 pt-10" } w-screen h-screen font-body flex flex-row`}>
+			<main className={`${margins == false ? "" : "px-14 pt-10" } w-screen h-screen font-text flex flex-row`}>
 				{children}
 			</main>
 			{/* FOOTER */}
