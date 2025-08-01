@@ -1,5 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+@font-face {
+	font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Regular'), local('HelveticaNowDisplay-Regular'),
+		url('/fonts/01db325a7f899fa2d4ada84bf479b288.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Medium'), local('HelveticaNowDisplay-Medium'),
+		url('/fonts/87caf42962ee4cd1b299d7e556ac119d.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Bold'), local('HelveticaNowDisplay-Bold'),
+		url('/fonts/7192af0d2cedc66b1befc89fc1830ff2.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Now Text';
+    src: local('Helvetica Now Text Regular'), local('HelveticaNowText-Regular'),
+		url('/fonts/68a8aa3e4a372c889d564c8fedbc7da2.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Now Text';
+    src: local('Helvetica Now Text Regular Italic'), local('HelveticaNowText-RegularItalic'),
+		url('/fonts/b6224fa9faa97ef7cd8bc57dc3c94af9.woff2') format('woff2');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Helvetica Now Text';
+    src: local('Helvetica Now Text Medium'), local('HelveticaNowText-Medium'),
+		url('/fonts/132b0e20645f8e571c5e0ea9219be464.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
