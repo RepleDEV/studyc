@@ -79,7 +79,7 @@ module.exports = {
 			},
 			fontFamily: {
 				display: ["Helvetica Now Display"],
-				body: ["Helvetica Now Display"],
+				title: ["Michroma"],
 				text: ["Helvetica Now Text"],
 			},
 		},
