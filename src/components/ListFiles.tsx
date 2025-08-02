@@ -55,7 +55,7 @@ export default function ListFiles({ searchInput }: { searchInput?: string }) {
 
 	return (
 		<>
-			<div className="flex py-3 flex-row border-b-2 font-semibold select-none">
+			<div className="flex py-3 flex-row border-b-2 text-sm font-semibold select-none">
 				<span className="basis-2/5 cursor-pointer flex items-center"
 					onClick={(e) => {
 						e.stopPropagation();
