@@ -1,0 +1,1 @@
+Keppler's laws are a collection of three laws which describes the motion of planetary orbits around the sun. 
