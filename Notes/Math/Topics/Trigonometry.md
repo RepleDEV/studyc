@@ -90,6 +90,20 @@ For compound angles these are the formulas:
 * $\sin(A \pm B) = \sin A \cos B \pm \sin B \cos A$
 * $\cos(A \pm B) = \cos A \cos B \mp \sin A \sin B$ 
 
+For $\tan(A \pm B)$, it can be derived by the two other functions:
+$$
+\begin{align*}
+\tan(A\pm B) &=\frac
+{\sin A \cos B \pm \sin B \cos A}
+{\cos A \cos B \mp \sin A \sin B}\\
+&= \frac
+{\cos A \cos B\left(\tan A \pm \tan B \right)}
+{\cos A \cos B \left(1 \mp \tan A \tan B\right)} \\
+&= \frac
+{\tan A \pm \tan B}
+{1 \mp \tan A \tan B}
+\end{align*}
+$$
 ## Trigonometric transformations (2)
 Given the function:
 $$

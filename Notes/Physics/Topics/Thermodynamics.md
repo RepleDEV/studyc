@@ -15,9 +15,10 @@ These three temperature scales have different ways of dictating what "0 degrees"
 	* $212^{\circ}F$ = Boiling point of water (at 1 atm pressure)
 * Kelvin
 	* $0^{\circ}K$ is defined as **absolute zero** where there is no movement of the particles of an object, i.e. no internal energy.
+	* $275.16^{\circ}K$ is defined by the triple point of water.
 
 > [!warning] Thermometers
-> Internal energy itself is impossible to measure directly, therefore thermometers use indirect methods of measuring temperature by measuring various properties that change as temperature changes, such as:
+> Internal energy itself is impossible to measure directly, therefore thermometers use indirect methods of measuring temperature by measuring various properties that change as temperature changes (known as thermoelectric properties), such as:
 > * expansion of a liquid (such as with mercury thermometers)
 > * change in electrical resistance
 > * change of electrical resistance of a thermistor
@@ -34,7 +35,7 @@ Where:
 * $c$ specific heat capacity
 * $\Delta T$ change in temperature
 ## Specific latent heat
-Specific latent heat $L$ is the energy required to change a substance's state without changing its temperature. There are two specific latent heats:
+Specific latent heat $L$ is the energy required to change 1 kg of a substance's state without changing its temperature. There are two specific latent heats:
 * **fusion**: between liquid and solid
 * **vaporisation**: between gas and liquid
 

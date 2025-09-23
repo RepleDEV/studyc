@@ -2,6 +2,12 @@ The kinematics of circular motion describes the motion of systems with rotation,
 $$
 \omega = \frac{d\theta}{dt}
 $$
+## Angular Velocity
+Given that an object moving in circular motion completes a single revolution within a time period $T$, assuming constant angular velocity, it can be defined as:
+$$
+\omega=\frac{2\pi}{T}
+$$
+
 Given the equation for [[Circular Measure#Arc|arc length]], we can see that the distance traveled of $s$ of $\theta$ is given as:
 $$
 s(\theta) = r\theta
@@ -25,8 +31,3 @@ a = \lim_{\Delta t \rightarrow 0}\frac{|\Delta\vec{v}|}{\Delta t}
 $$
 
 For acceleration, it is important to understand that for *linear* circular motion, the acceleration only changes the **direction** of the velocity. For an object that moves in circular motion, it can be visualized that the *velocity* is a [[Notes/Math/Topics/Vectors|vector]] that spins around tangentially. 
-
-Given that an object moving in circular motion completes a single revolution within a time period $T$, assuming constant angular velocity, it can be defined as:
-$$
-\omega=\frac{2\pi}{T}
-$$
