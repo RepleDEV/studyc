@@ -1,14 +1,16 @@
-**Density** is defined as **how much** a material is per its given volume. Formally:
+## Density
+**Density** is defined as **how much** a material is per its given volume. Formally, mass per unit volume:
 $$
 \rho=\frac{m}{V}
 $$
-**Pressure** is defined as how much [[Notes/Physics/Topics/Dynamics|force]] is exerted over a given area.
+## Pressure
+**Pressure** is defined as how much [[Notes/Physics/Topics/Dynamics|force]] is exerted over a given area. Formally, pressure is the normal force per unit area:
 $$
 p=\frac{F}{A}
 $$
-When it comes to pressure, the direction of force that it is acted on is always perpendicular to the surface area it's acting upon. This is due to the fact that pressure is actually calculated using the *normal* force.
+When it comes to pressure, the direction of force that it is acted on is always perpendicular to the surface area it's acting upon as pressure is calculated using the *normal* force.
 
-Using **pascals** as the unit, defined as $N$ (newtons, **force**) per $m^2$ (area).
+Using **pascals** as the unit, defined as $N$ (newtons, force) per $m^2$ (area).
 $$
 \text{Pa} = \frac{N}{m^2}=\text{kgm}^{-1}\text{s}^{-2}
 $$

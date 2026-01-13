@@ -10,14 +10,14 @@ The **dynamics** of a **system** of objects are the properties of such objects t
 * momentum
 ## Newton's laws of motion
 1. A body will remain at rest, or in motion at a constant speed in a **straight** line unless a force is acted upon it.
-2. Force is equal to the product of mass and acceleration, or the rate at which momentum is changing over time: $F = ma$
+2. An object's rate of change of momentum is proportional to the resultant force on it.
 3. An equal but opposite reaction occurs when two bodies exert forces on each other.
 ## Momentum
 Momentum is formally defined as the product of an object's mass and velocity:
 $$
 \pmb{p} = m\pmb{v} 
 $$
-Newton's second law states that:
+Newton's second law simplifies to:
 $$
 \pmb{F}=\frac{d\pmb{p}}{dt}
 $$
@@ -52,7 +52,9 @@ $$
 KE_1+KE_2 = KE_1^`+KE_2^`
 $$
 ### Inelastic Collisions
-In an inelastic collision, or a sticky collision, is a type of collision where the two objects "*stick*" to each other after the collision. For this, the final velocity of the two objects are the same.
+In an inelastic collision, as most collisions occur as, **lose some of the initial kinetic energy** during collision. However, momentum is still conserved.
+
+In a **perfectly** inelastic collision, or a sticky collision, is a type of collision where the two objects "*stick*" to each other after the collision. For this, the final velocity of the two objects are the same.
 $$
 m_1v_1 + m_2v_2=(m_1+m_2)v_f
 $$

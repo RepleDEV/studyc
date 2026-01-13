@@ -1,4 +1,4 @@
-A mole is a unit which describes a set quantity of atoms per given mole. 1 mole of an element or compound is defined as **Avogadro's constant** ($\ce{Na}$) number of said element/compounds.
+A mole is a unit which describes a set quantity of atoms per given mole. 1 mole of an element or compound is defined as **Avogadro's constant** ($\ce{N_a}$) number of said element/compounds.
 
 Avogadro's constant is defined as:
 $$

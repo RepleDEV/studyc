@@ -1,4 +1,4 @@
-Energy is a quantity of *work* that is transferrable to and from a body or system. According to newton's **first law of thermodynamics**, it states that energy is **always conserved**, and it cannot be created nor destroyed. 
+Energy is a quantity of *work* that is transferrable to and from a body or system. According to newton's **first law of thermodynamics**, it states that energy is **always conserved**, and it cannot be created nor destroyed. This is also known as the **principle of conservation of energy**.
 
 Energy is mainly categorized into two forms, **potential** and **kinetic**. Potential energy is a form of energy where work is **stored** to a body or a system and where it has the potential to release that energy. Meanwhile, kinetic energy is the form of energy as a consequence of **movement**.
 ## Classical mechanics definition
@@ -48,7 +48,7 @@ Finally:
 $$
 W =E_k= \frac{1}{2}mv^2
 $$
-Without calculus, we first assume work with a constant force:
+Without calculus, we first assume work with a constant force in one dimension:
 $$
 W = Fs
 $$

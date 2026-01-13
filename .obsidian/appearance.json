@@ -1,8 +1,9 @@
 {
-  "accentColor": "#c71f62",
+  "accentColor": "#a168c0",
   "monospaceFontFamily": "Cascadia Mono",
   "nativeMenus": false,
-  "cssTheme": "Encore",
-  "baseFontSize": 14,
-  "theme": "obsidian"
+  "cssTheme": "Border",
+  "baseFontSize": 16,
+  "theme": "system",
+  "textFontFamily": ""
 }
