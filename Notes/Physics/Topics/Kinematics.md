@@ -31,10 +31,23 @@ $$
 s(t)= v_1t-\frac{1}{2}at^2
 $$
 ### Velocity
+Acceleration is defined as the instantaneous rate of change of $v$ with respect to time:
+$$
+a = \frac{dv}{dt}
+$$
+However, with *constant* acceleration, this can be simplified to:
+$$
+a=\frac{\Delta v}{\Delta t}
+$$
+Given an initial velocity $v_0$ and $v(t)$ at time $t$, we get:
+$$
+a = \frac{v(t)-v_0}{t}
+$$
+Rewriting:
 $$
 v(t)=v_0+at
 $$
-This can be thought of as the velocity as being the starting velocity: $u$, added up with the velocity from accelerating at $a$ after $t$ seconds, resulting in $v$: the final velocity.
+This can be thought of as the velocity as being the starting velocity: $v_0$, added up with the velocity from accelerating at $a$ after $t$ seconds, resulting in $v$: the final velocity.
 
 Squaring both sides we get:
 $$
@@ -44,7 +57,7 @@ $$
 &= v_0^2+2as
 \end{align*}
 $$
-## SUVAT Derivation
+## SUVAT Derivation Using Integrals
 The first few equations of SUVAT comes from the integral of **acceleration**, given that:
 $$
 a = \frac{dv}{dt}=\frac{d^2 s}{dt^2}

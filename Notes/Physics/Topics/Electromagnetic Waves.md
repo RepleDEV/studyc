@@ -1,4 +1,4 @@
-An electromagnetic [[Notes/Physics/Topics/Waves|wave]], or EM wave, is a wave made up of a moving, oscillating **electric** and **magnetic** field, which are oscillating perpendicular to each other, and are both perpendicular to the electromagnetic wave's direction of travel. Electromagnetic waves are always **transverse** waves, however, they are a wave of energy which does not require a medium to travel.
+An electromagnetic [[Notes/Physics/Topics/Waves|wave]], or EM wave, is a wave made up of a moving, oscillating **electric** and **magnetic** field, which are oscillating perpendicular to each other, and are both perpendicular to the electromagnetic wave's direction of travel. Electromagnetic waves are always **transverse** waves, however, they are a wave of energy which do not require a medium to travel.
 
 Electromagnetic waves travel (in a vacuum, but, generally) at the speed of light, $c$, where it is roughly equal to:
 $$

@@ -8,9 +8,9 @@ From this, we can also deduce the time it takes for one wavelength to travel, it
 $$
 T = \frac{1}{f} = \frac{\lambda}{v}
 $$
-In a wave, it has an amplitude, i.e., its largest displacement. Intensity is another quantity that is proportional to the amplitude.
+In a wave, it has an amplitude, i.e., its largest **displacement**. Intensity is another quantity that is proportional to the amplitude.
 $$
-I \propto A^2
+I = \frac{\text{Power}}{\text{Area}} \propto A^2
 $$
 Waves can be categorized into two types, **progressive** and **stationary**:
 ## Progressive Waves
@@ -22,6 +22,8 @@ There are two types of progressive waves:
 ## Stationary Waves
 Stationary waves or standing waves are waves created by the **superposition** of two progressive waves, i.e., the addition of two progressive waves. A pair of progressive waves with opposing directions, with the same frequency and wavelength will create a stationary wave with a maximum amplitude of the sum of the amplitudes of the superposed waves.
 ![stationary wave pic](https://upload.wikimedia.org/wikipedia/commons/5/5d/Waventerference.gif)
+*By Lookangmany thanks to author of original simulation = Wolfgang Christian and Francisco Esquembre author of Easy Java Simulation = Francisco Esquembre - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=39309437*
+
 Notice that some particles stay in place while others move to its maximum amplitude. Particles that do not move are called **nodes** while particles that reach the amplitude is called an **antinode**. A consequence of this is that stationary waves do not carry energy along its path and its energy stays within the wave (assuming no energy loss).
 
 The formation of stationary waves can also be done from a single wave source which reflects back into itself in its medium. Such stationary waves follow these conditions for the boundaries of the medium:

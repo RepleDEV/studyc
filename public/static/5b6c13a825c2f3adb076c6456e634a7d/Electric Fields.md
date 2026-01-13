@@ -12,7 +12,7 @@ $$
 E = \frac{\Delta V}{d}
 $$
 ## Coulomb's Law
-Coulomb's law takes a similar form to the force of [[Notes/Physics/Topics/Gravity|Gravity]] to define the force between two point charges in free space.
+Coulomb's law takes a similar form to the force of [[Gravity & Circular Orbits|Gravity & Circular Orbits]] to define the force between two point charges in free space.
 $$
 F = k_e\frac{q_1q_2}{r^2}
 $$

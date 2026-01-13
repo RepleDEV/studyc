@@ -1,4 +1,4 @@
-This chapter is further elaborated in [[Ideal Gases]].
+This chapter is further elaborated in [[Ideal Gases & Kinetic Theory of Gases]].
 
 The **ideal gas law** states that under the same temperature, pressure, and volume, all gases contain the same number of molecules.
 $$

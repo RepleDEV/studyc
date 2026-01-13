@@ -4,21 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "d58817d7bd8243b8",
+        "id": "8c7630029f3f80ab",
         "type": "tabs",
         "children": [
           {
-            "id": "6eab75e2d53f78ec",
+            "id": "728ed915ffdb991b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Chemistry/Topics/Entropy & Gibbs Free Energy.md",
+                "file": "Notes/Physics/Cambridge Syllabus (9702).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Entropy & Gibbs Free Energy"
+              "title": "Cambridge Syllabus (9702)"
+            }
+          },
+          {
+            "id": "8d87622ccaab87c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Physics/Topics/Energy.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Energy"
+            }
+          },
+          {
+            "id": "c1b2d764665d5d5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Physics/Topics/Electromagnetic Waves.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Electromagnetic Waves"
             }
           }
         ]
@@ -171,63 +199,67 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": true,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "random-note:Open random note": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "canvas:Create new canvas": true,
+      "daily-notes:Open today's daily note": true,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "random-note:Open random note": true,
+      "table-editor-obsidian:Advanced Tables Toolbar": true
     }
   },
-  "active": "6eab75e2d53f78ec",
+  "active": "728ed915ffdb991b",
   "lastOpenFiles": [
-    "public/static/d663b52d7406231ab85b5906f91b77d0/Electrochemistry.md",
-    "public/static/d663b52d7406231ab85b5906f91b77d0",
-    "public/static/49b9d0e5a7393fb652299de45be28000/Kirchhoff's Law & Circuits.md",
+    "Notes/Chemistry/Topics/Capacitance.md",
+    "Notes/Physics/Topics/Energy.md",
+    "Notes/Physics/Topics/Deformation of Solids & Springs.md",
+    "Notes/Physics/Cambridge Syllabus (9702).md",
+    "Notes/Math/Topics/Exponentiation and Logarithms.md",
+    "Notes/Math/Topics/Sequences and Series.md",
+    "Notes/Math/Topics/Functions.md",
+    "Notes/Math/Topics/Coordinate Geometry.md",
+    "Notes/Math/Topics/Probability.md",
+    "Notes/Math/Topics/Circular Measure.md",
+    "Notes/Math/Topics/Angles.md",
+    "Untitled.md",
+    "Notes/Physics/Topics/Electromagnetic Waves.md",
+    "Notes/Physics/Topics/Magnetic Fields.md",
+    "Notes/Physics/Topics/Electricity & Resistivity.md",
+    "Notes/Chemistry/Topics/Electrochemistry.md",
+    "Notes/Physics/Topics/Gravity & Circular Orbits.md",
+    "Notes/Math/Topics/Trigonometry.md",
+    "Notes/Physics/Topics/Electric Fields.md",
+    "Notes/Physics/Topics/Oscillations.md",
+    "Notes/Physics/Topics/Thermodynamics.md",
+    "Notes/Physics/Topics/Ideal Gases & Kinetic Theory of Gases.md",
+    "Notes/Chemistry/Topics/Moles.md",
+    "Notes/Math/Topics/Differentiation.md",
+    "Untitled.base",
+    "Notes/Physics/Topics/Dynamics.md",
+    "Notes/Physics/Topics/Momentum.md",
+    "Images/Pasted image 20250925095326.png",
+    "Untitled 1.base",
+    "assets/svg/arrow_up.svg",
+    "assets/svg/arrow_down.svg",
     "public/static/49b9d0e5a7393fb652299de45be28000",
-    "public/static/125d5cf891c531c8968e1aeed375e5bd/Electricity & Resistivity.md",
     "public/static/125d5cf891c531c8968e1aeed375e5bd",
     "public/page-data/notes/physics/topics/kirchhoff-s-law-and-circuits/page-data.json",
     "public/page-data/notes/physics/topics/kirchhoff-s-law-and-circuits",
-    "public/notes/physics/topics/kirchhoff-s-law-and-circuits/index.html",
-    "public/notes/physics/topics/kirchhoff-s-law-and-circuits",
     "src/plugins/remarkHeaderCounter.ts",
-    "public/component---src-pages-notes-file-relative-directory-file-name-tsx-a3758020d23e72542305.js.map",
-    "public/component---src-pages-notes-file-relative-directory-file-name-tsx-a3758020d23e72542305.js.LICENSE.txt",
-    "Notes/Physics/Topics/Thermodynamics.md",
-    "Notes/Chemistry/Topics/Reaction Kinetics.md",
-    "Notes/Chemistry/Topics/Chemical Equations.md",
-    "Notes/Physics/Topics/Electric Fields.md",
-    "Notes/Chemistry/Topics/Electrochemistry.md",
-    "Notes/Physics/Topics/Kirchhoff's Law & Circuits.md",
-    "Notes/Physics/Topics/Kinematics.md",
-    "Notes/Physics/Topics/Electricity & Resistivity.md",
-    "Notes/Math/Topics/Linear Functions.md",
-    "Notes/Physics/Topics/Gravity.md",
-    "Notes/Physics/Topics/Energy.md",
-    "Notes/Physics/Topics/Work & Power.md",
-    "Notes/Physics/Topics/Momentum.md",
-    "Notes/Physics/Topics/Dynamics.md",
-    "Notes/Physics/Topics/Density and Pressure.md",
-    "Notes/Physics/Topics/Torque.md",
-    "public/static/8fdf0b76a239d41984776b90f9179818/Momentum.md",
-    "public/static/550bded16bd2d367a66d996d8b0f4b06/Torque.md",
-    "Notes/Math/Topics/Integration.md",
-    "public/static/05037f2adcc133ec890de9e04b03e155/Dynamics.md",
-    "public/static/10c1e73f927b9c4f4647cdd976ffa66a/Energy.md",
-    "public/static/4f04ea15be3f7a7bc1754639d09a56d5/Thermodynamics.md",
-    "Notes/Physics/Topics/Deformation of Solids & Springs.md",
+    "src/components/ContentOverview.tsx",
+    "public/webpack-runtime-70e2dba4899a0f8e1f8c.js.map",
+    "public/webpack-runtime-70e2dba4899a0f8e1f8c.js",
     "assets/svg/sigma.svg",
     "assets/svg/question_mark.svg",
     "Images/Pasted image 20240211213004.png",
@@ -235,9 +267,6 @@
     "Images/Pasted image 20230906122737.png",
     "Images/Pasted image 20230823150608.png",
     "Images/Pasted image 20230823150408.png",
-    "Images/Pasted image 20230823145700.png",
-    "Images/Pasted image 20230823145648.png",
-    "Images/Pasted image 20230815091954.png",
     "Untitled.canvas"
   ]
 }

@@ -67,7 +67,7 @@ Function translation is where the function is moved across the two axes.
 $$
 \begin{align*}
 f(x + c) &\rightarrow \text{translate towards negative $x$}\\
-f(x) + c &\rightarrow \text{translate towards positive $y$}
+f(x) + c &\rightarrow \text{translate towards negative $y$}
 \end{align*}
 $$
 > [!warning]

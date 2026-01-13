@@ -27,7 +27,7 @@ $$
 This quantity, when graphed, can be used to visualize a material's elastic region and plastic region.
 
 ![[Pasted image 20231122113221.png]]
-Materials will deform linearly until it hits its proportional limit (point A in the graph), but it will continue to follow elastic behavior until its **elastic limit**.
+Materials will deform linearly until it hits its proportional limit, also known as the **limit of proportionality** (point A in the graph), but it will continue to follow elastic behavior until its **elastic limit**.
 * Elastic behavior: the behavior of materials where if forces are removed, they will **return to their original shape or form**. A part of this region will follow Hooke's law.
 * Plastic behavior: the behavior where materials will **not** return to their original shape or form when their forces are removed.
 ## Elastic Potential Energy
